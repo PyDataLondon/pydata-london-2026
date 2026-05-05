@@ -111,31 +111,33 @@
   }
 
   /* Hero */
-  header { margin-bottom: 40px; }
+  header { margin-bottom: 56px; }
 
   .eyebrow {
-    display: inline-flex; align-items: center; gap: 10px;
+    display: inline-flex; align-items: center; gap: 12px;
     font-family: "JetBrains Mono", monospace;
-    font-size: 11px;
-    letter-spacing: 0.22em;
+    font-size: 11.5px;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--muted);
-    margin-bottom: 26px;
+    margin-bottom: 38px;
+    max-width: 100%;
   }
   .eyebrow::before {
     content: "";
     width: 28px; height: 1px;
     background: currentColor;
+    flex: 0 0 auto;
   }
 
   h1 {
     font-family: "Fraunces", "Times New Roman", serif;
     font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 0;
     font-weight: 460;
-    font-size: clamp(46px, 11.2vw, 92px);
-    line-height: 0.96;
-    letter-spacing: -0.025em;
-    margin: 0 0 28px;
+    font-size: clamp(44px, 10.4vw, 84px);
+    line-height: 1.04;
+    letter-spacing: -0.022em;
+    margin: 0 0 36px;
     color: var(--ink);
   }
   h1 em {
@@ -147,11 +149,11 @@
   h1 .ampbreak { display: block; }
 
   .lede {
-    font-size: clamp(17px, 2.4vw, 19.5px);
-    line-height: 1.5;
+    font-size: clamp(17px, 2.4vw, 20px);
+    line-height: 1.55;
     color: var(--ink-soft);
-    max-width: 32ch;
-    margin: 0 0 28px;
+    max-width: 38ch;
+    margin: 0 0 36px;
   }
 
   .stats {
@@ -184,7 +186,7 @@
     border: 0;
     height: 1px;
     background: var(--rule);
-    margin: 44px 0 36px;
+    margin: 56px 0 44px;
     opacity: 0.85;
   }
 
@@ -192,9 +194,9 @@
   .step {
     display: grid;
     grid-template-columns: 56px 1fr;
-    gap: 4px 18px;
+    gap: 6px 22px;
     align-items: start;
-    margin: 0 0 30px;
+    margin: 0 0 40px;
   }
   .step-num {
     font-family: "JetBrains Mono", monospace;
@@ -495,7 +497,7 @@
 
 <main>
   <header>
-    <p class="eyebrow reveal reveal-1">A community gimmick from PyData London</p>
+    <p class="eyebrow reveal reveal-1">A personal talk recommender for PyData London 2026</p>
     <h1 class="reveal reveal-2">Your PyData<br>2026 <em>lineup</em>,<span class="ampbreak"></span>in one prompt.</h1>
     <p class="lede reveal reveal-3">53 sessions across three days. Hand this URL to your favourite LLM and it turns into your personal conference recommender — top picks, a day-by-day plan, and a stretch pick to break you out of your bubble.</p>
     <div class="stats reveal reveal-4">
