@@ -2,247 +2,609 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Your PyData London 2026 lineup, in one prompt</title>
 <meta name="description" content="A personalised PyData London 2026 talk recommender. Tell your favourite LLM to fetch this URL — get top picks, an itinerary, and stretch picks tailored to you.">
+<meta name="theme-color" content="#fbf6ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0f12" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="Your PyData London 2026 lineup, in one prompt">
-<meta property="og:description" content="Tell your favourite LLM to fetch this URL — get top picks, an itinerary, and stretch picks tailored to you.">
+<meta property="og:description" content="Tell your favourite LLM to fetch this URL — get top picks, an itinerary, and stretch picks tailored to you. 5–7 June 2026, London.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://pydata.london/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+
 <style>
   :root {
-    --bg: #fffaf2;
-    --ink: #1a1a1a;
-    --muted: #5b5b5b;
-    --accent: #ff6e3c;
-    --accent-ink: #ffffff;
+    --paper: #fbf6ea;
+    --ink: #0f1218;
+    --ink-soft: #2a2d36;
+    --muted: #5a5751;
+    --rule: #15171c;
+    --accent: #e2462e;
+    --accent-ink: #fffaf2;
+    --accent-soft: #fbe3dd;
     --card: #ffffff;
-    --border: #ebe1d3;
-    --code-bg: #1a1a1a;
-    --code-ink: #fff8eb;
+    --code-bg: #0f1218;
+    --code-ink: #f4ecdb;
+    --code-muted: #8b8775;
+    --shadow: 0 1px 0 rgba(15,18,24,0.04), 0 12px 28px -22px rgba(15,18,24,0.18);
+    --grain-opacity: 0.03;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #161311;
-      --ink: #f6efe4;
-      --muted: #b3a999;
-      --accent: #ff8857;
-      --accent-ink: #1a1a1a;
-      --card: #221d18;
-      --border: #36302a;
-      --code-bg: #0d0b09;
-      --code-ink: #f6efe4;
+      --paper: #0e0f12;
+      --ink: #f4ecdb;
+      --ink-soft: #d6cdb8;
+      --muted: #9b9582;
+      --rule: #2c2e35;
+      --accent: #ff7a5c;
+      --accent-ink: #0e0f12;
+      --accent-soft: #2a1813;
+      --card: #181a1f;
+      --code-bg: #050608;
+      --code-ink: #f4ecdb;
+      --code-muted: #6b6754;
+      --shadow: 0 1px 0 rgba(0,0,0,0.3), 0 14px 36px -22px rgba(0,0,0,0.7);
+      --grain-opacity: 0.06;
     }
   }
+
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
   body {
-    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: var(--bg);
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 400;
+    font-size: 16.5px;
+    line-height: 1.55;
+    background: var(--paper);
     color: var(--ink);
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
   }
-  main { max-width: 760px; margin: 0 auto; padding: 48px 22px 80px; }
-  header { margin-bottom: 36px; }
-  .eyebrow {
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.06em;
+
+  /* Subtle paper grain — gives the warmth a tactile feel without overdoing it */
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: var(--grain-opacity);
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    mix-blend-mode: multiply;
+  }
+  @media (prefers-color-scheme: dark) {
+    body::before { mix-blend-mode: screen; }
+  }
+
+  /* Top accent stripe — like a festival poster wristband */
+  .stripe {
+    position: relative;
+    z-index: 2;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 11.5px;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 12px;
+    padding: 9px 22px;
+    display: flex; gap: 14px; align-items: center; flex-wrap: wrap;
   }
-  h1 {
-    font-size: clamp(28px, 5vw, 44px);
-    line-height: 1.1;
-    margin: 0 0 16px;
-    letter-spacing: -0.01em;
+  .stripe .dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent);
+    animation: pulse 2.4s ease-in-out infinite;
   }
-  .lede {
-    font-size: clamp(17px, 2.4vw, 19px);
+  .stripe .right { margin-left: auto; opacity: 0.65; }
+
+  main {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 36px 22px 64px;
+  }
+
+  /* Hero */
+  header { margin-bottom: 40px; }
+
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
     color: var(--muted);
-    margin: 0 0 24px;
-    max-width: 56ch;
+    margin-bottom: 26px;
   }
+  .eyebrow::before {
+    content: "";
+    width: 28px; height: 1px;
+    background: currentColor;
+  }
+
+  h1 {
+    font-family: "Fraunces", "Times New Roman", serif;
+    font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 0;
+    font-weight: 460;
+    font-size: clamp(46px, 11.2vw, 92px);
+    line-height: 0.96;
+    letter-spacing: -0.025em;
+    margin: 0 0 28px;
+    color: var(--ink);
+  }
+  h1 em {
+    font-style: italic;
+    font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+    color: var(--accent);
+    font-weight: 420;
+  }
+  h1 .ampbreak { display: block; }
+
+  .lede {
+    font-size: clamp(17px, 2.4vw, 19.5px);
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: 32ch;
+    margin: 0 0 28px;
+  }
+
+  .stats {
+    display: flex; flex-wrap: wrap; gap: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin: 0 0 4px;
+  }
+  .stats span {
+    display: inline-flex; align-items: center;
+    padding: 6px 14px 6px 0;
+  }
+  .stats span:not(:last-child)::after {
+    content: "/";
+    margin-left: 14px;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .stats b {
+    font-weight: 700;
+    color: var(--accent);
+    margin-right: 6px;
+  }
+
+  /* Horizontal rule used as section divider — like a printed programme */
+  .rule {
+    border: 0;
+    height: 1px;
+    background: var(--rule);
+    margin: 44px 0 36px;
+    opacity: 0.85;
+  }
+
+  /* Numbered steps */
   .step {
-    display: flex;
-    align-items: baseline;
-    gap: 14px;
-    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 4px 18px;
+    align-items: start;
+    margin: 0 0 30px;
   }
   .step-num {
-    flex: 0 0 auto;
-    width: 32px; height: 32px;
-    border-radius: 50%;
-    background: var(--accent); color: var(--accent-ink);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
     font-weight: 700;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 15px;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    line-height: 1.2;
+    padding-top: 7px;
   }
-  .step-body { flex: 1; }
-  .step-body h3 { margin: 4px 0 6px; font-size: 17px; }
-  .step-body p { margin: 0; color: var(--muted); }
+  .step-title {
+    font-family: "Fraunces", serif;
+    font-variation-settings: "opsz" 36, "SOFT" 0;
+    font-weight: 500;
+    font-size: clamp(22px, 4.4vw, 28px);
+    line-height: 1.18;
+    letter-spacing: -0.012em;
+    color: var(--ink);
+    margin: 0 0 6px;
+  }
+  .step-body { color: var(--ink-soft); font-size: 16px; line-height: 1.5; }
+  .step-body p { margin: 0 0 10px; }
+  .step-body p:last-child { margin-bottom: 0; }
+
+  /* Prompt card — terminal-flavoured */
   .prompt-card {
     background: var(--code-bg);
     color: var(--code-ink);
-    border-radius: 12px;
-    padding: 18px 78px 18px 20px;
-    font: 15px/1.5 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    border-radius: 10px;
+    padding: 16px 16px 18px;
     margin: 14px 0 22px;
-    word-break: break-word;
+    box-shadow: var(--shadow);
     position: relative;
+    overflow: hidden;
   }
-  .prompt-card .copy {
+  .prompt-meta {
+    display: flex; gap: 10px; align-items: center;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--code-muted);
+    padding-bottom: 12px;
+    border-bottom: 1px solid color-mix(in srgb, var(--code-ink) 12%, transparent);
+    margin-bottom: 12px;
+  }
+  .prompt-meta .traffic {
+    display: inline-flex; gap: 5px;
+  }
+  .prompt-meta .traffic i {
+    width: 9px; height: 9px; border-radius: 50%;
+    background: color-mix(in srgb, var(--code-ink) 22%, transparent);
+  }
+  .prompt-text {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    line-height: 1.55;
+    word-break: break-word;
+    padding-right: 4px;
+  }
+  .prompt-text::before {
+    content: "▍";
+    color: var(--accent);
+    margin-right: 6px;
+    animation: blink 1.1s steps(2, end) infinite;
+  }
+  .copy-btn {
     position: absolute;
-    top: 10px; right: 10px;
-    background: rgba(255,255,255,0.08);
+    top: 14px; right: 14px;
+    background: color-mix(in srgb, var(--code-ink) 8%, transparent);
     color: var(--code-ink);
-    border: 1px solid rgba(255,255,255,0.12);
-    padding: 5px 10px;
+    border: 1px solid color-mix(in srgb, var(--code-ink) 18%, transparent);
     border-radius: 6px;
-    font: 12px/1 -apple-system, sans-serif;
+    padding: 5px 10px;
+    font: 600 11px/1 "JetBrains Mono", monospace;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     cursor: pointer;
+    transition: background .15s ease, border-color .15s ease, transform .12s ease;
   }
-  .prompt-card .copy:hover { background: rgba(255,255,255,0.16); }
+  .copy-btn:hover { background: color-mix(in srgb, var(--code-ink) 14%, transparent); border-color: color-mix(in srgb, var(--code-ink) 30%, transparent); }
+  .copy-btn:active { transform: translateY(1px); }
+
+  /* CTAs */
   .ctas {
     display: flex; flex-wrap: wrap; gap: 10px;
-    margin: 8px 0 36px;
+    margin: 4px 0 0;
   }
   .btn {
-    display: inline-block;
-    padding: 11px 16px;
-    border-radius: 8px;
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 13px 18px;
+    border-radius: 999px;
     text-decoration: none;
+    font-family: "Manrope", sans-serif;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14.5px;
+    letter-spacing: 0.005em;
     border: 1.5px solid var(--ink);
     background: transparent;
     color: var(--ink);
     cursor: pointer;
-  }
-  .btn.primary {
-    background: var(--accent);
-    color: var(--accent-ink);
-    border-color: var(--accent);
+    transition: transform .15s ease, background .15s ease, color .15s ease, border-color .15s ease;
+    -webkit-tap-highlight-color: transparent;
   }
   .btn:hover { transform: translateY(-1px); }
-  .qr-row {
-    display: flex; gap: 24px; align-items: center;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px;
-    margin: 32px 0;
+  .btn:active { transform: translateY(0); }
+  .btn .arrow { transition: transform .2s ease; display: inline-block; }
+  .btn:hover .arrow { transform: translateX(4px); }
+  .btn.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
   }
-  .qr-row svg { width: 140px; height: 140px; flex: 0 0 auto; background: white; padding: 6px; border-radius: 6px; }
-  .qr-row p { margin: 0 0 6px; }
-  .qr-row .small { color: var(--muted); font-size: 14px; }
-  details {
+  .btn.primary:hover {
+    background: color-mix(in srgb, var(--accent) 88%, var(--ink) 12%);
+  }
+  .btn.ghost { border-color: var(--rule); color: var(--ink); }
+  .btn.ghost:hover { border-color: var(--ink); }
+
+  /* QR — a fixed-white "museum label" card, scannable in any theme */
+  .qr-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 22px;
+    align-items: center;
     background: var(--card);
-    border: 1px solid var(--border);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 22px 22px 22px 22px;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+  }
+  .qr-card::before {
+    /* corner crop marks like a printer's registration ticks */
+    content: "";
+    position: absolute; top: 8px; left: 8px;
+    width: 14px; height: 14px;
+    border-top: 1.5px solid var(--accent);
+    border-left: 1.5px solid var(--accent);
+  }
+  .qr-card::after {
+    content: "";
+    position: absolute; bottom: 8px; right: 8px;
+    width: 14px; height: 14px;
+    border-bottom: 1.5px solid var(--accent);
+    border-right: 1.5px solid var(--accent);
+  }
+  .qr-frame {
+    background: #ffffff;
     border-radius: 10px;
-    padding: 12px 16px;
-    margin: 8px 0;
+    padding: 12px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05), 0 8px 24px -16px rgba(0,0,0,0.25);
+    display: block;
   }
-  details summary { cursor: pointer; font-weight: 600; }
-  details ul { margin: 10px 0 4px; padding-left: 22px; color: var(--muted); }
+  .qr-frame img { display: block; width: 132px; height: 132px; }
+  .qr-text .label {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .qr-text h3 {
+    font-family: "Fraunces", serif;
+    font-variation-settings: "opsz" 36;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.15;
+    margin: 0 0 6px;
+    color: var(--ink);
+  }
+  .qr-text p { margin: 0; color: var(--muted); font-size: 14.5px; line-height: 1.45; }
+
+  /* FAQ */
+  details {
+    border-bottom: 1px solid var(--rule);
+    padding: 16px 0;
+  }
+  details:first-of-type { border-top: 1px solid var(--rule); margin-top: 12px; }
+  details summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    font-family: "Fraunces", serif;
+    font-variation-settings: "opsz" 36;
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: -0.005em;
+    color: var(--ink);
+  }
+  details summary::-webkit-details-marker { display: none; }
+  details .chev {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 18px;
+    color: var(--accent);
+    transition: transform .25s ease;
+    line-height: 1;
+  }
+  details[open] .chev { transform: rotate(45deg); }
+  details .body { padding-top: 12px; color: var(--ink-soft); font-size: 15.5px; line-height: 1.6; }
+  details .body p { margin: 0 0 10px; }
+  details .body ul { margin: 8px 0 0; padding-left: 22px; }
+  details .body li { margin-bottom: 4px; }
+
+  /* Footer — magazine colophon */
   footer {
-    margin-top: 48px;
-    padding-top: 24px;
-    border-top: 1px solid var(--border);
+    margin-top: 56px;
+    padding-top: 28px;
+    border-top: 2px solid var(--ink);
+  }
+  .colophon {
+    display: grid;
+    gap: 20px;
+    font-size: 14.5px;
+  }
+  .colophon h2 {
+    font-family: "Fraunces", serif;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.05;
+    margin: 0 0 6px;
+    color: var(--ink);
+  }
+  .colophon .meta {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
     color: var(--muted);
-    font-size: 14px;
   }
-  footer a { color: var(--ink); }
+  .colophon .links { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
+  .colophon a { color: var(--ink); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
+  .colophon a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+  .colophon .small { color: var(--muted); font-size: 13px; }
+
+  /* Toast */
   .toast {
-    position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
-    background: var(--ink); color: var(--bg);
-    padding: 10px 16px; border-radius: 8px;
-    font-size: 14px;
-    opacity: 0; pointer-events: none; transition: opacity 0.18s;
+    position: fixed; bottom: 22px; left: 50%; transform: translate(-50%, 8px);
+    background: var(--ink); color: var(--paper);
+    padding: 10px 18px; border-radius: 999px;
+    font: 600 13px/1 "Manrope", sans-serif;
+    letter-spacing: 0.02em;
+    opacity: 0; pointer-events: none;
+    transition: opacity .2s ease, transform .2s ease;
+    z-index: 50;
   }
-  .toast.show { opacity: 1; }
+  .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+  /* Entrance */
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal { opacity: 0; transform: translateY(8px); animation: rise .55s cubic-bezier(.2,.7,.2,1) forwards; }
+    .reveal-1 { animation-delay: .04s; }
+    .reveal-2 { animation-delay: .12s; }
+    .reveal-3 { animation-delay: .20s; }
+    .reveal-4 { animation-delay: .28s; }
+    .reveal-5 { animation-delay: .36s; }
+  }
+  @keyframes rise {
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes blink {
+    50% { opacity: 0.3; }
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent); }
+    50%      { box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 0%,  transparent); }
+  }
+
+  /* Responsive: cosier at very small widths */
+  @media (max-width: 460px) {
+    main { padding: 28px 18px 56px; }
+    .step { grid-template-columns: 40px 1fr; gap: 4px 14px; }
+    .step-num { padding-top: 6px; font-size: 12px; }
+    .qr-card { grid-template-columns: 1fr; gap: 14px; padding: 18px; }
+    .qr-frame { justify-self: start; }
+    .qr-frame img { width: 120px; height: 120px; }
+    .ctas .btn { flex: 1 1 auto; justify-content: center; }
+    .ctas .btn.primary { flex: 1 1 100%; }
+  }
+
+  /* Roomier on larger screens */
+  @media (min-width: 720px) {
+    main { padding: 56px 28px 96px; }
+  }
+
+  /* Selection */
+  ::selection { background: var(--accent); color: var(--accent-ink); }
 </style>
 </head>
 <body>
+
+<div class="stripe">
+  <span class="dot" aria-hidden="true"></span>
+  <span>PyData London 2026</span>
+  <span class="right">5–7 Jun · St. Paul's, London</span>
+</div>
+
 <main>
   <header>
-    <span class="eyebrow">PyData London · 5–7 June 2026</span>
-    <h1>Your PyData London 2026 lineup, in one prompt.</h1>
-    <p class="lede">53 sessions across three days. Tell your favourite LLM to read this page, and it will turn into your personal conference recommender — top picks, a day-by-day plan, and a stretch pick to break you out of your bubble.</p>
+    <p class="eyebrow reveal reveal-1">A community gimmick from PyData London</p>
+    <h1 class="reveal reveal-2">Your PyData<br>2026 <em>lineup</em>,<span class="ampbreak"></span>in one prompt.</h1>
+    <p class="lede reveal reveal-3">53 sessions across three days. Hand this URL to your favourite LLM and it turns into your personal conference recommender — top picks, a day-by-day plan, and a stretch pick to break you out of your bubble.</p>
+    <div class="stats reveal reveal-4">
+      <span><b>53</b>sessions</span>
+      <span><b>3</b>days</span>
+      <span><b>1</b>prompt</span>
+    </div>
   </header>
 
-  <div class="step">
-    <div class="step-num">1</div>
-    <div class="step-body">
-      <h3>Open ChatGPT, Claude, Gemini — whatever you use.</h3>
-      <p>Anything with web browsing turned on works.</p>
-    </div>
-  </div>
+  <hr class="rule reveal reveal-5">
 
-  <div class="step">
-    <div class="step-num">2</div>
-    <div class="step-body">
-      <h3>Paste this:</h3>
-    </div>
-  </div>
-
-  <div class="prompt-card" id="prompt-card">
-    <button class="copy" onclick="copyPrompt()">Copy</button>
-    <span id="prompt-text">Fetch https://pydata.london/recommender.md and follow the instructions — pick my top 5 PyData London 2026 talks.</span>
-  </div>
-
-  <div class="ctas">
-    <a class="btn primary" id="chatgpt-btn" target="_blank" rel="noopener">Open in ChatGPT →</a>
-    <button class="btn" onclick="copyPrompt()">Copy prompt</button>
-    <a class="btn" href="recommender.md">View raw recommender.md</a>
-  </div>
-
-  <div class="step">
-    <div class="step-num">3</div>
-    <div class="step-body">
-      <h3>Get your picks. Buy the ticket. See you in June.</h3>
-      <p>If you liked your stretch pick, share it on LinkedIn with <strong>#PyDataLondon2026</strong>.</p>
-    </div>
-  </div>
-
-  <div class="qr-row">
-    <object data="qr.svg" type="image/svg+xml" aria-label="QR code to the landing page"></object>
+  <section class="step reveal">
+    <div class="step-num">01</div>
     <div>
-      <p><strong>At the meetup?</strong></p>
-      <p class="small">Scan to land back here, then follow the steps above. Works on any phone with a camera.</p>
+      <h2 class="step-title">Open ChatGPT, Claude, Gemini.</h2>
+      <div class="step-body"><p>Anything with web browsing turned on works. On a phone or laptop — doesn't matter.</p></div>
     </div>
-  </div>
+  </section>
+
+  <section class="step reveal">
+    <div class="step-num">02</div>
+    <div>
+      <h2 class="step-title">Paste this prompt.</h2>
+      <div class="step-body">
+        <div class="prompt-card">
+          <div class="prompt-meta" aria-hidden="true">
+            <span class="traffic"><i></i><i></i><i></i></span>
+            <span>your-favourite-llm</span>
+          </div>
+          <button class="copy-btn" type="button" onclick="copyPrompt()">Copy</button>
+          <div class="prompt-text" id="prompt-text"></div>
+        </div>
+        <div class="ctas">
+          <a class="btn primary" id="chatgpt-btn" target="_blank" rel="noopener">Open in ChatGPT <span class="arrow">→</span></a>
+          <button class="btn ghost" type="button" onclick="copyPrompt()">Copy prompt</button>
+          <a class="btn ghost" href="recommender.md">View raw .md</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="step reveal">
+    <div class="step-num">03</div>
+    <div>
+      <h2 class="step-title">Get your picks. Buy the ticket. See you in June.</h2>
+      <div class="step-body"><p>Loved your stretch pick? Share it on LinkedIn with <strong>#PyDataLondon2026</strong> — tag a friend who'd geek out over it.</p></div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="qr-card reveal">
+    <div class="qr-frame">
+      <img src="qr.svg" alt="QR code linking to https://pydata.london" width="132" height="132">
+    </div>
+    <div class="qr-text">
+      <div class="label">At the meetup</div>
+      <h3>Scan, then follow the steps.</h3>
+      <p>Lands you back here. Best with a phone camera.</p>
+    </div>
+  </section>
 
   <details>
-    <summary>What does it actually do?</summary>
-    <p>The URL above points at a single markdown file containing (a) instructions for the LLM and (b) the full PyData London 2026 schedule. When your LLM fetches it, the file briefs the model to act as a recommender — using whatever it already knows about you, or asking three quick multiple-choice questions if it doesn't.</p>
-    <p>It then produces:</p>
-    <ul>
-      <li>🎯 Five ranked picks tailored to you</li>
-      <li>📅 A day-by-day itinerary that resolves the parallel tracks</li>
-      <li>🌶 Two stretch picks deliberately outside your usual interests</li>
-      <li>🎟 Conference info and how to bring your team</li>
-    </ul>
+    <summary>What does it actually do? <span class="chev" aria-hidden="true">+</span></summary>
+    <div class="body">
+      <p>The URL above points at a single markdown file containing (a) instructions for the LLM and (b) the full PyData London 2026 schedule. When your LLM fetches it, the file briefs the model to act as a recommender — using whatever it already knows about you, or asking three quick multiple-choice questions if it doesn't.</p>
+      <p>It then produces:</p>
+      <ul>
+        <li>Five ranked picks tailored to you</li>
+        <li>A day-by-day itinerary that resolves the parallel tracks</li>
+        <li>Two stretch picks deliberately outside your usual interests</li>
+        <li>Conference info and how to bring your team</li>
+      </ul>
+    </div>
   </details>
 
   <details>
-    <summary>Doesn't know much about you?</summary>
-    <p>If your LLM has no memory or you're in a fresh chat, the prompt instructs it to ask three short multiple-choice questions about your role, current stack, and what would make the conference a win. Answer "1a, 2c, 3b" and you're off.</p>
+    <summary>Doesn't know much about you? <span class="chev" aria-hidden="true">+</span></summary>
+    <div class="body">
+      <p>If your LLM has no memory or you're in a fresh chat, the prompt instructs it to ask three short multiple-choice questions about your role, current stack, and what would make the conference a win. Answer "1a, 2c, 3b" and you're off.</p>
+    </div>
   </details>
 
   <details>
-    <summary>How fresh is the schedule?</summary>
-    <p>The recommender file is rebuilt automatically every day from the official pretalx schedule. The timestamp at the top of <a href="recommender.md">recommender.md</a> tells you when it was last refreshed.</p>
+    <summary>How fresh is the schedule? <span class="chev" aria-hidden="true">+</span></summary>
+    <div class="body">
+      <p>The recommender file is rebuilt automatically every day from the official pretalx schedule. The timestamp at the top of <a href="recommender.md">recommender.md</a> tells you when it was last refreshed.</p>
+    </div>
   </details>
 
   <footer>
-    <p><strong>PyData London 2026</strong> · 5–7 June 2026 · Convene Sancroft, St. Paul's, London EC4M 7DQ</p>
-    <p>🎟 <a href="https://ti.to/pydata/pydatalondon26">Get tickets</a> · 👥 Group rates: <a href="mailto:admin@pydata.org">admin@pydata.org</a> · 🐍 PyData is a NumFOCUS non-profit</p>
-    <p>Built by the PyData London community. <a href="https://github.com/PyDataLondon/pydata-london-2026">Source on GitHub</a>.</p>
+    <div class="colophon">
+      <div>
+        <h2>PyData London 2026</h2>
+        <div class="meta">5–7 June 2026 · Convene Sancroft · St. Paul's, London EC4M 7DQ</div>
+      </div>
+      <div class="links">
+        <a href="https://ti.to/pydata/pydatalondon26">Tickets</a>
+        <a href="https://ti.to/pydata/pydatalondon26">Group rates</a>
+        <a href="https://github.com/PyDataLondon/pydata-london-2026">Source</a>
+      </div>
+      <p class="small"><strong>Bringing the team?</strong> 10% off 3+ tickets · 15% off 5+ tickets — applied automatically on the ticket page.</p>
+      <p class="small">A NumFOCUS non-profit event. Built by the community. Schedule data from pretalx, refreshed daily.</p>
+    </div>
   </footer>
 </main>
-<div class="toast" id="toast">Copied!</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite">Copied</div>
+
 <script>
 const PROMPT = "Fetch https://pydata.london/recommender.md and follow the instructions — pick my top 5 PyData London 2026 talks.";
 document.getElementById("chatgpt-btn").href = "https://chatgpt.com/?q=" + encodeURIComponent(PROMPT);
@@ -252,7 +614,8 @@ function copyPrompt() {
   navigator.clipboard.writeText(PROMPT).then(() => {
     const t = document.getElementById("toast");
     t.classList.add("show");
-    setTimeout(() => t.classList.remove("show"), 1400);
+    clearTimeout(window.__toastTimer);
+    window.__toastTimer = setTimeout(() => t.classList.remove("show"), 1600);
   });
 }
 </script>

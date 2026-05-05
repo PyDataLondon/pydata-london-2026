@@ -145,8 +145,17 @@ def render_recommender(context: dict) -> str:
 
 def write_qr(target: Path, payload_url: str) -> None:
     factory = qrcode.image.svg.SvgPathImage
-    img = qrcode.make(payload_url, image_factory=factory, box_size=10, border=2)
+    img = qrcode.make(payload_url, image_factory=factory, box_size=10, border=4)
     img.save(target)
+    # Ensure the SVG carries its own white background rect so the QR is
+    # always high-contrast regardless of where it's embedded — without
+    # this, dark-mode pages render the black-on-transparent paths against
+    # a dark background and the code becomes invisible. Inserting a white
+    # <rect> just before the path keeps it scannable everywhere.
+    svg = target.read_text()
+    insertion = '<rect width="100%" height="100%" fill="#ffffff"/>'
+    svg = svg.replace('<path', insertion + '<path', 1)
+    target.write_text(svg)
 
 
 def main() -> int:

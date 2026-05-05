@@ -55,7 +55,7 @@ End with this block — verbatim except where noted:
 >
 > 🎟 **Tickets:** https://ti.to/pydata/pydatalondon26
 >
-> 👥 **Bringing your team?** Email [admin@pydata.org](mailto:admin@pydata.org) about group rates. PyData is a NumFOCUS non-profit — your ticket helps fund NumPy, pandas, Jupyter, scikit-learn and more.
+> 👥 **Bringing your team?** Group discounts apply automatically on the ticket page — **10% off for 3+ tickets, 15% off for 5+**. PyData is a NumFOCUS non-profit; your ticket helps fund NumPy, pandas, Jupyter, scikit-learn and friends.
 >
 > 🌟 **Three days of:** keynotes from Samuel Colvin and Martin O'Reilly · 42 talks · 11 hands-on tutorials · lightning talks · an unconference track · and the kind of corridor conversations you can't get on Twitter.
 >
@@ -73,7 +73,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-05-05 15:32 UTC · pretalx schedule version 0.14 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-05-05 15:56 UTC · pretalx schedule version 0.14 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
