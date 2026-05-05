@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your PyData London 2026 lineup, in one prompt</title>
+<meta name="description" content="A personalised PyData London 2026 talk recommender. Tell your favourite LLM to fetch this URL — get top picks, an itinerary, and stretch picks tailored to you.">
+<meta property="og:title" content="Your PyData London 2026 lineup, in one prompt">
+<meta property="og:description" content="Tell your favourite LLM to fetch this URL — get top picks, an itinerary, and stretch picks tailored to you.">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --bg: #fffaf2;
+    --ink: #1a1a1a;
+    --muted: #5b5b5b;
+    --accent: #ff6e3c;
+    --accent-ink: #ffffff;
+    --card: #ffffff;
+    --border: #ebe1d3;
+    --code-bg: #1a1a1a;
+    --code-ink: #fff8eb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161311;
+      --ink: #f6efe4;
+      --muted: #b3a999;
+      --accent: #ff8857;
+      --accent-ink: #1a1a1a;
+      --card: #221d18;
+      --border: #36302a;
+      --code-bg: #0d0b09;
+      --code-ink: #f6efe4;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 22px 80px; }
+  header { margin-bottom: 36px; }
+  .eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-size: clamp(28px, 5vw, 44px);
+    line-height: 1.1;
+    margin: 0 0 16px;
+    letter-spacing: -0.01em;
+  }
+  .lede {
+    font-size: clamp(17px, 2.4vw, 19px);
+    color: var(--muted);
+    margin: 0 0 24px;
+    max-width: 56ch;
+  }
+  .step {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  .step-num {
+    flex: 0 0 auto;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: var(--accent); color: var(--accent-ink);
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px;
+  }
+  .step-body { flex: 1; }
+  .step-body h3 { margin: 4px 0 6px; font-size: 17px; }
+  .step-body p { margin: 0; color: var(--muted); }
+  .prompt-card {
+    background: var(--code-bg);
+    color: var(--code-ink);
+    border-radius: 12px;
+    padding: 18px 78px 18px 20px;
+    font: 15px/1.5 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    margin: 14px 0 22px;
+    word-break: break-word;
+    position: relative;
+  }
+  .prompt-card .copy {
+    position: absolute;
+    top: 10px; right: 10px;
+    background: rgba(255,255,255,0.08);
+    color: var(--code-ink);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 5px 10px;
+    border-radius: 6px;
+    font: 12px/1 -apple-system, sans-serif;
+    cursor: pointer;
+  }
+  .prompt-card .copy:hover { background: rgba(255,255,255,0.16); }
+  .ctas {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    margin: 8px 0 36px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 11px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border: 1.5px solid var(--ink);
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .btn.primary {
+    background: var(--accent);
+    color: var(--accent-ink);
+    border-color: var(--accent);
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .qr-row {
+    display: flex; gap: 24px; align-items: center;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 32px 0;
+  }
+  .qr-row svg { width: 140px; height: 140px; flex: 0 0 auto; background: white; padding: 6px; border-radius: 6px; }
+  .qr-row p { margin: 0 0 6px; }
+  .qr-row .small { color: var(--muted); font-size: 14px; }
+  details {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin: 8px 0;
+  }
+  details summary { cursor: pointer; font-weight: 600; }
+  details ul { margin: 10px 0 4px; padding-left: 22px; color: var(--muted); }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer a { color: var(--ink); }
+  .toast {
+    position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+    background: var(--ink); color: var(--bg);
+    padding: 10px 16px; border-radius: 8px;
+    font-size: 14px;
+    opacity: 0; pointer-events: none; transition: opacity 0.18s;
+  }
+  .toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="eyebrow">PyData London · 5–7 June 2026</span>
+    <h1>Your PyData London 2026 lineup, in one prompt.</h1>
+    <p class="lede">53 sessions across three days. Tell your favourite LLM to read this page, and it will turn into your personal conference recommender — top picks, a day-by-day plan, and a stretch pick to break you out of your bubble.</p>
+  </header>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <h3>Open ChatGPT, Claude, Gemini — whatever you use.</h3>
+      <p>Anything with web browsing turned on works.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <h3>Paste this:</h3>
+    </div>
+  </div>
+
+  <div class="prompt-card" id="prompt-card">
+    <button class="copy" onclick="copyPrompt()">Copy</button>
+    <span id="prompt-text">Fetch https://pydata.london/recommender.md and follow the instructions — pick my top 5 PyData London 2026 talks.</span>
+  </div>
+
+  <div class="ctas">
+    <a class="btn primary" id="chatgpt-btn" target="_blank" rel="noopener">Open in ChatGPT →</a>
+    <button class="btn" onclick="copyPrompt()">Copy prompt</button>
+    <a class="btn" href="recommender.md">View raw recommender.md</a>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <h3>Get your picks. Buy the ticket. See you in June.</h3>
+      <p>If you liked your stretch pick, share it on LinkedIn with <strong>#PyDataLondon2026</strong>.</p>
+    </div>
+  </div>
+
+  <div class="qr-row">
+    <object data="qr.svg" type="image/svg+xml" aria-label="QR code to pydata.london"></object>
+    <div>
+      <p><strong>At the meetup?</strong></p>
+      <p class="small">Scan to land back here, then follow the steps above. Works on any phone with a camera.</p>
+    </div>
+  </div>
+
+  <details>
+    <summary>What does it actually do?</summary>
+    <p>The URL above points at a single markdown file containing (a) instructions for the LLM and (b) the full PyData London 2026 schedule. When your LLM fetches it, the file briefs the model to act as a recommender — using whatever it already knows about you, or asking three quick multiple-choice questions if it doesn't.</p>
+    <p>It then produces:</p>
+    <ul>
+      <li>🎯 Five ranked picks tailored to you</li>
+      <li>📅 A day-by-day itinerary that resolves the parallel tracks</li>
+      <li>🌶 Two stretch picks deliberately outside your usual interests</li>
+      <li>🎟 Conference info and how to bring your team</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Doesn't know much about you?</summary>
+    <p>If your LLM has no memory or you're in a fresh chat, the prompt instructs it to ask three short multiple-choice questions about your role, current stack, and what would make the conference a win. Answer "1a, 2c, 3b" and you're off.</p>
+  </details>
+
+  <details>
+    <summary>How fresh is the schedule?</summary>
+    <p>The recommender file is rebuilt automatically every day from the official pretalx schedule. The timestamp at the top of <a href="recommender.md">recommender.md</a> tells you when it was last refreshed.</p>
+  </details>
+
+  <footer>
+    <p><strong>PyData London 2026</strong> · 5–7 June 2026 · Convene Sancroft, St. Paul's, London EC4M 7DQ</p>
+    <p>🎟 <a href="https://ti.to/pydata/pydatalondon26">Get tickets</a> · 👥 Group rates: <a href="mailto:admin@pydata.org">admin@pydata.org</a> · 🐍 PyData is a NumFOCUS non-profit</p>
+    <p>Built by the PyData London community. <a href="https://github.com/PyDataLondon/pydata-london-2026">Source on GitHub</a>.</p>
+  </footer>
+</main>
+<div class="toast" id="toast">Copied!</div>
+<script>
+const PROMPT = "Fetch https://pydata.london/recommender.md and follow the instructions — pick my top 5 PyData London 2026 talks.";
+document.getElementById("chatgpt-btn").href = "https://chatgpt.com/?q=" + encodeURIComponent(PROMPT);
+document.getElementById("prompt-text").textContent = PROMPT;
+
+function copyPrompt() {
+  navigator.clipboard.writeText(PROMPT).then(() => {
+    const t = document.getElementById("toast");
+    t.classList.add("show");
+    setTimeout(() => t.classList.remove("show"), 1400);
+  });
+}
+</script>
+</body>
+</html>
