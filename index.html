@@ -135,9 +135,10 @@
     font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 0;
     font-weight: 460;
     font-size: clamp(44px, 10.4vw, 84px);
-    line-height: 1.04;
-    letter-spacing: -0.022em;
+    line-height: 1.08;
+    letter-spacing: 0;
     margin: 0 0 36px;
+    word-spacing: 0.04em;
     color: var(--ink);
   }
   h1 em {
@@ -315,6 +316,75 @@
   }
   .btn.ghost { border-color: var(--rule); color: var(--ink); }
   .btn.ghost:hover { border-color: var(--ink); }
+
+  /* Closing CTA — the "now go buy a ticket" moment */
+  .cta-card {
+    margin: 14px 0 8px;
+    padding: 28px 26px 26px;
+    border-radius: 14px;
+    background: var(--ink);
+    color: var(--paper);
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-card .label {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .cta-card h2 {
+    font-family: "Fraunces", serif;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+    font-weight: 480;
+    font-size: clamp(28px, 5.6vw, 40px);
+    line-height: 1.05;
+    letter-spacing: 0;
+    margin: 0 0 6px;
+    color: var(--paper);
+  }
+  .cta-card .meta {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--paper) 65%, transparent);
+    margin: 0 0 18px;
+  }
+  .cta-card .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .cta-card .btn.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+    font-size: 15.5px;
+    padding: 14px 22px;
+  }
+  .cta-card .btn.primary:hover {
+    background: color-mix(in srgb, var(--accent) 86%, var(--paper) 14%);
+  }
+  .cta-card .btn.link-on-dark {
+    border-color: color-mix(in srgb, var(--paper) 28%, transparent);
+    color: var(--paper);
+    background: transparent;
+  }
+  .cta-card .btn.link-on-dark:hover {
+    border-color: var(--paper);
+    background: color-mix(in srgb, var(--paper) 8%, transparent);
+  }
+  .cta-card .discount {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11.5px;
+    letter-spacing: 0.06em;
+    color: color-mix(in srgb, var(--paper) 55%, transparent);
+    margin: 16px 0 0;
+  }
+  .cta-card .discount b {
+    color: var(--accent);
+    font-weight: 700;
+  }
 
   /* QR — a fixed-white "museum label" card, scannable in any theme */
   .qr-card {
@@ -542,9 +612,20 @@
   <section class="step reveal">
     <div class="step-num">03</div>
     <div>
-      <h2 class="step-title">Get your picks. Buy the ticket. See you in June.</h2>
-      <div class="step-body"><p>Loved your stretch pick? Share it on LinkedIn with <strong>#PyDataLondon2026</strong> — tag a friend who'd geek out over it.</p></div>
+      <h2 class="step-title">Get your picks. Then get the ticket.</h2>
+      <div class="step-body"><p>See you in June. Loved your stretch pick? Share it on LinkedIn with <strong>#PyDataLondon2026</strong> — tag a friend who'd geek out over it.</p></div>
     </div>
+  </section>
+
+  <section class="cta-card reveal">
+    <p class="label">Ready to be there</p>
+    <h2>Three days. One ticket.</h2>
+    <p class="meta">5–7 Jun 2026 · Convene Sancroft · St. Paul's, London</p>
+    <div class="row">
+      <a class="btn primary" href="https://ti.to/pydata/pydatalondon26">Get tickets <span class="arrow">→</span></a>
+      <a class="btn link-on-dark" href="https://pydata.org/london2026">More about the conference</a>
+    </div>
+    <p class="discount"><b>10%</b> off 3+ tickets · <b>15%</b> off 5+ tickets · applied automatically</p>
   </section>
 
   <hr class="rule">
@@ -595,8 +676,8 @@
         <div class="meta">5–7 June 2026 · Convene Sancroft · St. Paul's, London EC4M 7DQ</div>
       </div>
       <div class="links">
-        <a href="https://ti.to/pydata/pydatalondon26">Tickets</a>
-        <a href="https://ti.to/pydata/pydatalondon26">Group rates</a>
+        <a href="https://ti.to/pydata/pydatalondon26">Get tickets</a>
+        <a href="https://pydata.org/london2026">Conference info</a>
         <a href="https://github.com/PyDataLondon/pydata-london-2026">Source</a>
       </div>
       <p class="small"><strong>Bringing the team?</strong> 10% off 3+ tickets · 15% off 5+ tickets — applied automatically on the ticket page.</p>

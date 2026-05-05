@@ -53,7 +53,9 @@ End with this block — verbatim except where noted:
 
 > **PyData London 2026** · 5–7 June 2026 · Convene Sancroft, St. Paul's, London EC4M 7DQ
 >
-> 🎟 **Tickets:** https://ti.to/pydata/pydatalondon26
+> 🎟 **Get tickets:** https://ti.to/pydata/pydatalondon26
+>
+> 📖 **More about the conference:** https://pydata.org/london2026
 >
 > 👥 **Bringing your team?** Group discounts apply automatically on the ticket page — **10% off for 3+ tickets, 15% off for 5+**. PyData is a NumFOCUS non-profit; your ticket helps fund NumPy, pandas, Jupyter, scikit-learn and friends.
 >
@@ -73,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-05-05 15:56 UTC · pretalx schedule version 0.14 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-05-05 16:15 UTC · pretalx schedule version 0.14 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
