@@ -17,12 +17,8 @@ from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
 ROOT = Path(__file__).resolve().parent.parent
 SCHEDULE_URL = "https://pretalx.com/pydata-london-2026/schedule/export/schedule.json"
-# When the short domain `pydata.london` is registered, swap both URLs below to:
-#   RECOMMENDER_URL = "https://pydata.london/recommender.md"
-#   LANDING_URL = "https://pydata.london/"
-# and update the same two strings in `index.html`.
-RECOMMENDER_URL = "https://london.pydata.org/pydata-london-2026/recommender.md"
-LANDING_URL = "https://london.pydata.org/pydata-london-2026/"
+RECOMMENDER_URL = "https://pydata.london/recommender.md"
+LANDING_URL = "https://pydata.london/"
 MIN_SESSIONS = 30  # below this, something is wrong — fail loudly
 
 ABSTRACT_MAX = 600
