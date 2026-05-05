@@ -14,7 +14,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Manrope:ital,wght@0,400..800;1,400..700&family=JetBrains+Mono:wght@400;500;700&display=swap">
 
 <style>
   :root {
@@ -144,21 +144,20 @@
   }
 
   h1 {
-    font-family: "Fraunces", "Times New Roman", serif;
-    font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 0;
-    font-weight: 460;
-    font-size: clamp(44px, 10.4vw, 84px);
-    line-height: 1.08;
-    letter-spacing: 0;
-    margin: 0 0 36px;
-    word-spacing: 0.04em;
+    font-family: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-variation-settings: "opsz" 96;
+    font-weight: 500;
+    font-size: clamp(40px, 9.4vw, 76px);
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    margin: 0 0 28px;
     color: var(--ink);
   }
   h1 em {
-    font-style: italic;
-    font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+    font-style: normal;
+    font-weight: 700;
     color: var(--accent);
-    font-weight: 420;
+    letter-spacing: -0.025em;
   }
   h1 .ampbreak { display: block; }
 
@@ -252,11 +251,11 @@
     padding-top: 7px;
   }
   .step-title {
-    font-family: "Fraunces", serif;
-    font-variation-settings: "opsz" 36, "SOFT" 0;
-    font-weight: 500;
-    font-size: clamp(22px, 4.4vw, 28px);
-    line-height: 1.18;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-variation-settings: "opsz" 36;
+    font-weight: 600;
+    font-size: clamp(21px, 4.2vw, 26px);
+    line-height: 1.22;
     letter-spacing: -0.012em;
     color: var(--ink);
     margin: 0 0 6px;
@@ -285,15 +284,15 @@
     color: var(--code-muted);
     padding-bottom: 12px;
     border-bottom: 1px solid color-mix(in srgb, var(--code-ink) 12%, transparent);
-    margin-bottom: 12px;
+    margin-bottom: 14px;
+    min-height: 28px;
   }
-  .prompt-meta .traffic {
-    display: inline-flex; gap: 5px;
-  }
+  .prompt-meta .traffic { display: inline-flex; gap: 5px; }
   .prompt-meta .traffic i {
     width: 9px; height: 9px; border-radius: 50%;
     background: color-mix(in srgb, var(--code-ink) 22%, transparent);
   }
+  .prompt-meta .name { flex: 1; }
   .prompt-text {
     font-family: "JetBrains Mono", monospace;
     font-size: 14px;
@@ -308,21 +307,24 @@
     animation: blink 1.1s steps(2, end) infinite;
   }
   .copy-btn {
-    position: absolute;
-    top: 14px; right: 14px;
+    flex: 0 0 auto;
+    width: 32px; height: 32px;
+    display: inline-flex; align-items: center; justify-content: center;
     background: color-mix(in srgb, var(--code-ink) 8%, transparent);
     color: var(--code-ink);
     border: 1px solid color-mix(in srgb, var(--code-ink) 18%, transparent);
-    border-radius: 6px;
-    padding: 5px 10px;
-    font: 600 11px/1 "JetBrains Mono", monospace;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    border-radius: 7px;
     cursor: pointer;
-    transition: background .15s ease, border-color .15s ease, transform .12s ease;
+    transition: background .15s ease, border-color .15s ease, transform .12s ease, color .15s ease;
+    margin: -4px -4px -4px 0;
   }
-  .copy-btn:hover { background: color-mix(in srgb, var(--code-ink) 14%, transparent); border-color: color-mix(in srgb, var(--code-ink) 30%, transparent); }
+  .copy-btn:hover { background: color-mix(in srgb, var(--code-ink) 16%, transparent); border-color: color-mix(in srgb, var(--code-ink) 32%, transparent); }
   .copy-btn:active { transform: translateY(1px); }
+  .copy-btn svg { width: 16px; height: 16px; display: block; }
+  .copy-btn .icon-check { display: none; }
+  .copy-btn[data-copied="1"] { background: color-mix(in srgb, var(--accent) 22%, transparent); border-color: color-mix(in srgb, var(--accent) 42%, transparent); color: var(--accent); }
+  .copy-btn[data-copied="1"] .icon-copy { display: none; }
+  .copy-btn[data-copied="1"] .icon-check { display: block; }
 
   /* CTAs */
   .ctas {
@@ -398,12 +400,12 @@
     margin-bottom: 10px;
   }
   .cta-card h2 {
-    font-family: "Fraunces", serif;
-    font-variation-settings: "opsz" 144, "SOFT" 30;
-    font-weight: 480;
-    font-size: clamp(28px, 5.6vw, 40px);
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-variation-settings: "opsz" 72;
+    font-weight: 600;
+    font-size: clamp(28px, 5.6vw, 38px);
     line-height: 1.05;
-    letter-spacing: 0;
+    letter-spacing: -0.02em;
     margin: 0 0 6px;
     color: var(--paper);
   }
@@ -491,11 +493,12 @@
     margin-bottom: 8px;
   }
   .qr-text h3 {
-    font-family: "Fraunces", serif;
+    font-family: "Bricolage Grotesque", sans-serif;
     font-variation-settings: "opsz" 36;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 1.15;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 1.18;
+    letter-spacing: -0.012em;
     margin: 0 0 6px;
     color: var(--ink);
   }
@@ -511,11 +514,11 @@
     cursor: pointer;
     list-style: none;
     display: flex; align-items: center; justify-content: space-between; gap: 16px;
-    font-family: "Fraunces", serif;
-    font-variation-settings: "opsz" 36;
-    font-weight: 500;
-    font-size: 19px;
-    letter-spacing: -0.005em;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-variation-settings: "opsz" 24;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.01em;
     color: var(--ink);
   }
   details summary::-webkit-details-marker { display: none; }
@@ -544,11 +547,12 @@
     font-size: 14.5px;
   }
   .colophon h2 {
-    font-family: "Fraunces", serif;
-    font-variation-settings: "opsz" 144, "SOFT" 30;
-    font-weight: 500;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-variation-settings: "opsz" 48;
+    font-weight: 600;
     font-size: 28px;
     line-height: 1.05;
+    letter-spacing: -0.02em;
     margin: 0 0 6px;
     color: var(--ink);
   }
@@ -632,7 +636,7 @@
   <header>
     <p class="eyebrow reveal reveal-1">A personal talk recommender for PyData London 2026</p>
     <h1 class="reveal reveal-2">Your PyData<br>2026 <em>lineup</em>,<span class="ampbreak"></span>in one prompt.</h1>
-    <p class="lede reveal reveal-3">53 sessions across three days. Hand this URL to your favourite LLM and it turns into your personal conference recommender — top picks, a day-by-day plan, and a stretch pick to break you out of your bubble.</p>
+    <p class="lede reveal reveal-3">Hand this to your LLM. Get a personal lineup back — ranked picks, a day plan, a stretch pick.</p>
     <div class="stats reveal reveal-4">
       <span><b>53</b>sessions</span>
       <span><b>3</b>days</span>
@@ -660,20 +664,28 @@
       <h2 class="step-title">Paste this prompt.</h2>
       <div class="step-body">
         <div class="prompt-card">
-          <div class="prompt-meta" aria-hidden="true">
-            <span class="traffic"><i></i><i></i><i></i></span>
-            <span>your-favourite-llm</span>
+          <div class="prompt-meta">
+            <span class="traffic" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="name" aria-hidden="true">your-favourite-llm</span>
+            <button class="copy-btn" id="copy-prompt-btn" type="button" onclick="copyPrompt()" aria-label="Copy prompt to clipboard" title="Copy prompt">
+              <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="9" width="11" height="11" rx="2"></rect>
+                <path d="M5 15V6a2 2 0 0 1 2-2h9"></path>
+              </svg>
+              <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12.5l5 5L20 6.5"></path>
+              </svg>
+            </button>
           </div>
-          <button class="copy-btn" type="button" onclick="copyPrompt()">Copy</button>
           <div class="prompt-text" id="prompt-text"></div>
         </div>
         <div class="ctas">
           <a class="btn primary" id="chatgpt-btn" target="_blank" rel="noopener">Open in ChatGPT <span class="arrow">→</span></a>
-          <button class="btn ghost" type="button" onclick="copyPrompt()">Copy prompt</button>
           <button class="btn ghost" type="button" id="copy-full-btn" onclick="copyFullPrompt()">Copy full prompt</button>
+          <a class="btn ghost" href="recommender.md">View raw .md</a>
         </div>
         <p class="cta-note">
-          Works in any LLM with web browsing — ChatGPT, Claude, Gemini and friends. Or use <a href="#" onclick="copyFullPrompt(); return false;">Copy full prompt</a> to paste the whole 60&nbsp;KB recommender directly, no fetch required. <a href="recommender.md" class="raw-link">View raw .md ↗</a>
+          Works in any LLM with web browsing — ChatGPT, Claude, Gemini and friends. Or <a href="#" onclick="copyFullPrompt(); return false;">copy the whole 60&nbsp;KB recommender</a> and paste it directly, no fetch required.
         </p>
       </div>
     </div>
@@ -774,7 +786,13 @@ function showToast(msg) {
 }
 
 function copyPrompt() {
-  navigator.clipboard.writeText(PROMPT).then(() => showToast("Prompt copied"));
+  navigator.clipboard.writeText(PROMPT).then(() => {
+    const btn = document.getElementById("copy-prompt-btn");
+    btn.dataset.copied = "1";
+    clearTimeout(window.__copyTimer);
+    window.__copyTimer = setTimeout(() => { btn.dataset.copied = "0"; }, 1600);
+    showToast("Prompt copied");
+  });
 }
 
 async function copyFullPrompt() {
