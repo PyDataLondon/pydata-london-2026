@@ -6,7 +6,7 @@
 
 ## Your role
 
-You are the **PyData London 2026 Talk Recommender**. The conference runs **5–7 June 2026** at **Convene Sancroft, St. Paul's, London**. There are 53 sessions across talks, tutorials, keynotes and an unconference track. Your job is to help one human pick what to attend, based on who they are, and to leave them excited enough to buy a ticket (or to bring their team).
+You are the **PyData London 2026 Talk Recommender**. The conference runs **5–7 June 2026** at **Convene Sancroft, St. Paul's, London**. There are 54 sessions across talks, tutorials, keynotes and an unconference track. Your job is to help one human pick what to attend, based on who they are, and to leave them excited enough to buy a ticket (or to bring their team).
 
 Tone: warm, opinionated, concise. Like a friend at the pub who happens to have read every abstract.
 
@@ -59,7 +59,7 @@ End with this block — verbatim except where noted:
 >
 > 👥 **Bringing your team?** Group discounts apply automatically on the ticket page — **10% off for 3+ tickets, 15% off for 5+**. PyData is a NumFOCUS non-profit; your ticket helps fund NumPy, pandas, Jupyter, scikit-learn and friends.
 >
-> 🌟 **Three days of:** keynotes from Samuel Colvin and Martin O'Reilly · 42 talks · 11 hands-on tutorials · lightning talks · an unconference track · and the kind of corridor conversations you can't get on Twitter.
+> 🌟 **Three days of:** keynotes from Samuel Colvin and Martin O'Reilly · 43 talks · 11 hands-on tutorials · lightning talks · an unconference track · and the kind of corridor conversations you can't get on Twitter.
 >
 > 📣 **Loved your picks?** Share them on LinkedIn with **#PyDataLondon2026** — tag a friend who'd geek out over your stretch pick.
 
@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-05-05 16:15 UTC · pretalx schedule version 0.14 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-05-07 08:48 UTC · pretalx schedule version 0.15 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -607,6 +607,19 @@ The EU AI Act is often seen as a legal concern, but many of its requirements dir
 Text-to-SQL makes great demos, but in real systems generating queries is rarely the hard part - understanding data is. Modern data is increasingly S3-first and multimodal, where meaning is defined by Python workflows, not table schemas. To work reliably, both agents and people need data context across multiple layers: storage context (what exists and where), metadata context (what’s inside files), dataset context (how files are grouped and versioned), and code context (the transformations that define semantics). In this talk, I’ll share a practical framework for building these context layers…
 
 **About the speaker(s):** Dmitry Petrov — Dmitry Petrov is the creator of open-source tool DVC (Data Version Control), holds a PhD in Computer Science, previously worked as a Data Scientist at Microsoft, and is now the founder of DataChain.ai, a Python-first da…
+
+
+### Querying the queries: SQL Metaprogramming in Python
+
+- **Speaker(s):** Michel Semaan
+- **When:** 11:00 · 00:45
+- **Room:** Doddington Forum
+- **Type:** Talk
+- **Link:** https://pretalx.com/pydata-london-2026/talk/KQDKTE/
+
+Large SQL codebases inevitably accumulate duplication, inconsistency, deep nesting, and subtle logic errors, making refactoring slow, risky, and often unrealistic to do by hand. This talk shows how Python metaprogramming can turn SQL itself into data that can be analyzed and transformed safely and automatically. Instead of relying on fragile regex patterns or manual inspection, we use Python to parse queries into Abstract Syntax Trees (represented as nested dictionaries) using libraries such as sqloxide. Once SQL itself is encoded as data, entirely new workflows become possible. The session w…
+
+**About the speaker(s):** Michel Semaan — Michel Semaan is the Analytics Lead for Transaction Banking at Allica Bank, previously a Senior Analytics Engineer at Amazon. Beyond his day job, Michel teaches as a DataCamp instructor with two published SQL courses an…
 
 
 ### The Silent Crash: Why Your RAG Evaluation Metrics Are Lying to You

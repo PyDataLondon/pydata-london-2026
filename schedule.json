@@ -6,7 +6,7 @@
   },
   "schedule": {
     "url": "https://pretalx.com/pydata-london-2026/schedule/",
-    "version": "0.14",
+    "version": "0.15",
     "base_url": "https://pretalx.com",
     "conference": {
       "acronym": "pydata-london-2026",
@@ -1770,6 +1770,42 @@
               }
             ],
             "Doddington Forum": [
+              {
+                "guid": "0a3c85e7-097b-57a9-9f99-14c6ed9e4cd1",
+                "code": "KQDKTE",
+                "id": 88580,
+                "logo": null,
+                "date": "2026-06-07T11:00:00+01:00",
+                "start": "11:00",
+                "duration": "00:45",
+                "room": "Doddington Forum",
+                "slug": "pydata-london-2026-88580-querying-the-queries-sql-metaprogramming-in-python",
+                "url": "https://pretalx.com/pydata-london-2026/talk/KQDKTE/",
+                "title": "Querying the queries: SQL Metaprogramming in Python",
+                "subtitle": "",
+                "track": null,
+                "type": "Talk",
+                "language": "en",
+                "abstract": "Large SQL codebases inevitably accumulate duplication, inconsistency, deep nesting, and subtle logic errors, making refactoring slow, risky, and often unrealistic to do by hand. This talk shows how Python metaprogramming can turn SQL itself into data that can be analyzed and transformed safely and automatically.\r\n\r\nInstead of relying on fragile regex patterns or manual inspection, we use Python to parse queries into Abstract Syntax Trees (represented as nested dictionaries) using libraries such as sqloxide. Once SQL itself is encoded as data, entirely new workflows become possible.\r\n\r\nThe session walks through practical examples of treating SQL programmatically via tree operations in Python: computing subquery depth for linting, wrapping all denominators in NULLIF() with a simple AST rewrite, auto‑aliasing aggregate expressions, and generating dependency graphs of temporary tables used across pipelines, among others. Each example highlights how metaprogramming enables precise, automatable refactors that would be error‑prone or impossible through text manipulation alone. This talk is designed for analytics and data engineers who work with large SQL codebases.",
+                "description": "SQL sits at the heart of most analytics and data engineering work, yet the way we maintain SQL rarely scales with the complexity of our pipelines. As codebases grow, SQL tends to accumulate structural debt: duplicated logic, subtle inconsistencies, deeply nested subqueries, and transformations that are difficult to apply reliably. Teams often end up relying on manual pattern‑matching, ad‑hoc scripts, or one‑off rewrites, approaches that are fragile and nearly impossible to generalise.\r\n\r\nThis talk presents a more systematic solution: treat queries as manipulable data through metaprogramming in Python. Instead of working with SQL as raw text, we use Python to parse queries into Abstract Syntax Trees (ASTs), unlocking the ability to inspect, analyze, and modify SQL with precision at scale.\r\n\r\nAfter introducing the intuition behind SQL ASTs, we walk through what they look like in practice using Python libraries such as sqloxide. With queries represented as nested dictionaries, we can traverse them, detect patterns, and apply targeted modifications without breaking syntactic structure. The session demonstrates several real examples that highlight the power of this approach: evaluating subquery depth for complexity diagnostics, adding defensive transformations such as wrapping denominators in NULLIF(), generating consistent aliases for aggregation expressions, and extracting table references to infer dependency graphs across staging or temporary‑table‑heavy pipelines.\r\n\r\nRather than offering a single tool or framework, this talk focuses on the underlying metaprogramming techniques that empower engineers to build their own SQL analysis and refactoring utilities. Attendees will leave with a clear mental model of how SQL parsing works, how ASTs can be manipulated in Python, and how these patterns can be applied to enforce standards, build linters, or automate large‑scale refactors.\r\n\r\nBackground required:\r\n- Intermediate familiarity with Python (nested dictionaries, basic tree algorithms).\r\n- Intermediate familiarity with SQL (CTEs, subqueries, aggregates)\r\n- No prior knowledge of compiler theory or ASTs is assumed\r\n\r\n\r\nOutline:\r\n- 0–3 min — Motivation: Why SQL Refactoring Is Hard\r\n-- Structural debt in real SQL codebases: duplication, inconsistencies, nested logic\r\n-- Why regex and manual review fail at scale\r\n\r\n3–8 min — Key Idea: Treat SQL as Data\r\n-- What is an Abstract Syntax Tree (AST)?\r\n-- Using Python libraries (e.g., sqloxide) to parse SQL into manipulable structures\r\n\r\n8–15 min — Demo: Exploring Real SQL ASTs in Python\r\n-- Show nested dictionaries representing SQL structure\r\n-- Simple tree traversal patterns\r\n\r\n15–25 min — Practical Refactoring Examples\r\n-- Computing subquery depth (complexity linting)\r\n-- Auto‑aliasing aggregate expressions\r\n-- Wrapping denominators with NULLIF()\r\n-- Extracting table references for dependency graphs\r\n\r\n25–32 min — Building Custom SQL Tooling\r\n-- How these patterns generalize\r\n-- Enforcing standards, writing linters, automating bulk rewrites\r\n-- When AST‑based tooling is worth it\r\n\r\n32–40 min — Lessons Learned & Limits + Q&A\r\n-- Homoiconicity  (Python vs Lisp for AST manipulation)",
+                "recording_license": "",
+                "do_not_record": false,
+                "persons": [
+                  {
+                    "code": "ZZA7AP",
+                    "name": "Michel Semaan",
+                    "avatar": "https://pretalx.com/media/avatars/ZZA7AP_WYRUI7u.webp",
+                    "biography": "Michel Semaan is the Analytics Lead for Transaction Banking at Allica Bank, previously a Senior Analytics Engineer at Amazon. Beyond his day job, Michel teaches as a DataCamp instructor with two published SQL courses and as a Python and data science mentor with Great Learning and Springboard.",
+                    "public_name": "Michel Semaan",
+                    "guid": "3e3d1bf2-32a7-5351-9d03-69a0d04f5a7f",
+                    "url": "https://pretalx.com/pydata-london-2026/speaker/ZZA7AP/"
+                  }
+                ],
+                "links": [],
+                "feedback_url": "https://pretalx.com/pydata-london-2026/talk/KQDKTE/feedback/",
+                "origin_url": "https://pretalx.com/pydata-london-2026/talk/KQDKTE/",
+                "attachments": []
+              },
               {
                 "guid": "9020a04a-589c-55b6-a978-21b2f05cbb0f",
                 "code": "HPJR9B",
