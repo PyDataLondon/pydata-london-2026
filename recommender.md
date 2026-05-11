@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-05-10 08:22 UTC · pretalx schedule version 0.16 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-05-11 10:00 UTC · pretalx schedule version 0.16 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -446,7 +446,7 @@ What if you could watch an AI’s thought take shape? For years, LLMs have been 
 
 In science and engineering, we are frequently challenged by the inability to manipulate environmental variables—a key component of the scientific method. For example, we cannot simply stop a hurricane in its tracks or change the temperature of the Sun. Instead, we heavily rely on "Forward Models"—numerical simulations that predict data from physical parameters. However, these models are often massively computationally expensive. Emulators (or surrogate models) present a solution. Whether solving a single time-sensitive equation or searching a high-dimensional inference space, emulators can ac…
 
-**About the speaker(s):** Austen Wallis — Austen Wallis is a post-graduate researcher at the University of Southampton, specialising in scientific machine learning. His work focuses on developing emulator frameworks that accelerate complex physical simulations…
+**About the speaker(s):** Austen Wallis — Austen is a computational astrophysicist specialising in scientific machine learning. Currently a postgraduate researcher at the University of Southampton, he will soon be joining the University of Cambridge as an Exopl…
 
 
 ### Did Your Rollout Actually Work? Measuring Phased Launches with Staggered DiD in Python
