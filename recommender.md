@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-05-11 10:00 UTC · pretalx schedule version 0.16 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-05-12 09:13 UTC · pretalx schedule version 0.16 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -509,7 +509,7 @@ Have you ever happened to use GPS and realised that it is not working properly? 
 - **Type:** Talk
 - **Link:** https://pretalx.com/pydata-london-2026/talk/JWNWFQ/
 
-Multilingual language models are often assumed to embed different languages into a shared semantic space. This talk presents empirical results showing how script, tokenisation, and data imbalance shape multilingual embeddings in practice, and offers practical diagnostics for evaluating their reliability before deployment.
+Multilingual embeddings are often assumed to place different languages into a shared semantic space. In practice, that alignment breaks down in systematic ways. This talk explores where multilingual embeddings work, where they fail, and why. Using examples across multiple languages, I show how tokenisation, training data imbalance, and semantic ambiguity shape embedding behaviour in practice, along with practical diagnostics for evaluating multilingual embeddings.
 
 **About the speaker(s):** Kavit Tolia — The speaker spent over 12 years working in quantitative roles in investment management before returning to academia to study Artificial Intelligence. They are currently completing a Master’s degree in AI and ML in Scien…
 
