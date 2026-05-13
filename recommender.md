@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-05-12 09:13 UTC · pretalx schedule version 0.16 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-05-13 09:20 UTC · pretalx schedule version 0.16 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -117,7 +117,7 @@ Your model is well-calibrated on average, but is it calibrated for *every subgro
 
 AI agents are moving into production in 2026, but when something goes wrong (a tool call fails silently, an LLM takes 13 seconds to respond, token costs spike overnight) teams struggle to diagnose issues across multi-step agentic workflows. In this hands-on tutorial you will build a Model Context Protocol (MCP) server in Python using FastMCP, instrument it with OpenTelemetry following the emerging GenAI and MCP semantic conventions, and visualise end-to-end traces in a local Jaeger instance. You will learn how distributed tracing captures the hierarchical relationship between agent conversati…
 
-**About the speaker(s):** Tun Shwe — Tun is a Staff AI Engineer at Lenses, where he leads AI strategy. He is focused on helping companies imagine and implement their strategic vision with agentic AI systems fuelled with real-time context. He was previously…
+**About the speaker(s):** Tun Shwe — Tun is a Staff AI Engineer at Lenses, where he leads AI strategy. He is focused on helping companies imagine and implement their strategic vision with agentic AI systems fuelled with real-time context. He was previously… · Fei Phoon — Data Engineer in AI Platform at The Economist, PyData Cornwall co-founder, and committed diversity and inclusion ally.
 
 
 ### GPU Algorithm Authoring with CUDA Tile *[Tutorial — separate ticket]*
