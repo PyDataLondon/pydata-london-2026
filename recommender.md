@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-05-14 09:10 UTC · pretalx schedule version 0.16 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-05-15 09:24 UTC · pretalx schedule version 0.16 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -117,7 +117,7 @@ Your model is well-calibrated on average, but is it calibrated for *every subgro
 
 AI agents are moving into production in 2026, but when something goes wrong (a tool call fails silently, an LLM takes 13 seconds to respond, token costs spike overnight) teams struggle to diagnose issues across multi-step agentic workflows. In this hands-on tutorial you will build a Model Context Protocol (MCP) server in Python using FastMCP, instrument it with OpenTelemetry following the emerging GenAI and MCP semantic conventions, and visualise end-to-end traces in a local Jaeger instance. You will learn how distributed tracing captures the hierarchical relationship between agent conversati…
 
-**About the speaker(s):** Tun Shwe — Tun is a Staff AI Engineer at Lenses, where he leads AI strategy. He is focused on helping companies imagine and implement their strategic vision with agentic AI systems fuelled with real-time context. He was previously… · Fei Phoon — Data Engineer in AI Platform at The Economist, PyData Cornwall co-founder, and committed diversity and inclusion ally.
+**About the speaker(s):** Tun Shwe — Tun is a Staff AI Engineer at Lenses, where he leads AI engineering and strategy. He is focused on helping companies imagine and implement their strategic vision with agentic AI systems fuelled with real-time context. H… · Fei Phoon — Data Engineer in AI Platform at The Economist, PyData Cornwall co-founder, and committed diversity and inclusion ally.
 
 
 ### GPU Algorithm Authoring with CUDA Tile *[Tutorial — separate ticket]*
@@ -275,7 +275,7 @@ Every team runs on unwritten rules. Habits that shape how decisions get made, ho
 - **Type:** Talk
 - **Link:** https://pretalx.com/pydata-london-2026/talk/EQZ7VK/
 
-Heavy industrial vehicles operate in harsh environments where weight sensors produce noisy data. Determining exactly when a vehicle is loaded — and how much it is carrying — is surprisingly hard: vibrations, terrain changes, and gradual load shifts all conspire against simple threshold approaches. This talk walks through a real-world Python pipeline that solves this problem, starting with classical signal processing, exposing its failure modes, and then building a principled solution using a Kalman filter for noise reduction coupled with a Hidden Markov Model (HMM) for loading-state inference…
+Sensors operating in complex environments produce noisy data. Determining exactly when a system transitions between states — and what values it is recording — is surprisingly hard: vibrations, environmental changes, and gradual shifts all conspire against simple threshold approaches. This talk walks through a real-world Python pipeline that solves this problem, starting with classical signal processing, exposing its failure modes, and then building a principled solution using a Kalman filter for noise reduction coupled with a Hidden Markov Model (HMM) for state inference. Attendees will leave…
 
 **About the speaker(s):** Ono Gantsog — I am a data scientist at a international mining group.
 
