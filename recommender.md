@@ -6,7 +6,7 @@
 
 ## Your role
 
-You are the **PyData London 2026 Talk Recommender**. The conference runs **5–7 June 2026** at **Convene Sancroft, St. Paul's, London**. There are 55 sessions across talks, tutorials, keynotes and an unconference track. Your job is to help one human pick what to attend, based on who they are, and to leave them excited enough to buy a ticket (or to bring their team).
+You are the **PyData London 2026 Talk Recommender**. The conference runs **5–7 June 2026** at **Convene Sancroft, St. Paul's, London**. There are 54 sessions across talks, tutorials, keynotes and an unconference track. Your job is to help one human pick what to attend, based on who they are, and to leave them excited enough to buy a ticket (or to bring their team).
 
 Tone: warm, opinionated, concise. Like a friend at the pub who happens to have read every abstract.
 
@@ -59,7 +59,7 @@ End with this block — verbatim except where noted:
 >
 > 👥 **Bringing your team?** Group discounts apply automatically on the ticket page — **10% off for 3+ tickets, 15% off for 5+**. PyData is a NumFOCUS non-profit; your ticket helps fund NumPy, pandas, Jupyter, scikit-learn and friends.
 >
-> 🌟 **Three days of:** keynotes from Samuel Colvin and Martin O'Reilly · 44 talks · 11 hands-on tutorials · lightning talks · an unconference track · and the kind of corridor conversations you can't get on Twitter.
+> 🌟 **Three days of:** keynotes from Samuel Colvin and Martin O'Reilly · 44 talks · 10 hands-on tutorials · lightning talks · an unconference track · and the kind of corridor conversations you can't get on Twitter.
 >
 > 📣 **Loved your picks?** Share them on LinkedIn with **#PyDataLondon2026** — tag a friend who'd geek out over your stretch pick.
 
@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-05-15 09:24 UTC · pretalx schedule version 0.16 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-05-16 08:20 UTC · pretalx schedule version 0.18 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -185,20 +185,7 @@ Most machine learning methods give you a prediction but not a measure of how muc
 **About the speaker(s):** Chris Fonnesbeck — Chris is a Principal Quantitative Analyst at PyMC Labs and an Adjoint Associate Professor at the Vanderbilt University Medical Center, with 20 years of experience as a data scientist in academia, industry, and governmen…
 
 
-### HighLoad Python: SIMD, GPU, TPU. Practical Acceleration Patterns — Theory, Practice, Benchmarks. Looking into Silicon. *[Tutorial — separate ticket]*
-
-- **Speaker(s):** Petr Andreev
-- **When:** 14:10 · 01:30
-- **Room:** Hardwick Hub
-- **Type:** Tutorial
-- **Link:** https://pretalx.com/pydata-london-2026/talk/FZET9W/
-
-In 90 minutes, you’ll learn a repeatable workflow to accelerate real numeric kernels using CPU SIMD, GPU arrays + custom kernels, and TPU/XLA compilation—all from Python. For each acceleration tier we follow the same loop: theory → minimal working code → benchmark that confirms (or disproves) the theory. You’ll leave with a small benchmark harness you can reuse, plus a decision checklist for when SIMD is enough, when GPUs pay off, and when XLA/TPU is the right move.
-
-**About the speaker(s):** Petr Andreev — Specializes in CPython internals, optimization, and high-performance computing. Driven by GPU acceleration, CPU vectorization. Evolved from ML systems to CPython core research engineer. 8+ years leading teams in AI, mat…
-
-
-### Build Training and Evaluation Datasets That Actually Work: A Hands-On Synthetic Data Pipeline Workshop *[Tutorial — separate ticket]*
+### From Synthetic Examples to Production Signals: Multimodal Training Data Pipelines with Privacy-Safe Feedback *[Tutorial — separate ticket]*
 
 - **Speaker(s):** Nabin Mulepati, Lipika Ramaswamy
 - **When:** 16:00 · 01:30
@@ -206,9 +193,9 @@ In 90 minutes, you’ll learn a repeatable workflow to accelerate real numeric k
 - **Type:** Tutorial
 - **Link:** https://pretalx.com/pydata-london-2026/talk/HC3SLQ/
 
-Whether you're fine-tuning an LLM, building an evaluation benchmark, or generating domain-specific training data, the quality of your dataset directly determines the quality of your model. Yet most teams still create training and eval data through ad-hoc prompting — producing datasets that lack diversity, have no validation, and can't be reproduced or iterated on systematically. In this hands-on tutorial, participants will build synthetic training and evaluation datasets from scratch using a declarative Python framework that unifies statistical sampling, LLM-based generation, and automated va…
+Production AI systems improve through a data flywheel: teams create training examples from curated source material, those examples shape model behavior, production usage reveals what the model still needs, and those usage signals become the next round of improvement. This hands-on tutorial focuses on the data pipelines behind that flywheel: how to generate, validate, and anonymize training data without relying on one-off prompt scripts. Participants will build a reproducible training-data pipeline using NVIDIA NeMo Data Designer and NeMo Anonymizer. We'll start by working through text-based e…
 
-**About the speaker(s):** Nabin Mulepati — Research Scientist/Engineer at NVIDIA focused on Synthetic Data Generation
+**About the speaker(s):** Nabin Mulepati — Research Scientist/Engineer at NVIDIA focused on Multimodal Synthetic Data Generation
 
 
 ### Do you know how well your model is doing? Evaluate your LLMs *[Tutorial — separate ticket]*
