@@ -6,7 +6,7 @@
   },
   "schedule": {
     "url": "https://pretalx.com/pydata-london-2026/schedule/",
-    "version": "0.18",
+    "version": "0.21",
     "base_url": "https://pretalx.com",
     "conference": {
       "acronym": "pydata-london-2026",
@@ -475,6 +475,42 @@
                 "attachments": []
               },
               {
+                "guid": "1a41cd94-f848-51b4-a0e2-d67181c00763",
+                "code": "MRKKWJ",
+                "id": 90734,
+                "logo": "https://pretalx.com/media/pydata-london-2026-2025/submissions/MRKKWJ/image_VNGO3Et.webp",
+                "date": "2026-06-05T14:10:00+01:00",
+                "start": "14:10",
+                "duration": "01:30",
+                "room": "Hardwick Hub",
+                "slug": "pydata-london-2026-90734-test-driven-data-analysis",
+                "url": "https://pretalx.com/pydata-london-2026/talk/MRKKWJ/",
+                "title": "Test-Driven Data Analysis",
+                "subtitle": "",
+                "track": null,
+                "type": "Tutorial",
+                "language": "en",
+                "abstract": "Test-Driven Data Analysis is a methodology for reducing errors in data and data analy. It is also an open-source Python package for supporting key aspects of the methodology. This tutorial will provide hands-on experience using the library to validate data and write tests (manually or automatically) for analytical processes. It will also highlight approaches to avoiding errors in specific areas not amenable to software support.",
+                "description": "Test-Driven Data Analysis is a methodology for reducing errors in data and data analysis, and also a an open-source Python package (tdda) for supporting key aspects of the methodology. This tutorial will provide hands-on experience using the library to\r\n\r\n - generate constraints characterising data in data frames automatically;\r\n - validate data using previously generated constraints;\r\n - test structured data resulting from analyses in data frames;\r\n - test unstructured date from analyses, typically in text files and graphical form,\r\n\r\nas well as highlighting other libraries that can be used for similar purposes.\r\n\r\nIt will also discuss a taxonomy of errors arising during analysis and highlight approaches to reducing those errors, including through the use of 22 TDDA-focused checklists.\r\n\r\nThis major error categories that will be considered are\r\n\r\n - errors of interpretation (of formulation and of communication),\r\n - errors of implementation,\r\n - errors of process,\r\n - errors of applicability, and\r\n - errors of judgement.\r\n\r\nNo prior experience is required, but it would be helpful to have the tdda library installed and to have some familiarity with DataFrames in polars or pandas.",
+                "recording_license": "",
+                "do_not_record": false,
+                "persons": [
+                  {
+                    "code": "R89Z7R",
+                    "name": "Nick Radcliffe",
+                    "avatar": "https://pretalx.com/media/avatars/R89Z7R_uAQwhdL.webp",
+                    "biography": "Nick Radcliffe has used Python since around 2005 (starting with Python 2.1, in the form of Jython) and has been doing what we now call Data Science since around 1986. He is a Visiting Professor in the Maths Department (Operations Research) at University of Edinburgh and runs Stochastic Solutions Limited, a consulting and software company working in Data Science. Since around 2015 Nick has been developing the ideas of test-driven data analysis (TDDA), which is an approach to quality of data and analytical processes inspired by test-driven development (TDD). The open-source Python TDDA library (for which he is the lead developer) provides support for test-driven data analysis in those areas where software can help.\r\n\r\nNick has previously co-authored two books, one on Sustainability for WWF, and one on a (defunct) Python online tag-based social database called Fluidinfo. By the time of this conference, his latest book, Test-Driven Data Analysis (CRC Press) should be available.",
+                    "public_name": "Nick Radcliffe",
+                    "guid": "59c564f1-00b7-5285-a30d-a6d37d21928a",
+                    "url": "https://pretalx.com/pydata-london-2026/speaker/R89Z7R/"
+                  }
+                ],
+                "links": [],
+                "feedback_url": "https://pretalx.com/pydata-london-2026/talk/MRKKWJ/feedback/",
+                "origin_url": "https://pretalx.com/pydata-london-2026/talk/MRKKWJ/",
+                "attachments": []
+              },
+              {
                 "guid": "87cad231-0f60-562d-be7c-4bc29a71ef33",
                 "code": "JL7YAJ",
                 "id": 91854,
@@ -862,39 +898,39 @@
                 "attachments": []
               },
               {
-                "guid": "fef56cf6-fcda-50b6-992c-8e6a13d05c80",
-                "code": "HC3PXZ",
-                "id": 90326,
+                "guid": "1e2f5463-576a-5581-a15b-ec0c1e920626",
+                "code": "YYTLFF",
+                "id": 91812,
                 "logo": null,
                 "date": "2026-06-06T15:30:00+01:00",
                 "start": "15:30",
                 "duration": "00:45",
                 "room": "Grand Hall 2",
-                "slug": "pydata-london-2026-90326-when-space-weather-breaks-your-gps-building-an-explainable-early-warning-system",
-                "url": "https://pretalx.com/pydata-london-2026/talk/HC3PXZ/",
-                "title": "When Space Weather Breaks Your GPS: Building an Explainable Early Warning System",
+                "slug": "pydata-london-2026-91812-bridging-pandas-and-polars-the-hidden-costs-of-dataframe-interoperability",
+                "url": "https://pretalx.com/pydata-london-2026/talk/YYTLFF/",
+                "title": "Bridging Pandas and Polars: The Hidden Costs of Dataframe Interoperability",
                 "subtitle": "",
                 "track": null,
                 "type": "Talk",
                 "language": "en",
-                "abstract": "Have you ever happened to use GPS and realised that it is not working properly? The Sun could be responsible.\r\n\r\nIn this talk, I present a **real-world machine learning forecasting system** designed to predict a Space Weather phenomenon affecting GNSS accuracy and radio communications. The system is based on **CatBoost** and integrates data from space- and ground-based observations. **SHAP** is used to debug model behaviour and to build trust in model outputs. The talk focuses on **model design and evaluation choices**, showing how interpretability and uncertainty-aware forecasting can be combined in a real-time operational pipeline.",
-                "description": "**Space Weather** doesn’t just produce beautiful auroras: it can silently disrupt navigation systems, radio links, and satellite-based technologies we rely on every day.\r\n\r\nTravelling Ionospheric Disturbances (TIDs) are wave-like structures in the ionosphere that affect GNSS accuracy and HF communications. From an ML perspective, forecasting TIDs is a challenging rare-event prediction problem involving imbalanced data and heterogeneous physical inputs.\r\n\r\nIn this talk, I will present an operational machine learning approach developed within the T-FORS project to forecast TID occurrence over Europe. The model is built using **CatBoost** and integrates data from space- and ground-based observations.\r\n\r\nThe talk focuses on **model design and evaluation choices**. In particular, I will show how **SHAP** can be used to debug model behaviour, validate feature relevance, and build trust in predictions in a high-risk operational context.\r\n\r\nAlong the way, I’ll share practical engineering lessons on:\r\n- handling class imbalance,\r\n- incorporating domain knowledge into ML pipelines,\r\n- producing **uncertainty-aware outputs** via **Conformal Prediction**, and\r\n- running **interpretable models in real-time forecasting systems**.\r\n\r\nThe talk is aimed at data scientists and ML practitioners interested in applied forecasting, interpretable models, uncertainty quantification and ML at the boundary between data and physics.\r\n\r\n---\r\n\r\n**Talk outline**\r\n- 0-5: What is Space Weather and why should we care\r\n- 5-8: Framing TID forecasting as an ML problem\r\n- 8-12: Model design with CatBoost\r\n- 12-16: Explainability with SHAP\r\n- 16-25: Uncertainty quantification with Conformal Prediction\r\n- 25-30: Cost-sensitive learning and real-time operations\r\n- 30-35: Lessons learned\r\n- 35-40: Q&A",
+                "abstract": "The Python data ecosystem is migrating from NumPy-based arrays toward Apache Arrow. Polars is built entirely on Arrow, and Pandas is heading in the same direction. Yet differences in string encoding, missing values, schemas, and index metadata make interoperability between the two formats surprisingly costly and error-prone. This talk examines these challenges through a case study of how ArcticDB, the open-source client-side dataframe database, navigated this same migration.",
+                "description": "As organisations adopt Polars alongside Pandas, a critical question emerges: how do you move data between the two without silent data loss, performance regressions, or broken round-trips? The answer is more complex than calling `polars.from_pandas`.\r\n\r\nPandas stores data in NumPy arrays by default, though as of 3.0 it uses Arrow for strings. Polars is built entirely on Apache Arrow's columnar format. For each area where these formats diverge, this talk will explain the problem and show how ArcticDB, a dataframe database that must serialize, store, and reconstruct both formats, solves it in practice:\r\n\r\n- **Memory layout**: How NumPy and Arrow represent the same logical data differently, and how a dataframe database can bridge the two\r\n- **Strings**: NumPy object arrays vs. Arrow's offset-based binary buffers -- why Arrow is dramatically more efficient and the cost of conversion\r\n- **Missing values**: NaN/NaT/None sentinels vs. Arrow's validity bitmask -- why a Pandas NaN behaves differently from a Polars null and what breaks during conversion\r\n- **Schema differences**: Different supported data types and different allowed column names -- e.g. Pandas allows mixed-type columns that Arrow cannot represent\r\n- **Pandas-specific metadata** that has no Arrow equivalent: Index and RangeIndex semantics, and MultiIndex which uses an entirely different memory layout with its own performance implications\r\n\r\nTogether, these issues make conversion between Pandas and Polars far from trivial. This is especially challenging for a dataframe database like ArcticDB, where petabytes of Pandas DataFrames are stored and users increasingly want to read them back as Arrow. The talk will include benchmarks comparing native format reads against conversion-based approaches, and practical takeaways for anyone migrating a codebase, building a library that supports both formats, or choosing a dataframe database. The talk will include benchmarks comparing native format reads against conversion-based approaches, and practical takeaways for anyone migrating a codebase, building a library that supports both formats, or choosing a dataframe database.",
                 "recording_license": "",
                 "do_not_record": false,
                 "persons": [
                   {
-                    "code": "FRRAE7",
-                    "name": "Vincenzo Ventriglia",
-                    "avatar": "https://pretalx.com/media/avatars/FRRAE7_bJYDfI9.webp",
-                    "biography": "A results-driven data professional, focused on hype-free solutions tailored to business needs.\r\n\r\nI currently create value at the **National Institute of Geophysics and Volcanology**, where I develop machine learning models in the **Space Weather** domain. My work is complemented by finding the hidden stories in data and make them accessible to stakeholders. I studied Physics in Italy (Napoli) and Germany (Frankfurt am Main), previously worked in Analytics within the strategic division of the world's largest professional services network, as well as in the Data Science department of Italy’s leading publishing group.\r\n\r\nI am also an organiser of **PyData Roma Capitale**, actively involved in building the local Python and data science community. Outside of work, I enjoy theatre, discussing finance, and learning new languages.",
-                    "public_name": "Vincenzo Ventriglia",
-                    "guid": "524ac8af-2da0-540e-946f-1676f3146ee6",
-                    "url": "https://pretalx.com/pydata-london-2026/speaker/FRRAE7/"
+                    "code": "ACWZ7K",
+                    "name": "Ivo Dilov",
+                    "avatar": "https://pretalx.com/media/avatars/ACWZ7K_8BJXY3Q.webp",
+                    "biography": "Ivo Dilov has 5 years of industry experience and 10 years of competitive programming, with a focus on high-performance software. For the past 2 and a half years, he has been a senior engineer on ArcticDB, the open-source DataFrame database backed by Man Group and Bloomberg, working in C++ and Python.",
+                    "public_name": "Ivo Dilov",
+                    "guid": "913b332d-2c55-522d-92cc-002b55c66a32",
+                    "url": "https://pretalx.com/pydata-london-2026/speaker/ACWZ7K/"
                   }
                 ],
                 "links": [],
-                "feedback_url": "https://pretalx.com/pydata-london-2026/talk/HC3PXZ/feedback/",
-                "origin_url": "https://pretalx.com/pydata-london-2026/talk/HC3PXZ/",
+                "feedback_url": "https://pretalx.com/pydata-london-2026/talk/YYTLFF/feedback/",
+                "origin_url": "https://pretalx.com/pydata-london-2026/talk/YYTLFF/",
                 "attachments": []
               }
             ],

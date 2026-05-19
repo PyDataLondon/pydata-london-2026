@@ -6,7 +6,7 @@
 
 ## Your role
 
-You are the **PyData London 2026 Talk Recommender**. The conference runs **5–7 June 2026** at **Convene Sancroft, St. Paul's, London**. There are 54 sessions across talks, tutorials, keynotes and an unconference track. Your job is to help one human pick what to attend, based on who they are, and to leave them excited enough to buy a ticket (or to bring their team).
+You are the **PyData London 2026 Talk Recommender**. The conference runs **5–7 June 2026** at **Convene Sancroft, St. Paul's, London**. There are 55 sessions across talks, tutorials, keynotes and an unconference track. Your job is to help one human pick what to attend, based on who they are, and to leave them excited enough to buy a ticket (or to bring their team).
 
 Tone: warm, opinionated, concise. Like a friend at the pub who happens to have read every abstract.
 
@@ -59,7 +59,7 @@ End with this block — verbatim except where noted:
 >
 > 👥 **Bringing your team?** Group discounts apply automatically on the ticket page — **10% off for 3+ tickets, 15% off for 5+**. PyData is a NumFOCUS non-profit; your ticket helps fund NumPy, pandas, Jupyter, scikit-learn and friends.
 >
-> 🌟 **Three days of:** keynotes from Samuel Colvin and Martin O'Reilly · 44 talks · 10 hands-on tutorials · lightning talks · an unconference track · and the kind of corridor conversations you can't get on Twitter.
+> 🌟 **Three days of:** keynotes from Samuel Colvin and Martin O'Reilly · 44 talks · 11 hands-on tutorials · lightning talks · an unconference track · and the kind of corridor conversations you can't get on Twitter.
 >
 > 📣 **Loved your picks?** Share them on LinkedIn with **#PyDataLondon2026** — tag a friend who'd geek out over your stretch pick.
 
@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-05-18 10:41 UTC · pretalx schedule version 0.18 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-05-19 10:08 UTC · pretalx schedule version 0.21 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -183,6 +183,19 @@ AI systems that can autonomously navigate websites, fill forms, extract data, an
 Most machine learning methods give you a prediction but not a measure of how much to trust it. Bayesian Additive Regression Trees (BART) combine the flexibility of tree ensembles (e.g. random forests, boosting) with full uncertainty quantification—every prediction comes with a probability interval, not just a point estimate. This hands-on tutorial introduces BART through three applications: regression, classification, and survival analysis. Using `pymc-bart`, participants will learn to fit flexible models that automatically capture non-linear relationships while providing honest uncertainty e…
 
 **About the speaker(s):** Chris Fonnesbeck — Chris is a Principal Quantitative Analyst at PyMC Labs and an Adjoint Associate Professor at the Vanderbilt University Medical Center, with 20 years of experience as a data scientist in academia, industry, and governmen…
+
+
+### Test-Driven Data Analysis *[Tutorial — separate ticket]*
+
+- **Speaker(s):** Nick Radcliffe
+- **When:** 14:10 · 01:30
+- **Room:** Hardwick Hub
+- **Type:** Tutorial
+- **Link:** https://pretalx.com/pydata-london-2026/talk/MRKKWJ/
+
+Test-Driven Data Analysis is a methodology for reducing errors in data and data analy. It is also an open-source Python package for supporting key aspects of the methodology. This tutorial will provide hands-on experience using the library to validate data and write tests (manually or automatically) for analytical processes. It will also highlight approaches to avoiding errors in specific areas not amenable to software support.
+
+**About the speaker(s):** Nick Radcliffe — Nick Radcliffe has used Python since around 2005 (starting with Python 2.1, in the form of Jython) and has been doing what we now call Data Science since around 1986. He is a Visiting Professor in the Maths Department (…
 
 
 ### From Synthetic Examples to Production Signals: Multimodal Training Data Pipelines with Privacy-Safe Feedback *[Tutorial — separate ticket]*
@@ -475,17 +488,17 @@ Choosing a cloud instance type for a DS/ML/AI workload is still largely a heuris
 **About the speaker(s):** Gergely Daroczi — Gergely Daroczi, PhD, has been a passionate open-source package developer for two decades. With over 15 years in the fintech, adtech, healthtech, and other SaaS industries, he has expertise in data science and engineeri…
 
 
-### When Space Weather Breaks Your GPS: Building an Explainable Early Warning System
+### Bridging Pandas and Polars: The Hidden Costs of Dataframe Interoperability
 
-- **Speaker(s):** Vincenzo Ventriglia
+- **Speaker(s):** Ivo Dilov
 - **When:** 15:30 · 00:45
 - **Room:** Grand Hall 2
 - **Type:** Talk
-- **Link:** https://pretalx.com/pydata-london-2026/talk/HC3PXZ/
+- **Link:** https://pretalx.com/pydata-london-2026/talk/YYTLFF/
 
-Have you ever happened to use GPS and realised that it is not working properly? The Sun could be responsible. In this talk, I present a **real-world machine learning forecasting system** designed to predict a Space Weather phenomenon affecting GNSS accuracy and radio communications. The system is based on **CatBoost** and integrates data from space- and ground-based observations. **SHAP** is used to debug model behaviour and to build trust in model outputs. The talk focuses on **model design and evaluation choices**, showing how interpretability and uncertainty-aware forecasting can be combin…
+The Python data ecosystem is migrating from NumPy-based arrays toward Apache Arrow. Polars is built entirely on Arrow, and Pandas is heading in the same direction. Yet differences in string encoding, missing values, schemas, and index metadata make interoperability between the two formats surprisingly costly and error-prone. This talk examines these challenges through a case study of how ArcticDB, the open-source client-side dataframe database, navigated this same migration.
 
-**About the speaker(s):** Vincenzo Ventriglia — A results-driven data professional, focused on hype-free solutions tailored to business needs. I currently create value at the **National Institute of Geophysics and Volcanology**, where I develop machine learning model…
+**About the speaker(s):** Ivo Dilov — Ivo Dilov has 5 years of industry experience and 10 years of competitive programming, with a focus on high-performance software. For the past 2 and a half years, he has been a senior engineer on ArcticDB, the open-sourc…
 
 
 ### Do Multilingual Embeddings Really Share a Semantic Space? Practical Lessons Across Scripts and Languages
