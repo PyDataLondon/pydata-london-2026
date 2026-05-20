@@ -6,7 +6,7 @@
   },
   "schedule": {
     "url": "https://pretalx.com/pydata-london-2026/schedule/",
-    "version": "0.21",
+    "version": "0.24",
     "base_url": "https://pretalx.com",
     "conference": {
       "acronym": "pydata-london-2026",
@@ -65,6 +65,48 @@
           "day_end": "2026-06-06T03:59:00+01:00",
           "rooms": {
             "Grand Hall 1": [
+              {
+                "guid": "8a66dd96-4724-5eaf-9e1b-cb335e791ef8",
+                "code": "YFYXAC",
+                "id": 88321,
+                "logo": null,
+                "date": "2026-06-05T09:00:00+01:00",
+                "start": "09:00",
+                "duration": "01:30",
+                "room": "Grand Hall 1",
+                "slug": "pydata-london-2026-88321-making-databases-llm-ready-building-production-semantic-layers-with-semantido",
+                "url": "https://pretalx.com/pydata-london-2026/talk/YFYXAC/",
+                "title": "Making Databases LLM-Ready: Building Production Semantic Layers with Semantido",
+                "subtitle": "",
+                "track": null,
+                "type": "Tutorial",
+                "language": "en",
+                "abstract": "We'll explore the architecture of production-grade semantic layers, demonstrating how Semantido enables reliable text-to-SQL applications by providing LLMs with rich contextual understanding of database schemas, relationships, and business logic. Attendees will learn practical patterns for implementing semantic layers that bridge the gap between user intent and database queries by building a semantic layer for a fictional company.",
+                "description": "Learning Objectives\r\n\r\nBy the end of this tutorial, participants will be able to:\r\n\r\n* Design and implement semantic models that capture business logic and domain knowledge alongside database schema definitions\r\n* Build LLM integrations that leverage semantic metadata for accurate query generation and validation\r\n* Implement observability patterns for monitoring and debugging\r\n* How to evaluate semantic layer quality \r\n* Deploy scalable semantic APIs that abstract database complexity from LLM applications\r\n\r\n\r\n__Desired Tutorial Structure (90 minutes)__\r\n\r\n__Part 1: Foundations (~20 minutes)__\r\n\r\n- The Text2SQL Challenge: Why naive approaches fail\r\n- Semantic Layer Architecture: Core concepts, design patterns, and the role of metadata in LLM reliability\r\n- Semantido Quick Start: Installation, project setup, and connecting to the playground database\r\n- *Hands-on Exercise*: Participants will set up their development environment and connect semantido to a provided database.\r\n\r\n__Part 2: Building Your First Semantic Layer (~25 minutes - 35 mins)__\r\n\r\n* Declarative Model Definition: Extending SQLAlchemy models with business metadata, descriptions, and constraints\r\n* Relationship Semantics: Annotating foreign keys, joins, and cross-table business rules\r\n* Domain Knowledge Injection: Adding enums, validation logic, and computed fields with business meaning\r\n* *Hands-on Exercise*: Participants will build a semantic layer for a given database, adding rich metadata that describes the tables and columns both in application and business terms.\r\n\r\n__Part 3: LLM Integration Patterns (~20 minutes)__\r\n\r\n*Context aware Query Generation: Using semantic layers with FastAPI and LangChain for SQL generation\r\n* *Hands-on Exercise*: Participants build a simple chatbot that answers natural language questions about orders by querying the semantic layer. Participants will implement query validation and test it with ambiguous questions.\r\n\r\n__Part 4: Production Considerations (~20 minutes)__\r\n\r\n* Observability and Debugging (6 min): Logging semantic context, tracing query generation, and monitoring LLM-database interactions\r\n* Evaluation Framework (5 min): Testing semantic layer quality with automated benchmarks and business logic validation\r\n* Deployment Patterns (4 min): Docker, FastAPI integration, and scaling considerations\r\n* *Hands-on Exercise*: Participants will add observability instrumentation to their semantic layer and run an evaluation suite that tests query accuracy against known business questions.\r\n\r\n__Part 5: Production Considerations (15 minutes)__\r\n* Q&A: Open discussion and troubleshooting",
+                "recording_license": "",
+                "do_not_record": false,
+                "persons": [
+                  {
+                    "code": "UATLWR",
+                    "name": "Dragos Crintea",
+                    "avatar": "https://pretalx.com/media/avatars/UATLWR_8gEXXAs.webp",
+                    "biography": "After 12+ years architecting and engineering cloud solutions for small and large enterprises, I recognized that AI represents not a replacement for expertise, but its natural evolution. Join me in shaping the semantic layer for AI-ready data.",
+                    "public_name": "Dragos Crintea",
+                    "guid": "32166fb3-e172-5fe5-bb9e-8fb1bbf082b2",
+                    "url": "https://pretalx.com/pydata-london-2026/speaker/UATLWR/"
+                  }
+                ],
+                "links": [],
+                "feedback_url": "https://pretalx.com/pydata-london-2026/talk/YFYXAC/feedback/",
+                "origin_url": "https://pretalx.com/pydata-london-2026/talk/YFYXAC/",
+                "attachments": [
+                  {
+                    "title": "Notebook LM generated deck based on the semantido codebase",
+                    "url": "/media/pydata-london-2026-2025/submissions/YFYXAC/resources/se_Lkbzl9x.pdf",
+                    "type": "related"
+                  }
+                ]
+              },
               {
                 "guid": "050d2cc9-cf0e-566c-9543-6a85d5b68713",
                 "code": "DBGAND",
@@ -665,6 +707,42 @@
                 "attachments": []
               },
               {
+                "guid": "147e2648-c9d1-5b6f-a723-f08d0012f821",
+                "code": "QU33NS",
+                "id": 98723,
+                "logo": null,
+                "date": "2026-06-06T13:35:00+01:00",
+                "start": "13:35",
+                "duration": "00:45",
+                "room": "Grand Hall 1",
+                "slug": "pydata-london-2026-98723-keynote-jeremiah-lowin-build-reasonable-software",
+                "url": "https://pretalx.com/pydata-london-2026/talk/QU33NS/",
+                "title": "Keynote- Jeremiah Lowin- Build Reasonable Software",
+                "subtitle": "",
+                "track": null,
+                "type": "Talk",
+                "language": "en",
+                "abstract": "Python became the language of data science because it made hard work feel possible. It gave scientists, analysts, engineers, and researchers a shared way to express ideas without forcing them to become software specialists first. The result was a style of software that made powerful systems easier to learn, easier to combine, and easier to trust.\r\n\r\nIn this keynote, Jeremiah Lowin explores what it means for software to be Pythonic: simple, composable, readable, and easy to reason about. Those qualities helped Python become the default language for data science, and they matter even more now that software is beginning to build software.\r\n\r\nThe next generation of agentic systems will be judged by whether people can understand them, change them, and trust them. This talk argues that the lesson of PyData is also the challenge for AI: build systems that remain easy to reason about as they become more powerful, and use emerging interfaces like MCP to make data easier to communicate, explore, and act on.",
+                "description": "",
+                "recording_license": "",
+                "do_not_record": false,
+                "persons": [
+                  {
+                    "code": "NNKJNL",
+                    "name": "Jeremiah Lowin",
+                    "avatar": "https://pretalx.com/media/avatars/XFXPNU_Ck3DwuA.webp",
+                    "biography": "Jeremiah Lowin is the founder and CEO of Prefect and the author of FastMCP. Prefect develops automation tools used across the data and AI ecosystem, and FastMCP has become the standard framework for working with the Model Context Protocol. Before founding Prefect, he spent over a decade leading risk and data initiatives at major investment firms and was a founding member of the Apache Airflow PMC. He lives in Washington, DC.",
+                    "public_name": "Jeremiah Lowin",
+                    "guid": "c2deceb3-f6f4-5f85-ae80-4918173c3cb5",
+                    "url": "https://pretalx.com/pydata-london-2026/speaker/NNKJNL/"
+                  }
+                ],
+                "links": [],
+                "feedback_url": "https://pretalx.com/pydata-london-2026/talk/QU33NS/feedback/",
+                "origin_url": "https://pretalx.com/pydata-london-2026/talk/QU33NS/",
+                "attachments": []
+              },
+              {
                 "guid": "507ed170-4d81-523e-ba1b-9795822eb216",
                 "code": "AYDUBL",
                 "id": 91834,
@@ -783,6 +861,42 @@
               }
             ],
             "Grand Hall 2": [
+              {
+                "guid": "9996c9de-d455-51b4-ba92-b7141f60eddf",
+                "code": "RQ3FJQ",
+                "id": 89378,
+                "logo": null,
+                "date": "2026-06-06T10:20:00+01:00",
+                "start": "10:20",
+                "duration": "00:45",
+                "room": "Grand Hall 2",
+                "slug": "pydata-london-2026-89378-building-production-multi-agent-rag-systems-on-serverless-aws",
+                "url": "https://pretalx.com/pydata-london-2026/talk/RQ3FJQ/",
+                "title": "Building Production Multi-Agent RAG Systems on Serverless AWS",
+                "subtitle": "",
+                "track": null,
+                "type": "Talk",
+                "language": "en",
+                "abstract": "Multi-agent AI systems promise autonomous reasoning, but most tutorials stop at prototypes. This talk shares hard-won lessons from deploying a production multi-agent RAG platform on serverless AWS , covering agent orchestration patterns, cross-region LLM routing, vector search cost optimisation, and the observability strategies that keep it all running reliably.\r\n\r\nYou'll learn concrete patterns for coordinating multiple RAG-enabled agents via SQS and Lambda, the cost/latency trade-offs between managed and self-managed vector search (including how to achieve 90% storage savings), and practical observability strategies using Langfuse and dead-letter queues. Whether you're scaling your first RAG system or architecting multi-agent workflows, you'll leave with actionable patterns you can apply immediately.",
+                "description": "Modern AI applications increasingly require multiple specialised agents working together, but orchestrating them reliably at scale is challenging. This talk walks through the architecture and lessons learned from building a production multi-agent financial analysis platform.\r\n\r\nOutline:\r\n- Minutes 0-5: Why single-agent RAG hits limits — the case for multi-agent orchestration\r\n- Minutes 5-15: Architecture deep-dive — SQS-based agent coordination, Lambda handlers, and how RAG retrieval integrates across agents\r\n- Minutes 15-22: Cross-region Bedrock routing and why latency geography matters\r\n- Minutes 22-30: Cost lessons — achieving 90% vector storage savings with S3 Vector Search vs managed alternatives\r\n- Minutes 30-37: Observability and failure handling — Langfuse tracing, DLQs, and debugging distributed agent calls\r\n- Minutes 37-40: Key takeaways and Q&A\r\n\r\nTarget audience: ML engineers, data scientists, and developers building production AI systems. Familiarity with RAG concepts and basic AWS services assumed; no multi-agent experience required.",
+                "recording_license": "",
+                "do_not_record": false,
+                "persons": [
+                  {
+                    "code": "UK3RCM",
+                    "name": "Samuel Jaja",
+                    "avatar": "https://pretalx.com/media/avatars/UK3RCM_hAdy3bY.webp",
+                    "biography": "I am a technical director/founder of an early start-up, Atlasync AI Ltd, also an AI Associate at GW Power-Safe UK where he builds production AI systems using serverless AWS and Azure. He also founded and co-organizes PyData Hull, the UK's newest NumFOCUS chapter. Samuel holds an MSc in AI & Data Science (Distinction) from the University of Hull and is AWS certified. His current work focuses on multi-agent architectures, RAG pipelines, and enterprise workflow automation.",
+                    "public_name": "Samuel Jaja",
+                    "guid": "d1361059-9192-5d22-8c71-a3f33ff979f5",
+                    "url": "https://pretalx.com/pydata-london-2026/speaker/UK3RCM/"
+                  }
+                ],
+                "links": [],
+                "feedback_url": "https://pretalx.com/pydata-london-2026/talk/RQ3FJQ/feedback/",
+                "origin_url": "https://pretalx.com/pydata-london-2026/talk/RQ3FJQ/",
+                "attachments": []
+              },
               {
                 "guid": "87f09954-a835-51bc-b1aa-4f72245e1cce",
                 "code": "3JJHZF",

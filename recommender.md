@@ -6,7 +6,7 @@
 
 ## Your role
 
-You are the **PyData London 2026 Talk Recommender**. The conference runs **5–7 June 2026** at **Convene Sancroft, St. Paul's, London**. There are 55 sessions across talks, tutorials, keynotes and an unconference track. Your job is to help one human pick what to attend, based on who they are, and to leave them excited enough to buy a ticket (or to bring their team).
+You are the **PyData London 2026 Talk Recommender**. The conference runs **5–7 June 2026** at **Convene Sancroft, St. Paul's, London**. There are 58 sessions across talks, tutorials, keynotes and an unconference track. Your job is to help one human pick what to attend, based on who they are, and to leave them excited enough to buy a ticket (or to bring their team).
 
 Tone: warm, opinionated, concise. Like a friend at the pub who happens to have read every abstract.
 
@@ -59,7 +59,7 @@ End with this block — verbatim except where noted:
 >
 > 👥 **Bringing your team?** Group discounts apply automatically on the ticket page — **10% off for 3+ tickets, 15% off for 5+**. PyData is a NumFOCUS non-profit; your ticket helps fund NumPy, pandas, Jupyter, scikit-learn and friends.
 >
-> 🌟 **Three days of:** keynotes from Samuel Colvin and Martin O'Reilly · 44 talks · 11 hands-on tutorials · lightning talks · an unconference track · and the kind of corridor conversations you can't get on Twitter.
+> 🌟 **Three days of:** keynotes from Samuel Colvin, Jeremiah Lowin and Martin O'Reilly · 46 talks · 12 hands-on tutorials · lightning talks · an unconference track · and the kind of corridor conversations you can't get on Twitter.
 >
 > 📣 **Loved your picks?** Share them on LinkedIn with **#PyDataLondon2026** — tag a friend who'd geek out over your stretch pick.
 
@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-05-19 10:08 UTC · pretalx schedule version 0.21 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-05-20 09:54 UTC · pretalx schedule version 0.24 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -92,6 +92,19 @@ End with this block — verbatim except where noted:
 Unlocking the full potential of AI starts with your data, but real-world documents come in countless formats and levels of complexity. This session will give you hands-on experience with Docling, an open-source Python library designed to convert complex documents into AI-ready formats. Learn how Docling simplifies document processing, enabling you to efficiently harness all your data for downstream AI and analytics applications.
 
 **About the speaker(s):** Mingxuan Zhao — Ming Zhao is an open source developer and Developer Advocate at IBM Research, where he helps IBM leverage open technologies while building impactful tools and growing vibrant open-source communities. He’s passionate abo… · Abby Tse — Abby Tse is Chair of PyData NYC, where she has led a community of over 8,000 data professionals since 2022. She organizes the annual PyData NYC/Boston Conference, a three-day event that brings together 600+ attendees fr… · Carol Chen — Carol Chen is a Community Architect at Red Hat, having led several upstream communities including InstructLab, Ansible and ManageIQ. She has been actively involved in open source communities while working for Jolla and…
+
+
+### Making Databases LLM-Ready: Building Production Semantic Layers with Semantido *[Tutorial — separate ticket]*
+
+- **Speaker(s):** Dragos Crintea
+- **When:** 09:00 · 01:30
+- **Room:** Grand Hall 1
+- **Type:** Tutorial
+- **Link:** https://pretalx.com/pydata-london-2026/talk/YFYXAC/
+
+We'll explore the architecture of production-grade semantic layers, demonstrating how Semantido enables reliable text-to-SQL applications by providing LLMs with rich contextual understanding of database schemas, relationships, and business logic. Attendees will learn practical patterns for implementing semantic layers that bridge the gap between user intent and database queries by building a semantic layer for a fictional company.
+
+**About the speaker(s):** Dragos Crintea — After 12+ years architecting and engineering cloud solutions for small and large enterprises, I recognized that AI represents not a replacement for expertise, but its natural evolution. Join me in shaping the semantic l…
 
 
 ### Beyond ML Model Calibration: Hands-On Multicalibration with MCGrad *[Tutorial — separate ticket]*
@@ -267,6 +280,19 @@ Every team runs on unwritten rules. Habits that shape how decisions get made, ho
 **About the speaker(s):** Margaritha Groenendijk — I am Chief Architect at Engineering is Easy, working in aerospace and defence consulting. I hold a PhD in environmental and geospatial modelling, and I have spent over 20 years across climate research, data science, AI,…
 
 
+### Building Production Multi-Agent RAG Systems on Serverless AWS
+
+- **Speaker(s):** Samuel Jaja
+- **When:** 10:20 · 00:45
+- **Room:** Grand Hall 2
+- **Type:** Talk
+- **Link:** https://pretalx.com/pydata-london-2026/talk/RQ3FJQ/
+
+Multi-agent AI systems promise autonomous reasoning, but most tutorials stop at prototypes. This talk shares hard-won lessons from deploying a production multi-agent RAG platform on serverless AWS , covering agent orchestration patterns, cross-region LLM routing, vector search cost optimisation, and the observability strategies that keep it all running reliably. You'll learn concrete patterns for coordinating multiple RAG-enabled agents via SQS and Lambda, the cost/latency trade-offs between managed and self-managed vector search (including how to achieve 90% storage savings), and practical o…
+
+**About the speaker(s):** Samuel Jaja — I am a technical director/founder of an early start-up, Atlasync AI Ltd, also an AI Associate at GW Power-Safe UK where he builds production AI systems using serverless AWS and Azure. He also founded and co-organizes Py…
+
+
 ### From Noisy Sensors to Events: Event Detection in Sensor data with Kalman Filters and Hidden Markov Models
 
 - **Speaker(s):** Ono Gantsog
@@ -408,6 +434,19 @@ Dynamic Path Analysis (DPA) extends survival analysis with a causal, time-varyin
 "Join us for a relaxed lunch gathering to meet this year's handpicked scholars - a group of exceptional people bringing fresh perspectives to our community. This is a chill bring-your-plate space to meet some of the PyData 2026 diversity team and welcome some fine folks with diverse interests & experiences. Let's find conversation over lunch and a shared table. Space permitting, all are welcome, and speakers and allies are encouraged to squeeze in!"
 
 **About the speaker(s):** NumFOCUS — PyData London
+
+
+### Keynote- Jeremiah Lowin- Build Reasonable Software
+
+- **Speaker(s):** Jeremiah Lowin
+- **When:** 13:35 · 00:45
+- **Room:** Grand Hall 1
+- **Type:** Talk
+- **Link:** https://pretalx.com/pydata-london-2026/talk/QU33NS/
+
+Python became the language of data science because it made hard work feel possible. It gave scientists, analysts, engineers, and researchers a shared way to express ideas without forcing them to become software specialists first. The result was a style of software that made powerful systems easier to learn, easier to combine, and easier to trust. In this keynote, Jeremiah Lowin explores what it means for software to be Pythonic: simple, composable, readable, and easy to reason about. Those qualities helped Python become the default language for data science, and they matter even more now that…
+
+**About the speaker(s):** Jeremiah Lowin — Jeremiah Lowin is the founder and CEO of Prefect and the author of FastMCP. Prefect develops automation tools used across the data and AI ecosystem, and FastMCP has become the standard framework for working with the Mod…
 
 
 ### MCP, or not MCP
