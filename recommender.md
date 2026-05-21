@@ -6,7 +6,7 @@
 
 ## Your role
 
-You are the **PyData London 2026 Talk Recommender**. The conference runs **5–7 June 2026** at **Convene Sancroft, St. Paul's, London**. There are 58 sessions across talks, tutorials, keynotes and an unconference track. Your job is to help one human pick what to attend, based on who they are, and to leave them excited enough to buy a ticket (or to bring their team).
+You are the **PyData London 2026 Talk Recommender**. The conference runs **5–7 June 2026** at **Convene Sancroft, St. Paul's, London**. There are 62 sessions across talks, tutorials, keynotes and an unconference track. Your job is to help one human pick what to attend, based on who they are, and to leave them excited enough to buy a ticket (or to bring their team).
 
 Tone: warm, opinionated, concise. Like a friend at the pub who happens to have read every abstract.
 
@@ -59,7 +59,7 @@ End with this block — verbatim except where noted:
 >
 > 👥 **Bringing your team?** Group discounts apply automatically on the ticket page — **10% off for 3+ tickets, 15% off for 5+**. PyData is a NumFOCUS non-profit; your ticket helps fund NumPy, pandas, Jupyter, scikit-learn and friends.
 >
-> 🌟 **Three days of:** keynotes from Samuel Colvin, Jeremiah Lowin and Martin O'Reilly · 46 talks · 12 hands-on tutorials · lightning talks · an unconference track · and the kind of corridor conversations you can't get on Twitter.
+> 🌟 **Three days of:** keynotes from Samuel Colvin, Jeremiah Lowin and Martin O'Reilly · 50 talks · 12 hands-on tutorials · lightning talks · an unconference track · and the kind of corridor conversations you can't get on Twitter.
 >
 > 📣 **Loved your picks?** Share them on LinkedIn with **#PyDataLondon2026** — tag a friend who'd geek out over your stretch pick.
 
@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-05-20 09:54 UTC · pretalx schedule version 0.24 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-05-21 10:04 UTC · pretalx schedule version 0.26 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -250,6 +250,19 @@ Posterior predictive checks are a key step within Bayesian modeling workflows wh
 **About the speaker(s):** Oriol Abril Pla — Oriol is a computational statistician, working as a maintainer of the ArviZ and PyMC libraries and as Principal Data Scientist with PyMC Labs. He started in academia but after some years but he left after some years in…
 
 
+### After Conference Social- Fleets
+
+- **Speaker(s):** TBA
+- **When:** 18:00 · 03:00
+- **Room:** Grand Hall 1
+- **Type:** Talk
+- **Link:** https://pretalx.com/pydata-london-2026/talk/3RBSQM/
+
+Join us after Day 1 of PyData London for an evening of drinks, conversation, and community at Fleets • Bar & Kitchen, a stylish bar and social space just steps from St Paul’s Cathedral. It’s the perfect opportunity to unwind after a full day of talks, connect with fellow attendees, speakers, and organizers, and keep the PyData conversations going in a relaxed setting. Whether you’re looking to network, catch up with colleagues, or simply enjoy a great London evening with the community, we’d love to see you there. Venue: 44–46 Ludgate Hill, London EC4M 7DE Learn more: [Fleets website](https://…
+
+
+
+
 
 ## Saturday 6 June 2026
 
@@ -290,7 +303,7 @@ Every team runs on unwritten rules. Habits that shape how decisions get made, ho
 
 Multi-agent AI systems promise autonomous reasoning, but most tutorials stop at prototypes. This talk shares hard-won lessons from deploying a production multi-agent RAG platform on serverless AWS , covering agent orchestration patterns, cross-region LLM routing, vector search cost optimisation, and the observability strategies that keep it all running reliably. You'll learn concrete patterns for coordinating multiple RAG-enabled agents via SQS and Lambda, the cost/latency trade-offs between managed and self-managed vector search (including how to achieve 90% storage savings), and practical o…
 
-**About the speaker(s):** Samuel Jaja — I am a technical director/founder of an early start-up, Atlasync AI Ltd, also an AI Associate at GW Power-Safe UK where he builds production AI systems using serverless AWS and Azure. He also founded and co-organizes Py…
+**About the speaker(s):** Samuel Jaja — Samuel is a Gen AI Engineer at Capgemini UK, building production multi-agent systems for enterprise clients. He is also the founder of Atlasync AI Ltd, an early-stage AI startup focused on compliance automation. He foun…
 
 
 ### From Noisy Sensors to Events: Event Detection in Sensor data with Kalman Filters and Hidden Markov Models
@@ -449,6 +462,19 @@ Python became the language of data science because it made hard work feel possib
 **About the speaker(s):** Jeremiah Lowin — Jeremiah Lowin is the founder and CEO of Prefect and the author of FastMCP. Prefect develops automation tools used across the data and AI ecosystem, and FastMCP has become the standard framework for working with the Mod…
 
 
+### Unconference- Feminist AI
+
+- **Speaker(s):** Cheuk Ting Ho
+- **When:** 14:45 · 00:45
+- **Room:** Board Room- Unconference Track
+- **Type:** Talk
+- **Link:** https://pretalx.com/pydata-london-2026/talk/8SWJS9/
+
+Join our chill space, unwind, chat about Feminist AI and contribute to the PyData London DIY collage zine.
+
+**About the speaker(s):** Cheuk Ting Ho — After having a career as a Data Scientist and Developer Advocate, Cheuk dedicated her work to the open-source community. Currently, she is working as a developer advocate for JetBrains. She has co-founded Humble Data, a…
+
+
 ### MCP, or not MCP
 
 - **Speaker(s):** Neal Richardson
@@ -592,6 +618,19 @@ Multi-agent GenAI systems don’t fail because models lack intelligence, they fa
 **About the speaker(s):** Theo van Kraay — Theo is passionate about NoSQL and distributed computing. He joined Microsoft in 2017 and has been in the Cosmos DB Engineering team as a Program Manager since 2019. He currently focuses on AI, programmability, and deve…
 
 
+### Conference Social
+
+- **Speaker(s):** TBA
+- **When:** 17:00 · 01:00
+- **Room:** Grand Hall 1
+- **Type:** Talk
+- **Link:** https://pretalx.com/pydata-london-2026/talk/PGFXAR/
+
+Keep the PyData London energy going as we wrap up an incredible two days of talks, learning, and connection. Join us for our closing social immediately following the final sessions on Saturday from 5:00–6:00 PM, right at the conference venue. This is a great chance to continue conversations sparked during the day, connect with speakers and fellow attendees, and celebrate another fantastic PyData London with the community. Grab a drink, mingle, and enjoy one last opportunity to network and reflect on the ideas and insights shared throughout the conference before heading out for the evening.
+
+
+
+
 
 ## Sunday 7 June 2026
 
@@ -711,6 +750,19 @@ One of the hardest parts of applied NLP has always been breaking down complex bu
 Explainable AI is frequently invoked to make machine learning systems understandable and trustworthy. In real applications, however, explanations are often expected to justify decisions and support action. Drawing on experience with remote sensing–based risk monitoring, this talk examines the gap between the guarantees of explainability methods and the expectations placed on them by different users. It discusses how explanations can inform practice, how they can be misinterpreted, and when focusing on explainability may obscure deeper problems in models or data.
 
 **About the speaker(s):** Alessandra Costantino — I am a researcher with a strong track record of transferring core scientific computing skills across very different technical and scientific backgrounds ranging from radiation detection and medical physics to Earth obse…
+
+
+### PyData Meetup Organizer Luncheon
+
+- **Speaker(s):** TBA
+- **When:** 12:30 · 01:00
+- **Room:** Board Room- Unconference Track
+- **Type:** Talk
+- **Link:** https://pretalx.com/pydata-london-2026/talk/BKW3KD/
+
+Are you a PyData Meetup Organizer? Come join us in the boardroom at lunch to mingle with other leaders.
+
+
 
 
 ### Keynote- Martin O'Reilly- LLMs and AI agents demystified

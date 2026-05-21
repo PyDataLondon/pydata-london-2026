@@ -6,7 +6,7 @@
   },
   "schedule": {
     "url": "https://pretalx.com/pydata-london-2026/schedule/",
-    "version": "0.24",
+    "version": "0.26",
     "base_url": "https://pretalx.com",
     "conference": {
       "acronym": "pydata-london-2026",
@@ -249,6 +249,32 @@
                 "links": [],
                 "feedback_url": "https://pretalx.com/pydata-london-2026/talk/SUJZCA/feedback/",
                 "origin_url": "https://pretalx.com/pydata-london-2026/talk/SUJZCA/",
+                "attachments": []
+              },
+              {
+                "guid": "8bd6aab6-721c-5409-911e-3ccc6cce9fa5",
+                "code": "3RBSQM",
+                "id": 98763,
+                "logo": null,
+                "date": "2026-06-05T18:00:00+01:00",
+                "start": "18:00",
+                "duration": "03:00",
+                "room": "Grand Hall 1",
+                "slug": "pydata-london-2026-98763-after-conference-social-fleets",
+                "url": "https://pretalx.com/pydata-london-2026/talk/3RBSQM/",
+                "title": "After Conference Social- Fleets",
+                "subtitle": "",
+                "track": null,
+                "type": "Talk",
+                "language": "en",
+                "abstract": "Join us after Day 1 of PyData London for an evening of drinks, conversation, and community at Fleets • Bar & Kitchen, a stylish bar and social space just steps from St Paul’s Cathedral. It’s the perfect opportunity to unwind after a full day of talks, connect with fellow attendees, speakers, and organizers, and keep the PyData conversations going in a relaxed setting. Whether you’re looking to network, catch up with colleagues, or simply enjoy a great London evening with the community, we’d love to see you there.\r\n\r\nVenue: 44–46 Ludgate Hill, London EC4M 7DE\r\nLearn more: [Fleets website](https://www.urbanpubsandbars.com/city-by-urban/venues/fleets#)",
+                "description": "",
+                "recording_license": "",
+                "do_not_record": false,
+                "persons": [],
+                "links": [],
+                "feedback_url": "https://pretalx.com/pydata-london-2026/talk/3RBSQM/feedback/",
+                "origin_url": "https://pretalx.com/pydata-london-2026/talk/3RBSQM/",
                 "attachments": []
               }
             ],
@@ -858,6 +884,32 @@
                 "feedback_url": "https://pretalx.com/pydata-london-2026/talk/ZFR8VH/feedback/",
                 "origin_url": "https://pretalx.com/pydata-london-2026/talk/ZFR8VH/",
                 "attachments": []
+              },
+              {
+                "guid": "c2f7c2bc-0260-522f-9609-0427f1d7c306",
+                "code": "PGFXAR",
+                "id": 98764,
+                "logo": null,
+                "date": "2026-06-06T17:00:00+01:00",
+                "start": "17:00",
+                "duration": "01:00",
+                "room": "Grand Hall 1",
+                "slug": "pydata-london-2026-98764-conference-social",
+                "url": "https://pretalx.com/pydata-london-2026/talk/PGFXAR/",
+                "title": "Conference Social",
+                "subtitle": "",
+                "track": null,
+                "type": "Talk",
+                "language": "en",
+                "abstract": "Keep the PyData London energy going as we wrap up an incredible two days of talks, learning, and connection. Join us for our closing social immediately following the final sessions on Saturday from 5:00–6:00 PM, right at the conference venue. This is a great chance to continue conversations sparked during the day, connect with speakers and fellow attendees, and celebrate another fantastic PyData London with the community. Grab a drink, mingle, and enjoy one last opportunity to network and reflect on the ideas and insights shared throughout the conference before heading out for the evening.",
+                "description": "",
+                "recording_license": "",
+                "do_not_record": false,
+                "persons": [],
+                "links": [],
+                "feedback_url": "https://pretalx.com/pydata-london-2026/talk/PGFXAR/feedback/",
+                "origin_url": "https://pretalx.com/pydata-london-2026/talk/PGFXAR/",
+                "attachments": []
               }
             ],
             "Grand Hall 2": [
@@ -886,7 +938,7 @@
                     "code": "UK3RCM",
                     "name": "Samuel Jaja",
                     "avatar": "https://pretalx.com/media/avatars/UK3RCM_hAdy3bY.webp",
-                    "biography": "I am a technical director/founder of an early start-up, Atlasync AI Ltd, also an AI Associate at GW Power-Safe UK where he builds production AI systems using serverless AWS and Azure. He also founded and co-organizes PyData Hull, the UK's newest NumFOCUS chapter. Samuel holds an MSc in AI & Data Science (Distinction) from the University of Hull and is AWS certified. His current work focuses on multi-agent architectures, RAG pipelines, and enterprise workflow automation.",
+                    "biography": "Samuel is a Gen AI Engineer at Capgemini UK, building production multi-agent systems for enterprise clients. He is also the founder of Atlasync AI Ltd, an early-stage AI startup focused on compliance automation. He founded and organises PyData Hull, the UK's newest NumFOCUS chapter. Samuel holds an MSc in AI and Data Science with Distinction from the University of Hull and is AWS certified. His work focuses on multi-agent architectures, RAG pipelines, and agentic observability.",
                     "public_name": "Samuel Jaja",
                     "guid": "d1361059-9192-5d22-8c71-a3f33ff979f5",
                     "url": "https://pretalx.com/pydata-london-2026/speaker/UK3RCM/"
@@ -1573,6 +1625,42 @@
                 "links": [],
                 "feedback_url": "https://pretalx.com/pydata-london-2026/talk/RZPMEY/feedback/",
                 "origin_url": "https://pretalx.com/pydata-london-2026/talk/RZPMEY/",
+                "attachments": []
+              },
+              {
+                "guid": "b9145766-1a9c-5c50-97c0-97936d8412ae",
+                "code": "8SWJS9",
+                "id": 98790,
+                "logo": null,
+                "date": "2026-06-06T14:45:00+01:00",
+                "start": "14:45",
+                "duration": "00:45",
+                "room": "Board Room- Unconference Track",
+                "slug": "pydata-london-2026-98790-unconference-feminist-ai",
+                "url": "https://pretalx.com/pydata-london-2026/talk/8SWJS9/",
+                "title": "Unconference- Feminist AI",
+                "subtitle": "",
+                "track": null,
+                "type": "Talk",
+                "language": "en",
+                "abstract": "Join our chill space, unwind, chat about Feminist AI and contribute to the PyData London DIY collage zine.",
+                "description": "",
+                "recording_license": "",
+                "do_not_record": true,
+                "persons": [
+                  {
+                    "code": "8EGVC9",
+                    "name": "Cheuk Ting Ho",
+                    "avatar": "https://pretalx.com/media/avatars/8EGVC9_LbezfQb.webp",
+                    "biography": "After having a career as a Data Scientist and Developer Advocate, Cheuk dedicated her work to the open-source community. Currently, she is working as a developer advocate for JetBrains. She has co-founded Humble Data, a beginner Python workshop that has been happening around the world. Cheuk also started and hosted a Python podcast, PyPodCats, which highlights the achievements of underrepresented members in the community. She has served the EuroPython Society board for two years and is now a fellow and director of the Python Software Foundation.",
+                    "public_name": "Cheuk Ting Ho",
+                    "guid": "716d26c2-170b-5a5e-86e5-9d4cecf3bbdd",
+                    "url": "https://pretalx.com/pydata-london-2026/speaker/8EGVC9/"
+                  }
+                ],
+                "links": [],
+                "feedback_url": "https://pretalx.com/pydata-london-2026/talk/8SWJS9/feedback/",
+                "origin_url": "https://pretalx.com/pydata-london-2026/talk/8SWJS9/",
                 "attachments": []
               }
             ]
@@ -2291,6 +2379,32 @@
                 "links": [],
                 "feedback_url": "https://pretalx.com/pydata-london-2026/talk/AV3A3W/feedback/",
                 "origin_url": "https://pretalx.com/pydata-london-2026/talk/AV3A3W/",
+                "attachments": []
+              },
+              {
+                "guid": "c16ecacf-19e1-5cd9-9d3d-9ad1a1187ba7",
+                "code": "BKW3KD",
+                "id": 98789,
+                "logo": null,
+                "date": "2026-06-07T12:30:00+01:00",
+                "start": "12:30",
+                "duration": "01:00",
+                "room": "Board Room- Unconference Track",
+                "slug": "pydata-london-2026-98789-pydata-meetup-organizer-luncheon",
+                "url": "https://pretalx.com/pydata-london-2026/talk/BKW3KD/",
+                "title": "PyData Meetup Organizer Luncheon",
+                "subtitle": "",
+                "track": null,
+                "type": "Talk",
+                "language": "en",
+                "abstract": "Are you a PyData Meetup Organizer? Come join us in the boardroom at lunch to mingle with other leaders.",
+                "description": "",
+                "recording_license": "",
+                "do_not_record": false,
+                "persons": [],
+                "links": [],
+                "feedback_url": "https://pretalx.com/pydata-london-2026/talk/BKW3KD/feedback/",
+                "origin_url": "https://pretalx.com/pydata-london-2026/talk/BKW3KD/",
                 "attachments": []
               }
             ]
