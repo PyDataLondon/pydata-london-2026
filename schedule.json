@@ -6,7 +6,7 @@
   },
   "schedule": {
     "url": "https://pretalx.com/pydata-london-2026/schedule/",
-    "version": "0.26",
+    "version": "0.27",
     "base_url": "https://pretalx.com",
     "conference": {
       "acronym": "pydata-london-2026",
@@ -2188,6 +2188,42 @@
                 "links": [],
                 "feedback_url": "https://pretalx.com/pydata-london-2026/talk/BAFKCL/feedback/",
                 "origin_url": "https://pretalx.com/pydata-london-2026/talk/BAFKCL/",
+                "attachments": []
+              },
+              {
+                "guid": "e31ebfdd-a6eb-5380-8149-e9a461cb0bae",
+                "code": "R7UEBE",
+                "id": 89590,
+                "logo": null,
+                "date": "2026-06-07T11:00:00+01:00",
+                "start": "11:00",
+                "duration": "00:45",
+                "room": "Hardwick Hub",
+                "slug": "pydata-london-2026-89590-the-clean-energy-graveyard-using-python-gemini-to-map-the-uk-s-cancelled-renewable-s",
+                "url": "https://pretalx.com/pydata-london-2026/talk/R7UEBE/",
+                "title": "The Clean Energy Graveyard: Using Python & Gemini to Map the UK's Cancelled Renewable's",
+                "subtitle": "",
+                "track": null,
+                "type": "Talk",
+                "language": "en",
+                "abstract": "Britain has an invisible clean energy graveyard. Over 3,800 clean energy projects have been cancelled in the UK since 2010, representing enough capacity to power millions of homes.  This talk presents the Clean Energy Graveyard - an open-source python pipeline & interactive web visualisation that transforms the government's Renewable Energy Planning Database (REPD) into a story about what's blockoing out energy transition.",
+                "description": "Within this talk, I'll go through some data on Britain's hidden energy crisis, including evaluating current quality of the Renewable Energy Planning Database (REPD), a government project that's been tracking every renewable energy project from beginnning to success/cancellation openly. \r\n\r\nWhile the data is public, it's often difficult to navigate and tells an incomplete story.\r\n\r\nWhen a wind farm is cancelled after 4 years of planning, this represents hundreds of pages of planning documents, countless hours of work with ocmmunity objections, and interventions hidden in planning documents.\r\n\r\nThe Clean Energy Graveyard is a open-source and free web visualisation tool that seeks to transform the REPD dataset into an interactive clean energy graveyard, using a mixture between GeoPandas for spatial analysis, Pandas for dataset cleaning, and the gemini API to begin intelligently surfacing critical news stories and council data. \r\n\r\nThe key take-aways from this talk will be:\r\n\r\n- How to design and build AI models for the public good, to help transform byzantine systems into open data flows.\r\n- Practical patterns for using API's to enrich datasets at scale. \r\n- Techniques for handling messy government data with inconsistent schemas\r\n- How to create data visualisations that seek to tell human stories, not just difficult to understand statistics. \r\n- How to collaborate and work on open-source public good projects\r\n\r\nPrior Knowledge Expected:\r\n\r\nBasic familiarity with Python & coding techniques. No prior knowledge of energy policy, LLM api's, geospatial analysis or detailed webs of council websites required. The talk is aimed at intermediate python users & data scientists who want to explore how to use their skills for public good.\r\n\r\nTarget Audience:\r\n- Data scientists interested in working with government/public sector data\r\n- Developers exploring practical applications of LLMs past typical analysis and summarisation\r\n- Anyone interested in climate/civic tech.\r\n\r\nResources:\r\nLive Demo: nimby.bemben.co.uk\r\nPrevious Blog Post about Specific Example: https://ends.substack.com/p/faw-side-community-wind-farm\r\nPrevious Presentation Slides: github.com/dambem/nimbydex_slides\r\n\r\n\r\nWhy this talk:\r\n\r\nThis",
+                "recording_license": "",
+                "do_not_record": false,
+                "persons": [
+                  {
+                    "code": "H89NEW",
+                    "name": "Damian Bemben",
+                    "avatar": "https://pretalx.com/media/avatars/H89NEW_4Zgcjsc.webp",
+                    "biography": "Damian Bemben is a prominent speaker, creative technologist & developer within the Hampshire & Solent tech space. Damian is currently a Senior Software Engineer at Ada Mode - developing groundbreaking \"human-in-the-loop\" AI applications within highly regulated industrial sectors like civil nuclear.\r\n\r\nHe holds a First Class Masters in Computer Science from the University of Sheffield. His academic work included a dissertation on robotic locomotion using evolutionary principles and using AI to monitor air pollution & local renewable energy projects.\r\n\r\nDamian is a dedicated educator and community organiser within the local space, who has excelled at translating complex research into accessible insights. He is an active organiser of events within the Hampshire creative & tech space.",
+                    "public_name": "Damian Bemben",
+                    "guid": "dd42605c-1bb7-544b-8fcf-edf46d8f5191",
+                    "url": "https://pretalx.com/pydata-london-2026/speaker/H89NEW/"
+                  }
+                ],
+                "links": [],
+                "feedback_url": "https://pretalx.com/pydata-london-2026/talk/R7UEBE/feedback/",
+                "origin_url": "https://pretalx.com/pydata-london-2026/talk/R7UEBE/",
                 "attachments": []
               },
               {
