@@ -6,7 +6,7 @@
   },
   "schedule": {
     "url": "https://pretalx.com/pydata-london-2026/schedule/",
-    "version": "0.27",
+    "version": "0.28",
     "base_url": "https://pretalx.com",
     "conference": {
       "acronym": "pydata-london-2026",
@@ -1098,6 +1098,42 @@
                 "feedback_url": "https://pretalx.com/pydata-london-2026/talk/YYTLFF/feedback/",
                 "origin_url": "https://pretalx.com/pydata-london-2026/talk/YYTLFF/",
                 "attachments": []
+              },
+              {
+                "guid": "bb037c74-3101-5388-bd1b-398375170863",
+                "code": "HBPSDS",
+                "id": 98957,
+                "logo": null,
+                "date": "2026-06-06T16:15:00+01:00",
+                "start": "16:15",
+                "duration": "00:45",
+                "room": "Grand Hall 2",
+                "slug": "pydata-london-2026-98957-using-coding-agents-with-open-models",
+                "url": "https://pretalx.com/pydata-london-2026/talk/HBPSDS/",
+                "title": "Using coding agents with open models",
+                "subtitle": "",
+                "track": null,
+                "type": "Talk",
+                "language": "en",
+                "abstract": "Coding agents such as Cursor and Claude Code are fundamentally changing software development workflows. Most teams, however, still rely primarily on proprietary frontier models.\r\nIn this demo-driven session, I will show how to pair modern coding agents with high-performance open models running on Nebius Token Factory, with a focus on developer experience, model behavior, considerations relevant to production use.\r\n\r\nAttendees will receive platform credits for getting started immediately with open-model-powered coding agents.",
+                "description": "",
+                "recording_license": "",
+                "do_not_record": false,
+                "persons": [
+                  {
+                    "code": "A9KFMS",
+                    "name": "Sujee Maniyam",
+                    "avatar": "https://pretalx.com/media/avatars/HHGLYW_7fhoZ2U.webp",
+                    "biography": "Sujee Maniyam is a Developer Advocate at Nebius, with a background spanning AI, distributed systems, data engineering, and cloud infrastructure. Outside of work, he is usually on a local pickleball court.\r\n\r\n\"I’m a developer, technical instructor, and entrepreneur, now focusing on Developer Advocacy / Developer Relations for AI. I have worked with AI/ML, Data Engineering, Distributed Systems, Big Data, and Cloud technologies. As a AI Developer Relations Engineer, I combine hands-on engineering with community building to help developers make the most of AI, specially open-source AI. I also influence/shape the product by providing feedback to dev/product teams. See my developer advocacy work\".",
+                    "public_name": "Sujee Maniyam",
+                    "guid": "ca24de06-47c6-5bea-a5e1-85fcb6ede2de",
+                    "url": "https://pretalx.com/pydata-london-2026/speaker/A9KFMS/"
+                  }
+                ],
+                "links": [],
+                "feedback_url": "https://pretalx.com/pydata-london-2026/talk/HBPSDS/feedback/",
+                "origin_url": "https://pretalx.com/pydata-london-2026/talk/HBPSDS/",
+                "attachments": []
               }
             ],
             "Doddington Forum": [
@@ -1267,13 +1303,13 @@
                 "do_not_record": false,
                 "persons": [
                   {
-                    "code": "39QBTS",
-                    "name": "Dawn Gibson Wages",
-                    "avatar": "https://pretalx.com/media/avatars/SKEATK_jO88fBB.webp",
-                    "biography": "Dawn Wages is the Director of Community and Developer Relations at Anaconda, responsible for the most popular AI and ML Python distribution in the world. She is a software engineer, ethical open source advocate, and community leader who previously served as Chair of the Python Software Foundation. Her work emphasizes inclusive practices and sustainable growth in open source ecosystems, combining technical knowledge with attention to equity, sovereignty, and developer collaboration. \r\n\r\nWhen not working on Python, she enjoys watching Star Trek in Philadelphia with her wife and two dogs.",
-                    "public_name": "Dawn Gibson Wages",
-                    "guid": "6e7a2861-5121-5040-89f0-0777fa2c9b64",
-                    "url": "https://pretalx.com/pydata-london-2026/speaker/39QBTS/"
+                    "code": "PZEMN7",
+                    "name": "Daina Bouquin",
+                    "avatar": "https://pretalx.com/media/avatars/PZEMN7_zB176St.webp",
+                    "biography": "Daina Bouquin is Senior Developer Relations Engineer at Anaconda with over 12 years of experience spanning astrophysics, library science, and software development. She previously served as Head Librarian at the Harvard-Smithsonian Center for Astrophysics, where she led projects on software citation, preservation, and recovering the contributions of early women in computing. This work gave her deep familiarity with historical computing collections in addition to experience supporting scientists doing computational research. At Anaconda, she creates educational content and strengthens connections between engineering teams and the broader open source community. She believes documentation isn't just about clarity, it's about building communities where people want to participate.",
+                    "public_name": "Daina Bouquin",
+                    "guid": "a1a90090-9082-5b7e-b922-e93befd5c6f1",
+                    "url": "https://pretalx.com/pydata-london-2026/speaker/PZEMN7/"
                   }
                 ],
                 "links": [],

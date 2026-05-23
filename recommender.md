@@ -6,7 +6,7 @@
 
 ## Your role
 
-You are the **PyData London 2026 Talk Recommender**. The conference runs **5–7 June 2026** at **Convene Sancroft, St. Paul's, London**. There are 63 sessions across talks, tutorials, keynotes and an unconference track. Your job is to help one human pick what to attend, based on who they are, and to leave them excited enough to buy a ticket (or to bring their team).
+You are the **PyData London 2026 Talk Recommender**. The conference runs **5–7 June 2026** at **Convene Sancroft, St. Paul's, London**. There are 64 sessions across talks, tutorials, keynotes and an unconference track. Your job is to help one human pick what to attend, based on who they are, and to leave them excited enough to buy a ticket (or to bring their team).
 
 Tone: warm, opinionated, concise. Like a friend at the pub who happens to have read every abstract.
 
@@ -59,7 +59,7 @@ End with this block — verbatim except where noted:
 >
 > 👥 **Bringing your team?** Group discounts apply automatically on the ticket page — **10% off for 3+ tickets, 15% off for 5+**. PyData is a NumFOCUS non-profit; your ticket helps fund NumPy, pandas, Jupyter, scikit-learn and friends.
 >
-> 🌟 **Three days of:** keynotes from Samuel Colvin, Jeremiah Lowin and Martin O'Reilly · 51 talks · 12 hands-on tutorials · lightning talks · an unconference track · and the kind of corridor conversations you can't get on Twitter.
+> 🌟 **Three days of:** keynotes from Samuel Colvin, Jeremiah Lowin and Martin O'Reilly · 52 talks · 12 hands-on tutorials · lightning talks · an unconference track · and the kind of corridor conversations you can't get on Twitter.
 >
 > 📣 **Loved your picks?** Share them on LinkedIn with **#PyDataLondon2026** — tag a friend who'd geek out over your stretch pick.
 
@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-05-22 09:50 UTC · pretalx schedule version 0.27 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-05-23 08:31 UTC · pretalx schedule version 0.28 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -529,7 +529,7 @@ Your company launches a loyalty program — but not everywhere at once. Ten stor
 
 ### Build your castle, dig your moat: AI sovereignty, provenance and compliance
 
-- **Speaker(s):** Dawn Gibson Wages
+- **Speaker(s):** Daina Bouquin
 - **When:** 15:30 · 00:45
 - **Room:** Doddington Forum
 - **Type:** Talk
@@ -537,7 +537,7 @@ Your company launches a loyalty program — but not everywhere at once. Ten stor
 
 Your intelligent application is your castle, and your security practices are the moat that protects it. Inside your castle, you must aim for full visibility into what you’re running and why, with freedom to iterate without vendor rate limits or surprise API changes. Your moat creates your security perimeter, ensuring no proprietary data leaves your castle and enforcing best practices including data provenance, cryptographically signed models, evaluation tools, build pipelines and reproducible environments. Build on your infrastructure, answer to your requirements, scale on your terms.
 
-**About the speaker(s):** Dawn Gibson Wages — Dawn Wages is the Director of Community and Developer Relations at Anaconda, responsible for the most popular AI and ML Python distribution in the world. She is a software engineer, ethical open source advocate, and com…
+**About the speaker(s):** Daina Bouquin — Daina Bouquin is Senior Developer Relations Engineer at Anaconda with over 12 years of experience spanning astrophysics, library science, and software development. She previously served as Head Librarian at the Harvard-…
 
 
 ### SELECT instance FROM cloud WHERE workload = ? ORDER BY cost_efficiency
@@ -603,6 +603,19 @@ As coding agents grow in popularity, open source project documentation is increa
 Scientific publishers tag **millions of articles** with author-provided keywords, but these keywords are noisy, inconsistent, and semantically ambiguous. *"Machine learning," "ML," and "machine-learning"* all mean the same thing, while other terms shift meaning across disciplines. This talk presents a **production pipeline** that extends [OpenAlex](https://openalex.org/)'s 4-level hierarchy with a fifth in-house **Concept** layer, producing a **115K-concept scientific taxonomy**. **SPECTER2** embeddings model semantic similarity, and per-field **Leiden clustering with CPM resolution** groups…
 
 **About the speaker(s):** Daniele Raimondi — Daniele is a data scientist with expertise in statistics, data science and AI, passionate about exploring the intersection of AI and financial markets. Since 2023, he is working at MDPI, one of the largest open-access p… · Feichi Lu — Feichi Lu is a Data Scientist at MDPI in Basel, where she works on building data-driven analytics for scientific publishing. She holds a Master’s degree in Data Science from ETH Zürich. Her experience spans large-scale…
+
+
+### Using coding agents with open models
+
+- **Speaker(s):** Sujee Maniyam
+- **When:** 16:15 · 00:45
+- **Room:** Grand Hall 2
+- **Type:** Talk
+- **Link:** https://pretalx.com/pydata-london-2026/talk/HBPSDS/
+
+Coding agents such as Cursor and Claude Code are fundamentally changing software development workflows. Most teams, however, still rely primarily on proprietary frontier models. In this demo-driven session, I will show how to pair modern coding agents with high-performance open models running on Nebius Token Factory, with a focus on developer experience, model behavior, considerations relevant to production use. Attendees will receive platform credits for getting started immediately with open-model-powered coding agents.
+
+**About the speaker(s):** Sujee Maniyam — Sujee Maniyam is a Developer Advocate at Nebius, with a background spanning AI, distributed systems, data engineering, and cloud infrastructure. Outside of work, he is usually on a local pickleball court. "I’m a develop…
 
 
 ### Designing Semantic Memory for Multi-Agent Systems with Python
