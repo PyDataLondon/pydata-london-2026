@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-05-25 10:50 UTC · pretalx schedule version 0.28 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-05-26 10:19 UTC · pretalx schedule version 0.28 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -159,7 +159,7 @@ This hands-on tutorial takes participants from zero to confident use of tabular 
 **About the speaker(s):** Nicolas Makaroff — Nicolas holds a Ph.D. in applied mathematics from Université Paris Dauphine - PSL, where his research focused on machine learning, with particular emphasis on attention mechanisms and geodesic approaches to segmentation…
 
 
-### Keynote: Sam Colvin: Pydantic Monty & Logfire: Wild LLMs, from tool calling to computer use
+### Keynote: Samuel Colvin: Pydantic Monty & Logfire: Wild LLMs, from tool calling to computer use
 
 - **Speaker(s):** Samuel Colvin
 - **When:** 13:20 · 00:45
@@ -602,7 +602,7 @@ As coding agents grow in popularity, open source project documentation is increa
 
 Scientific publishers tag **millions of articles** with author-provided keywords, but these keywords are noisy, inconsistent, and semantically ambiguous. *"Machine learning," "ML," and "machine-learning"* all mean the same thing, while other terms shift meaning across disciplines. This talk presents a **production pipeline** that extends [OpenAlex](https://openalex.org/)'s 4-level hierarchy with a fifth in-house **Concept** layer, producing a **115K-concept scientific taxonomy**. **SPECTER2** embeddings model semantic similarity, and per-field **Leiden clustering with CPM resolution** groups…
 
-**About the speaker(s):** Daniele Raimondi — Daniele is a data scientist with expertise in statistics, data science and AI, passionate about exploring the intersection of AI and financial markets. Since 2023, he is working at MDPI, one of the largest open-access p… · Feichi Lu — Feichi Lu is a Data Scientist at MDPI in Basel, where she works on building data-driven analytics for scientific publishing. She holds a Master’s degree in Data Science from ETH Zürich. Her experience spans large-scale…
+**About the speaker(s):** Daniele Raimondi — Daniele is a Data Scientist with expertise in statistics, data science and AI, passionate about exploring the intersection of AI and financial markets. Since 2023, he is working at MDPI, one of the largest open-access p… · Feichi Lu — Feichi Lu is a Data Scientist at MDPI in Basel, where she works on building data-driven analytics for scientific publishing. She holds a Master’s degree in Data Science from ETH Zürich. Her experience spans large-scale…
 
 
 ### Using coding agents with open models
