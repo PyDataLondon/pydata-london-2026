@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-05-27 10:31 UTC · pretalx schedule version 0.28 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-05-28 10:34 UTC · pretalx schedule version 0.28 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -120,7 +120,7 @@ Your model is well-calibrated on average, but is it calibrated for *every subgro
 **About the speaker(s):** Niek Tax — Niek Tax is a Staff Research Scientist and Tech Lead at Meta's Central Applied Science team in London. He focuses on longer-term, foundational work that addresses new opportunities and challenges across Meta, bridging t…
 
 
-### Observing Agentic AI in Production: MCP Server Tracing with OpenTelemetry *[Tutorial — separate ticket]*
+### Observing Agentic AI in Production: MCP Server Tracing with OpenTelemetry and Animal Crossing *[Tutorial — separate ticket]*
 
 - **Speaker(s):** Tun Shwe, Fei Phoon
 - **When:** 10:50 · 01:30
@@ -128,7 +128,7 @@ Your model is well-calibrated on average, but is it calibrated for *every subgro
 - **Type:** Tutorial
 - **Link:** https://pretalx.com/pydata-london-2026/talk/APYSNR/
 
-AI agents are moving into production in 2026, but when something goes wrong (a tool call fails silently, an LLM takes 13 seconds to respond, token costs spike overnight) teams struggle to diagnose issues across multi-step agentic workflows. In this hands-on tutorial you will build a Model Context Protocol (MCP) server in Python using FastMCP, instrument it with OpenTelemetry following the emerging GenAI and MCP semantic conventions, and visualise end-to-end traces in a local Jaeger instance. You will learn how distributed tracing captures the hierarchical relationship between agent conversati…
+AI agents are moving into production in 2026, but when something goes wrong (a tool call fails silently, an LLM takes 13 seconds to respond, token costs spike overnight) teams struggle to diagnose issues across multi-step agentic workflows. In this hands-on tutorial you will solve a real problem on the island in Animal Crossing by building a Model Context Protocol (MCP) server in Python using FastMCP, instrumenting it with OpenTelemetry following the emerging GenAI and MCP semantic conventions and visualising end-to-end traces in a local Jaeger instance. Did I mention that events on the islan…
 
 **About the speaker(s):** Tun Shwe — Tun is a Staff AI Engineer at Lenses, where he leads AI engineering and strategy. He is focused on helping companies imagine and implement their strategic vision with agentic AI systems fuelled with real-time context. H… · Fei Phoon — Data Engineer in AI Platform at The Economist, PyData Cornwall co-founder, and committed diversity and inclusion ally.
 
@@ -741,7 +741,7 @@ Britain has an invisible clean energy graveyard. Over 3,800 clean energy project
 
 ### Making tech boring to keep data exciting
 
-- **Speaker(s):** Fred O'Loughlin
+- **Speaker(s):** Fred O'Loughlin, Kerry Parker, Mark
 - **When:** 11:45 · 00:45
 - **Room:** Doddington Forum
 - **Type:** Talk
@@ -749,7 +749,7 @@ Britain has an invisible clean energy graveyard. Over 3,800 clean energy project
 
 Data work often gets blocked by the unglamorous parts: brittle pipelines, unclear ownership, slow deployments, and systems that are hard to trust. This talk is about deliberately making data infrastructure “boring” — predictable, observable, and easy to change — so that the data itself can be used in lots of exciting ways. Climate Policy Radar is a non-profit building open, credible databases and AI powered tools to support informed climate, nature, and development action. Using a real-world journey from an unreliable ingest to a steadier, federated platform, this talk will walk through the p…
 
-**About the speaker(s):** Fred O'Loughlin — Lead MLOps Engineer at Climate Policy Radar
+**About the speaker(s):** Fred O'Loughlin — Lead MLOps Engineer at Climate Policy Radar · Kerry Parker — Data Engineer at Climate Policy Radar
 
 
 ### Vibe NLP for Applied NLP
