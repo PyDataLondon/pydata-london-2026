@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-05-29 10:14 UTC · pretalx schedule version 0.28 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-05-30 08:41 UTC · pretalx schedule version 0.28 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -130,7 +130,7 @@ Your model is well-calibrated on average, but is it calibrated for *every subgro
 
 AI agents are moving into production in 2026, but when something goes wrong (a tool call fails silently, an LLM takes 13 seconds to respond, token costs spike overnight) teams struggle to diagnose issues across multi-step agentic workflows. In this hands-on tutorial you will solve a real problem on the island in Animal Crossing by building a Model Context Protocol (MCP) server in Python using FastMCP, instrumenting it with OpenTelemetry following the emerging GenAI and MCP semantic conventions and visualising end-to-end traces in a local Jaeger instance. Did I mention that events on the islan…
 
-**About the speaker(s):** Tun Shwe — Tun is a Staff AI Engineer at Lenses, where he leads AI engineering and strategy. He is focused on helping companies imagine and implement their strategic vision with agentic AI systems fuelled with real-time context. H… · Fei Phoon — Data Engineer in AI Platform at The Economist, PyData Cornwall co-founder, and committed diversity and inclusion ally.
+**About the speaker(s):** Tun Shwe — Tun leads AI Engineering at Lenses, where he is focused on helping companies imagine and implement their strategic vision with agentic AI systems fuelled by real-time context. He was previously a Head of Data and Data/M… · Fei Phoon — Data Engineer in AI Platform at The Economist, PyData Cornwall co-founder, and committed diversity and inclusion ally.
 
 
 ### GPU Algorithm Authoring with CUDA Tile *[Tutorial — separate ticket]*
