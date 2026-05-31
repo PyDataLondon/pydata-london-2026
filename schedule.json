@@ -6,7 +6,7 @@
   },
   "schedule": {
     "url": "https://pretalx.com/pydata-london-2026/schedule/",
-    "version": "0.28",
+    "version": "0.29",
     "base_url": "https://pretalx.com",
     "conference": {
       "acronym": "pydata-london-2026",
@@ -624,6 +624,42 @@
           "day_end": "2026-06-07T03:59:00+01:00",
           "rooms": {
             "Grand Hall 1": [
+              {
+                "guid": "278cb917-f2cf-5a23-b13b-bdc84770696d",
+                "code": "PUL99Q",
+                "id": 99798,
+                "logo": null,
+                "date": "2026-06-06T09:10:00+01:00",
+                "start": "09:10",
+                "duration": "00:45",
+                "room": "Grand Hall 1",
+                "slug": "pydata-london-2026-99798-keynote-rachel-lee-nabors-the-community-is-the-boat",
+                "url": "https://pretalx.com/pydata-london-2026/talk/PUL99Q/",
+                "title": "Keynote- Rachel Lee Nabors- The Community Is the Boat",
+                "subtitle": "",
+                "track": null,
+                "type": "Talk",
+                "language": "en",
+                "abstract": "The tech industry rises and falls in cycles, like the tide follows the moon. Every few years, the ground shifts and we all have to learn to walk again. It happened to me twice, when I moved from being an award-winning cartoonist to an underemployed web developer during the Recession, and again as a React Core engineer who washed up in AI after layoffs. I went from peak influence to the absolute bottom rung each time. Both times, what saved me wasn't genius or a special gift. It was embracing and being embraced by my new community.\r\n\r\nThis is a keynote about which skills travel across every shift, what we owe each other as the waves keep coming, and how, in a rising tide era, to find your boat and row with the crew. Whether you've been here a while, have just arrived, or are watching the water rise from the shore, there's a place in this boat.",
+                "description": "",
+                "recording_license": "",
+                "do_not_record": false,
+                "persons": [
+                  {
+                    "code": "EUJQRL",
+                    "name": "Rachel Lee Nabors",
+                    "avatar": "https://pretalx.com/media/avatars/PGMLH9_6CeX9nd.webp",
+                    "biography": "Rachel-Lee Nabors spent the better part of their career on web standards and opensource and has spearheaded developer education at FAANG and startups, on the React Team, and W3C. Now they work to usher in the future with browser builders and Silicon Valley startups, teaching a new generation of builders that “it's not magic; it's just math” and building experiences that adapt information to people. You can find them drinking tea in London or shadowboxing in San Francisco.",
+                    "public_name": "Rachel Lee Nabors",
+                    "guid": "bfd52396-cadc-5cc0-ac4e-e73e4a97d6bc",
+                    "url": "https://pretalx.com/pydata-london-2026/speaker/EUJQRL/"
+                  }
+                ],
+                "links": [],
+                "feedback_url": "https://pretalx.com/pydata-london-2026/talk/PUL99Q/feedback/",
+                "origin_url": "https://pretalx.com/pydata-london-2026/talk/PUL99Q/",
+                "attachments": []
+              },
               {
                 "guid": "e35d0a2d-113a-5cce-8aaf-514b23c43eb4",
                 "code": "V3D3LS",
