@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-05-31 09:24 UTC · pretalx schedule version 0.29 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-06-01 12:10 UTC · pretalx schedule version 0.29 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -697,7 +697,7 @@ Birds of a feather to share what’s working well for us to do the best Python e
 
 The EU AI Act is often seen as a legal concern, but many of its requirements directly affect everyday ML workflows. This talk shows data scientists and ML engineers where the regulation impacts the machine learning lifecycle and presents concrete, low-overhead patterns to make ML systems more AI Act–ready, without slowing down development.
 
-**About the speaker(s):** Gabriel Lipnik — Gabriel Lipnik is an AI engineer and applied mathematician working on production-grade machine learning, artificial intelligence, and optimisation systems. His work focuses on bridging the gap between advanced models an…
+**About the speaker(s):** Gabriel Lipnik — Gabriel Lipnik is an AI engineer and applied mathematician at Anexia Digital Engineering, working on production-grade machine learning, artificial intelligence, and optimisation systems. His work focuses on bridging the…
 
 
 ### From SQL to Python: Building Data Context for Agents and People
@@ -754,7 +754,7 @@ Britain has an invisible clean energy graveyard. Over 3,800 clean energy project
 
 ### Making tech boring to keep data exciting
 
-- **Speaker(s):** Fred O'Loughlin, Kerry Parker, Mark
+- **Speaker(s):** Fred O'Loughlin, Kerry Parker, Mark Cottam
 - **When:** 11:45 · 00:45
 - **Room:** Doddington Forum
 - **Type:** Talk
@@ -762,7 +762,7 @@ Britain has an invisible clean energy graveyard. Over 3,800 clean energy project
 
 Data work often gets blocked by the unglamorous parts: brittle pipelines, unclear ownership, slow deployments, and systems that are hard to trust. This talk is about deliberately making data infrastructure “boring” — predictable, observable, and easy to change — so that the data itself can be used in lots of exciting ways. Climate Policy Radar is a non-profit building open, credible databases and AI powered tools to support informed climate, nature, and development action. Using a real-world journey from an unreliable ingest to a steadier, federated platform, this talk will walk through the p…
 
-**About the speaker(s):** Fred O'Loughlin — Lead MLOps Engineer at Climate Policy Radar · Kerry Parker — Data Engineer at Climate Policy Radar
+**About the speaker(s):** Fred O'Loughlin — Lead MLOps Engineer at Climate Policy Radar · Kerry Parker — Data Engineer at Climate Policy Radar · Mark Cottam — Data Engineer at Climate Policy Radar
 
 
 ### Vibe NLP for Applied NLP
