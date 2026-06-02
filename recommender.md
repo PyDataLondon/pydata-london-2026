@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-06-01 12:10 UTC · pretalx schedule version 0.29 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-06-02 10:55 UTC · pretalx schedule version 0.29 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -420,7 +420,7 @@ Modern lakehouse architectures promise flexibility and scale — but governance 
 
 JupyterLite is a JupyterLab distribution that runs entirely in the web browser, backed by in-browser language kernels. Using it you can run Python, R and C++ in your browser via WebAssembly, use `git` and `vim` in a terminal, and access AI agents in a safe, sandboxed environment. This talk will present a comprehensive summary of all things JupyterLite, and provide live demonstrations of many of its key features and how easy it is to deploy. The talk assumes basic familiarity with JupyterLab but not necessarily JupyterLite. It will be of benefit to anyone who wishes to learn about this emergin…
 
-**About the speaker(s):** Ian Thomas — Ian is a Scientific Software Developer at QuantStack. He has been an Open Source contributor for over 15 years, is a core maintainer of the visualisation libraries Matplotlib and Bokeh, and lead maintainer of ContourPy.…
+**About the speaker(s):** Ian Thomas — Ian is a Scientific Software Developer at QuantStack. He has been an Open Source contributor for over 15 years, is a core maintainer of the libraries Matplotlib and ContourPy and a significant contributor to Bokeh and D…
 
 
 ### Evaluating multi-turn conversations: A practical guide to AI Agent evals
@@ -879,7 +879,7 @@ Most RAG demos stop at retrieval and summarisation. In practice, we also need to
 
 Large Language Models are rapidly changing how we think about recommendation systems. Traditional pipelines based on collaborative filtering or matrix factorization are being complemented and sometimes replaced by embedding-based and LLM-driven approaches. In this talk, we explore how modern recommendation systems can be built using LLM embeddings, vector databases, and hybrid architectures that combine classical ML with generative models. We will discuss practical design patterns for personalization, retrieval, ranking, and user modeling, focusing on real-world constraints such as latency, c…
 
-**About the speaker(s):** Özge Çinko — Hello World, I'm Özge Çinko! 👋 I'm a computer engineer who finds inspiration at the intersection of curiosity and technology. Currently building the future as an AI Engineer at ING. For me, engineering is a creative cra…
+**About the speaker(s):** Özge Çinko — Hello world! 👋 I'm Özge Çinko. I'm currently an AI Engineer at ING, working around agentic AI. Before that, I spent two years as an AI Research Engineer at Huawei, where I focused on research-driven AI systems, includin…
 
 
 ### What Can LLMs Do with Messy Residential Electrification Data?
