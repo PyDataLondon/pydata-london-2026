@@ -411,8 +411,8 @@
                   {
                     "code": "DV9CMN",
                     "name": "Oreolorun Olu-Ipinlaye",
-                    "avatar": null,
-                    "biography": "Oreolorun is a machine learning engineer with experience in building AI enabled software features and data processing for AI workflows.",
+                    "avatar": "https://pretalx.com/media/avatars/S7NNH8_6s1ZY7x.webp",
+                    "biography": "Oreolorun Olu-Ipinlaye is a Machine Learning/AI Engineer at Crowdhelix in London, where he builds production AI systems end-to-end for a platform connecting researchers with EU funding opportunities. As the lead engineer behind ReviewIQ; a self-hosted-LLM proposal review tool used by researchers across dozens of organisations; he has helped researchers in assessing their proposals before submission leading to more competitive proposals. \n\nHis work spans the full stack of applied ML: self-hosted LLM infrastructure, recommender systems, semantic and hybrid search, and the event-driven pipelines underneath, built largely in Python. He's particularly drawn to taking ML products from idea to adoption with measurable impact, and to making AI capabilities legible to non-technical stakeholders.\n\nHe holds an MSc in Artificial Intelligence and Data Science from the University of Hull, where he earned the award for Best Overall Performance.",
                     "public_name": "Oreolorun Olu-Ipinlaye",
                     "guid": "d85d4c0d-ea97-5506-8059-6f02eb034203",
                     "url": "https://pretalx.com/pydata-london-2026/speaker/DV9CMN/"

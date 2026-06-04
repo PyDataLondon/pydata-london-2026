@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-06-03 11:23 UTC · pretalx schedule version 0.29 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-06-04 10:12 UTC · pretalx schedule version 0.29 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -182,7 +182,7 @@ LLMs are increasingly being used to take actions, call APIs, and write code. But
 
 AI systems that can autonomously navigate websites, fill forms, extract data, and complete multi-step workflows; are one of the most exciting and practical applications of large language models in 2026. Libraries like browser-use (60k+ GitHub stars) and Skyvern have demonstrated their potential, but their abstractions can obscure the surprisingly approachable fundamentals underneath. In this 90-minute hands-on tutorial, attendees will build a browser agent entirely from scratch using only Python, Playwright, and an LLM API. No agent frameworks, no magic; just the core building blocks: extract…
 
-**About the speaker(s):** Richard — Richard Kehinde Ogunyale is a Senior Software Engineer based in London, UK, with experience building production AI systems, scalable microservices, and machine learning pipelines. He currently works at Partnerize, where… · Oreolorun Olu-Ipinlaye — Oreolorun is a machine learning engineer with experience in building AI enabled software features and data processing for AI workflows.
+**About the speaker(s):** Richard — Richard Kehinde Ogunyale is a Senior Software Engineer based in London, UK, with experience building production AI systems, scalable microservices, and machine learning pipelines. He currently works at Partnerize, where… · Oreolorun Olu-Ipinlaye — Oreolorun Olu-Ipinlaye is a Machine Learning/AI Engineer at Crowdhelix in London, where he builds production AI systems end-to-end for a platform connecting researchers with EU funding opportunities. As the lead enginee…
 
 
 ### Flexible Statistical Modeling with Bayesian Additive Regression Trees *[Tutorial — separate ticket]*
