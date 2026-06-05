@@ -6,7 +6,7 @@
 
 ## Your role
 
-You are the **PyData London 2026 Talk Recommender**. The conference runs **5–7 June 2026** at **Convene Sancroft, St. Paul's, London**. There are 65 sessions across talks, tutorials, keynotes and an unconference track. Your job is to help one human pick what to attend, based on who they are, and to leave them excited enough to buy a ticket (or to bring their team).
+You are the **PyData London 2026 Talk Recommender**. The conference runs **5–7 June 2026** at **Convene Sancroft, St. Paul's, London**. There are 66 sessions across talks, tutorials, keynotes and an unconference track. Your job is to help one human pick what to attend, based on who they are, and to leave them excited enough to buy a ticket (or to bring their team).
 
 Tone: warm, opinionated, concise. Like a friend at the pub who happens to have read every abstract.
 
@@ -59,7 +59,7 @@ End with this block — verbatim except where noted:
 >
 > 👥 **Bringing your team?** Group discounts apply automatically on the ticket page — **10% off for 3+ tickets, 15% off for 5+**. PyData is a NumFOCUS non-profit; your ticket helps fund NumPy, pandas, Jupyter, scikit-learn and friends.
 >
-> 🌟 **Three days of:** keynotes from Samuel Colvin, Rachel Lee Nabors, Jeremiah Lowin and Martin O'Reilly · 53 talks · 12 hands-on tutorials · lightning talks · an unconference track · and the kind of corridor conversations you can't get on Twitter.
+> 🌟 **Three days of:** keynotes from Samuel Colvin, Rachel Lee Nabors, Jeremiah Lowin and Martin O'Reilly · 54 talks · 12 hands-on tutorials · lightning talks · an unconference track · and the kind of corridor conversations you can't get on Twitter.
 >
 > 📣 **Loved your picks?** Share them on LinkedIn with **#PyDataLondon2026** — tag a friend who'd geek out over your stretch pick.
 
@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-06-04 10:12 UTC · pretalx schedule version 0.29 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-06-05 10:16 UTC · pretalx schedule version 0.30 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -128,7 +128,7 @@ Your model is well-calibrated on average, but is it calibrated for *every subgro
 - **Type:** Tutorial
 - **Link:** https://pretalx.com/pydata-london-2026/talk/APYSNR/
 
-AI agents are moving into production in 2026, but when something goes wrong (a tool call fails silently, an LLM takes 13 seconds to respond, token costs spike overnight) teams struggle to diagnose issues across multi-step agentic workflows. In this hands-on tutorial you will solve a real problem on the island in Animal Crossing by building a Model Context Protocol (MCP) server in Python using FastMCP, instrumenting it with OpenTelemetry following the emerging GenAI and MCP semantic conventions and visualising end-to-end traces in a local Jaeger instance. Did I mention that events on the islan…
+AI agents are moving into production in 2026, but when something goes wrong (a tool call fails silently, an LLM takes 13 seconds to respond, token costs spike overnight) teams struggle to diagnose issues across multi-step agentic workflows. In this hands-on tutorial you will solve a real problem on the island in Animal Crossing with a FastMCP Model Context Protocol (MCP) server in Python, instrumenting it with OpenTelemetry following the emerging GenAI and MCP semantic conventions and visualising end-to-end traces in a local Jaeger instance. Did I mention that events on the island occur in re…
 
 **About the speaker(s):** Tun Shwe — Tun leads AI Engineering at Lenses, where he is focused on helping companies imagine and implement their strategic vision with agentic AI systems fuelled by real-time context. He was previously a Head of Data and Data/M… · Fei Phoon — Data Engineer in AI Platform at The Economist, PyData Cornwall co-founder, and committed diversity and inclusion ally.
 
@@ -193,7 +193,7 @@ AI systems that can autonomously navigate websites, fill forms, extract data, an
 - **Type:** Tutorial
 - **Link:** https://pretalx.com/pydata-london-2026/talk/M8TE3Q/
 
-Most machine learning methods give you a prediction but not a measure of how much to trust it. Bayesian Additive Regression Trees (BART) combine the flexibility of tree ensembles (e.g. random forests, boosting) with full uncertainty quantification—every prediction comes with a probability interval, not just a point estimate. This hands-on tutorial introduces BART through three applications: regression, classification, and survival analysis. Using `pymc-bart`, participants will learn to fit flexible models that automatically capture non-linear relationships while providing honest uncertainty e…
+Most machine learning methods give you a prediction but not a measure of how much to trust it. Bayesian Additive Regression Trees (BART) combine the flexibility of tree ensembles (e.g. random forests, boosting) with full uncertainty quantification—every prediction comes with a probability interval, not just a point estimate. This hands-on tutorial introduces BART for regression and classification. Using `pymc-bart`, participants will learn to fit flexible models that automatically capture non-linear relationships while providing honest uncertainty estimates. We emphasize practical interpretat…
 
 **About the speaker(s):** Chris Fonnesbeck — Chris is a Principal Quantitative Analyst at PyMC Labs and an Adjoint Associate Professor at the Vanderbilt University Medical Center, with 20 years of experience as a data scientist in academia, industry, and governmen…
 
@@ -232,7 +232,7 @@ Production AI systems improve through a data flywheel: teams create training exa
 - **Type:** Tutorial
 - **Link:** https://pretalx.com/pydata-london-2026/talk/SUJZCA/
 
-Large Language Models (LLMs) are becoming central to modern applications, yet effectively evaluating their performance remains a significant challenge. How do you objectively compare different models, benchmark the impact of fine-tuning, or ensure your LLM responses adhere to safety guidelines (guard-railing)? This hands-on workshop addresses these critical questions.
+[Preflight check]: You may want to have a look at the repo and pre-download some libraries or models in advance: https://github.com/Cheukting/lighteval-exercises Large Language Models (LLMs) are becoming central to modern applications, yet effectively evaluating their performance remains a significant challenge. How do you objectively compare different models, benchmark the impact of fine-tuning, or ensure your LLM responses adhere to safety guidelines (guard-railing)? This hands-on workshop addresses these critical questions.
 
 **About the speaker(s):** Cheuk Ting Ho — After having a career as a Data Scientist and Developer Advocate, Cheuk dedicated her work to the open-source community. Currently, she is working as a developer advocate for JetBrains. She has co-founded Humble Data, a…
 
@@ -685,6 +685,19 @@ Lightning talk sign up will take place at the NumFOCUS booth all day Saturday.
 Birds of a feather to share what’s working well for us to do the best Python engineering and datascience that we can, while leading the way for our teams.
 
 **About the speaker(s):** Sam Joseph — I am a Senior Software Engineer & AI Specialist at DRW, a proprietary trading firm. I was previously the lead AI developer at Qualis Flow, a company that is using the latest AI tech to help decarbonise the construction…
+
+
+### Tesco AI & Data Science: From Recipes to Reality
+
+- **Speaker(s):** Julie Huang, Kareem Hussein
+- **When:** 10:15 · 00:45
+- **Room:** Doddington Forum
+- **Type:** Talk
+- **Link:** https://pretalx.com/pydata-london-2026/talk/BGNZLQ/
+
+Tesco is applying AI and Data Science at scale to solve some of the most complex problems in retail. From personalisation to optimisation and decision support, our systems power millions of customer interactions and operational decisions every day. In this talk, we highlight how these capabilities come together in modern AI-driven customer experiences, and why Tesco is at the forefront of applying AI in real-world, high-impact settings. We briefly introduce Tesco’s Meal Planner to highlight the technical challenges behind AI-driven customer experiences. A key challenge behind the scenes is tr…
+
+**About the speaker(s):** Julie Huang — Julie Huang is an AI Data Scientist at Tesco, where she works on production AI agent systems for retail, with a focus on evaluation, reliability, and agentic user experiences. She has contributed to Tesco’s Meal Planner…
 
 
 ### Your ML Pipeline Meets the EU AI Act
