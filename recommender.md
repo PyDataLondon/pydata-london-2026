@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-06-05 10:16 UTC · pretalx schedule version 0.30 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-06-06 08:46 UTC · pretalx schedule version 0.30 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -250,7 +250,7 @@ Posterior predictive checks are a key step within Bayesian modeling workflows wh
 **About the speaker(s):** Oriol Abril Pla — Oriol is a computational statistician, working as a maintainer of the ArviZ and PyMC libraries and as Principal Data Scientist with PyMC Labs. He started in academia but after some years but he left after some years in…
 
 
-### After Conference Social- Fleets
+### After Conference Social- Fleets- Sponsored by PDFTA & Coefficient
 
 - **Speaker(s):** TBA
 - **When:** 18:00 · 03:00
@@ -258,7 +258,7 @@ Posterior predictive checks are a key step within Bayesian modeling workflows wh
 - **Type:** Talk
 - **Link:** https://pretalx.com/pydata-london-2026/talk/3RBSQM/
 
-Join us after Day 1 of PyData London for an evening of drinks, conversation, and community at Fleets • Bar & Kitchen, a stylish bar and social space just steps from St Paul’s Cathedral. It’s the perfect opportunity to unwind after a full day of talks, connect with fellow attendees, speakers, and organizers, and keep the PyData conversations going in a relaxed setting. Whether you’re looking to network, catch up with colleagues, or simply enjoy a great London evening with the community, we’d love to see you there. Venue: 44–46 Ludgate Hill, London EC4M 7DE Learn more: [Fleets website](https://…
+Join us after Day 1 of PyData London for an evening of drinks, conversation, and community at Fleets • Bar & Kitchen, a stylish bar and social space just steps from St Paul’s Cathedral. It’s the perfect opportunity to unwind after a full day of talks, connect with fellow attendees, speakers, and organizers, and keep the PyData conversations going in a relaxed setting. Whether you’re looking to network, catch up with colleagues, or simply enjoy a great London evening with the community, we’d love to see you there. Thank you to our sponsor PDFTA & Coefficient, find John Carney and John Sandall…
 
 
 
@@ -392,9 +392,9 @@ Building a demo agent with hundred billion parameters and beyond can be easy. De
 - **Type:** Talk
 - **Link:** https://pretalx.com/pydata-london-2026/talk/CKV8PH/
 
-Decarbonising UK’s home heating is one of the greatest challenges of the Net Zero transition, yet it currently relies on individual household decisions supported by government incentives. To help accelerate the local delivery, we are building tool that maps the most suitable low-carbon heating for clusters of properties at a neighbourhood level. In this talk we will walk through our end-to-end data science pipeline, covering processing of large-scale geospatial data, the nuances of modelling where ground truth data does not yet exist, and how to translated local authorities needs into a funct…
+Decarbonising UK’s home heating is one of the greatest challenges of the Net Zero transition, yet it currently relies on individual household decisions supported by government incentives. To help accelerate the local delivery, we are building a tool that maps the most suitable low-carbon heating for clusters of properties at a neighbourhood level. In this talk we will walk through our end-to-end data science pipeline, covering processing of large-scale geospatial data, the nuances of modelling where ground truth data does not yet exist, and how to translated local authorities needs into a fun…
 
-**About the speaker(s):** Sofia Pinto — Sofia is a principal data scientist at Nesta, working with the sustainable future mission team on decarbonising UK homes. During her time at Nesta, Sofia worked with energy performance certificates, social media and sma…
+**About the speaker(s):** Sofia Pinto — Sofia is a principal data scientist at Nesta, working with the sustainable future mission team on decarbonising UK homes. During her time at Nesta, Sofia worked with energy performance certificates, social media and sma… · Simran Dave — Simran is a PhD student in high energy physics at University College London, working on direct searches for dark matter with the LUX-ZEPLIN experiment. She is undertaking a data science placement at Nesta, working with…
 
 
 ### Governance-as-Code for the Lakehouse: Zero Trust with Iceberg REST Catalog and Policy Engines
@@ -548,7 +548,7 @@ Your company launches a loyalty program — but not everywhere at once. Ten stor
 - **Type:** Talk
 - **Link:** https://pretalx.com/pydata-london-2026/talk/T7BQTG/
 
-Your intelligent application is your castle, and your security practices are the moat that protects it. Inside your castle, you must aim for full visibility into what you’re running and why, with freedom to iterate without vendor rate limits or surprise API changes. Your moat creates your security perimeter, ensuring no proprietary data leaves your castle and enforcing best practices including data provenance, cryptographically signed models, evaluation tools, build pipelines and reproducible environments. Build on your infrastructure, answer to your requirements, scale on your terms.
+Your intelligent application is your castle, and your security practices are the moat that protects it. Inside your castle, you must aim for full visibility into what you’re running and why, with freedom to iterate. Your moat creates your security perimeter, ensuring no proprietary data leaves your castle and enforcing best practices including data provenance, cryptographically signed models, evaluation tools, build pipelines and reproducible environments. Build on your infrastructure, answer to your requirements, scale on your terms.
 
 **About the speaker(s):** Daina Bouquin — Daina Bouquin is Senior Developer Relations Engineer at Anaconda with over 12 years of experience spanning astrophysics, library science, and software development. She previously served as Head Librarian at the Harvard-…
 
@@ -697,7 +697,7 @@ Birds of a feather to share what’s working well for us to do the best Python e
 
 Tesco is applying AI and Data Science at scale to solve some of the most complex problems in retail. From personalisation to optimisation and decision support, our systems power millions of customer interactions and operational decisions every day. In this talk, we highlight how these capabilities come together in modern AI-driven customer experiences, and why Tesco is at the forefront of applying AI in real-world, high-impact settings. We briefly introduce Tesco’s Meal Planner to highlight the technical challenges behind AI-driven customer experiences. A key challenge behind the scenes is tr…
 
-**About the speaker(s):** Julie Huang — Julie Huang is an AI Data Scientist at Tesco, where she works on production AI agent systems for retail, with a focus on evaluation, reliability, and agentic user experiences. She has contributed to Tesco’s Meal Planner…
+**About the speaker(s):** Julie Huang — Julie Huang is an AI Data Scientist at Tesco, where she works on production AI agent systems for retail, with a focus on evaluation, reliability, and agentic user experiences. She has contributed to Tesco’s Meal Planner… · Kareem Hussein — Kareem is an AI Engineer at Tesco working on the upcoming customer shopping assistant. Particular focuses include personalisation, guardrails, and the custom evaluation framework in use for the system at scale. Before t…
 
 
 ### Your ML Pipeline Meets the EU AI Act
