@@ -6,7 +6,7 @@
   },
   "schedule": {
     "url": "https://pretalx.com/pydata-london-2026/schedule/",
-    "version": "0.30",
+    "version": "0.33",
     "base_url": "https://pretalx.com",
     "conference": {
       "acronym": "pydata-london-2026",
@@ -81,8 +81,8 @@
                 "track": null,
                 "type": "Tutorial",
                 "language": "en",
-                "abstract": "We'll explore the architecture of production-grade semantic layers, demonstrating how Semantido enables reliable text-to-SQL applications by providing LLMs with rich contextual understanding of database schemas, relationships, and business logic. Attendees will learn practical patterns for implementing semantic layers that bridge the gap between user intent and database queries by building a semantic layer for a fictional company.",
-                "description": "Learning Objectives\n\nBy the end of this tutorial, participants will be able to:\n\n* Design and implement semantic models that capture business logic and domain knowledge alongside database schema definitions\n* Build LLM integrations that leverage semantic metadata for accurate query generation and validation\n* Implement observability patterns for monitoring and debugging\n* How to evaluate semantic layer quality \n* Deploy scalable semantic APIs that abstract database complexity from LLM applications\n\n\n__Desired Tutorial Structure (90 minutes)__\n\n__Part 1: Foundations (~20 minutes)__\n\n- The Text2SQL Challenge: Why naive approaches fail\n- Semantic Layer Architecture: Core concepts, design patterns, and the role of metadata in LLM reliability\n- Semantido Quick Start: Installation, project setup, and connecting to the playground database\n- *Hands-on Exercise*: Participants will set up their development environment and connect semantido to a provided database.\n\n__Part 2: Building Your First Semantic Layer (~25 minutes - 35 mins)__\n\n* Declarative Model Definition: Extending SQLAlchemy models with business metadata, descriptions, and constraints\n* Relationship Semantics: Annotating foreign keys, joins, and cross-table business rules\n* Domain Knowledge Injection: Adding enums, validation logic, and computed fields with business meaning\n* *Hands-on Exercise*: Participants will build a semantic layer for a given database, adding rich metadata that describes the tables and columns both in application and business terms.\n\n__Part 3: LLM Integration Patterns (~20 minutes)__\n\n*Context aware Query Generation: Using semantic layers with FastAPI and LangChain for SQL generation\n* *Hands-on Exercise*: Participants build a simple chatbot that answers natural language questions about orders by querying the semantic layer. Participants will implement query validation and test it with ambiguous questions.\n\n__Part 4: Production Considerations (~20 minutes)__\n\n* Observability and Debugging (6 min): Logging semantic context, tracing query generation, and monitoring LLM-database interactions\n* Evaluation Framework (5 min): Testing semantic layer quality with automated benchmarks and business logic validation\n* Deployment Patterns (4 min): Docker, FastAPI integration, and scaling considerations\n* *Hands-on Exercise*: Participants will add observability instrumentation to their semantic layer and run an evaluation suite that tests query accuracy against known business questions.\n\n__Part 5: Production Considerations (15 minutes)__\n* Q&A: Open discussion and troubleshooting",
+                "abstract": "We'll explore the architecture of production-grade semantic layers, demonstrating how Semantido enables reliable text-to-SQL applications by providing LLMs with rich contextual understanding of database schemas, relationships, and business logic. Attendees will learn practical patterns for implementing semantic layers that bridge the gap between user intent and database queries by building a semantic layer for a fictional company.\n\n\nThe repos for this tutorial:\nhttps://github.com/hikarilabs/pydata-london-2026-ui.git\nhttps://github.com/hikarilabs/pydata-london-2026-sql.git\n\nThe deck:\nhttps://docs.google.com/presentation/d/1uyN-xblr6d6cKb9HgHcgfd4ZafnN3mLRcVTuiKsYL-E/edit?usp=sharing",
+                "description": "Learning Objectives\n\nBy the end of this tutorial, participants will be able to:\n\n* Design and implement semantic models that capture business logic and domain knowledge alongside database schema definitions\n* Build LLM integrations that leverage semantic metadata for accurate query generation and validation\n* Deploy scalable semantic APIs that abstract database complexity from LLM applications\n* Use PydanticAI for an agentic analytics harness\n* Implement observability patterns for monitoring and debugging\n* How to evaluate semantic layer quality\n\n\n__Desired Tutorial Structure (90 minutes)__\n\n__Part 1: Foundations (~20 minutes)__\n\n- The Text2SQL Challenge: Why naive approaches fail\n- Semantic Layer Architecture: Core concepts, design patterns, and the role of metadata in LLM reliability\n- Semantido Quick Start: Installation, project setup, and connecting to the playground database\n- *Hands-on Exercise*: Participants will set up their development environment and connect semantido to a provided database.\n\n__Part 2: Building Your First Semantic Layer (~25 minutes - 35 mins)__\n\n- Declarative Model Definition: Extending SQLAlchemy models with business metadata, descriptions, and constraints\n- Relationship Semantics: Annotating foreign keys, joins, and cross-table business rules\n- Domain Knowledge Injection: Adding enums, validation logic, and computed fields with business meaning\n- *Hands-on Exercise*: Participants will build a semantic layer for a given database, adding rich metadata that describes the tables and columns both in application and business terms.\n\n__Part 3: LLM Integration Patterns (~20 minutes)__\n\n- Context aware Query Generation: Using semantic layers exposed via a FastAPI endpoint\n- *Hands-on Exercise*: Participants build a simple chatbot that answers natural language questions using the generated semantic layer. Participants will implement query validation and test it with ambiguous questions.\n\n__Part 4: Production Considerations (~20 minutes)__\n\n- Observability and Debugging (6 min): Logging semantic context, tracing query generation, and monitoring LLM-database interactions\n- Evaluation Framework (5 min): Testing semantic layer quality with automated benchmarks and business logic validation\n- Deployment Patterns (4 min): Docker, FastAPI integration, and scaling considerations\n- *Hands-on Exercise*: Participants will add observability instrumentation to their semantic layer and run an evaluation suite that tests query accuracy against known business questions.\n\n__Part 5: Production Considerations (15 minutes)__\n* Q&A: Open discussion and troubleshooting",
                 "recording_license": "",
                 "do_not_record": false,
                 "persons": [
@@ -2487,15 +2487,15 @@
                 "start": "16:15",
                 "duration": "00:45",
                 "room": "Hardwick Hub",
-                "slug": "pydata-london-2026-91780-don-t-call-it-the-forecast-designing-prediction-systems-at-scale",
+                "slug": "pydata-london-2026-91780-no-ropes-on-a-boat-coherent-forecasting",
                 "url": "https://pretalx.com/pydata-london-2026/talk/RTWLPY/",
-                "title": "Don’t Call It “The Forecast”: Designing Prediction Systems at Scale",
+                "title": "No Ropes on a Boat: Coherent Forecasting",
                 "subtitle": "",
                 "track": null,
                 "type": "Talk",
                 "language": "en",
-                "abstract": "Sailors avoid the word ‘rope’. Once it has a job, it becomes a line with a specific name: halyard, sheet or warp. In forecasting, we often do the opposite — projections, baselines, scenarios and targets all end up being called ‘the forecast’.\n\nIn practice, forecasts live in a high-dimensional space. They vary by origin date, prediction horizon, scenario assumptions, uncertainty representation, reconciliation level and decision context. Treating them as a single artefact creates ambiguity, semantic drift and misaligned expectations.\n\nIn this talk, I’ll show how we reframed forecasting at Spotify as a structured prediction problem rather than simply a modelling task. I’ll cover practical design patterns for representing forecast objects across multiple origins and scenarios, handling probabilistic outputs, implementing hierarchical reconciliation and tracking lineage and versioning in Python-based systems.\n\nAimed at data scientists and ML engineers working with production systems, this talk offers a framework for thinking about forecast dimensionality and concrete implementation patterns you can apply in your own forecasting platforms.",
-                "description": "_Sailors avoid the word ‘rope’. Once it has a purpose, it earns a precise name. A halyard is not a sheet, and neither is just a rope. The distinction enables coordination at scale._\n\nIn many forecasting systems, we lack this semantic discipline. We refer to ‘the forecast’ as if it were a single, well-defined object. In practice, forecasts vary along multiple dimensions: origin date, prediction horizon, scenario assumptions, uncertainty representation, reconciliation level and decision context. A baseline projection is not a stress scenario. A probabilistic model output is not a financial guide. Collapsing these into a single artefact creates ambiguity, semantic drift and brittle workflows.\n\nThis talk frames forecasting as a data modelling and systems design problem. Drawing on production systems built at Spotify, I’ll describe how we:\n\n- Represent forecasts as structured, high-dimensional objects\n- Encode forecast dimensions explicitly in Python data models\n- Manage multiple origins and scenarios reproducibly\n- Implement hierarchical reconciliation workflows\n- Track forecast lineage and versioning across runs to ensure reproducibility and auditability\n\nThe emphasis is on architecture and implementation rather than modelling technique. Examples draw from Python-based production workflows, including Pandas data structures, schema design and storage patterns.\n\n**Outline**:\n- 0–5 min: The rope -> line analogy and the forecasting naming problem\n- 5–15 min: The dimensional structure of forecasts\n- 15–30 min: Implementation patterns in Python\n- 30–35 min: Organisational impact and lessons learned\n- 35–40 min: Q&A\n\n**Target audience**: Data scientists and ML engineers building or maintaining production forecasting systems.\n\n**Takeaway**: Making forecast dimensions explicit enables prediction systems that scale, reduce semantic drift and support clearer decisions.",
+                "abstract": "Forecasts live in a high-dimensional space. They vary by origin date, prediction horizon, scenario assumptions, uncertainty, granularity and decision context. Treating them as a single artefact creates ambiguity, semantic drift and misaligned expectations.\n\nIn this talk, I’ll show how we reframed forecasting at Spotify as a structured prediction problem not just a modelling task. I’ll cover practical design patterns for representing forecast objects across  origins and scenarios, handling probabilistic outputs, implementing hierarchical reconciliation and tracking lineage and versioning in Python-based systems.\n\nAimed at data scientists and ML engineers working with production systems, this talk offers a framework for thinking about forecast dimensionality and concrete implementation patterns you can apply in your own forecasting platforms.",
+                "description": "",
                 "recording_license": "",
                 "do_not_record": false,
                 "persons": [
@@ -2503,7 +2503,7 @@
                     "code": "ZMGX3E",
                     "name": "Thomas Ogden",
                     "avatar": "https://pretalx.com/media/avatars/ZMGX3E_Rwqzsvs.webp",
-                    "biography": "Thomas Ogden is a Senior ML Engineer in Financial Engineering at Spotify. He builds tools, mostly with probabilistic machine learning on sequences and graphs. He once did a PhD in Quantum Optics theory and still thinks about physics a lot.",
+                    "biography": "Thomas Ogden is a Senior Data Scientist in Platform at Spotify. He builds tools, mostly with probabilistic machine learning on sequences and graphs.",
                     "public_name": "Thomas Ogden",
                     "guid": "349188f2-154f-52a9-be04-616bb1d531ca",
                     "url": "https://pretalx.com/pydata-london-2026/speaker/ZMGX3E/"
@@ -2553,6 +2553,42 @@
                 "attachments": []
               },
               {
+                "guid": "6950ad15-4812-5096-9704-354eea153cc5",
+                "code": "LLVVRQ",
+                "id": 100481,
+                "logo": null,
+                "date": "2026-06-07T11:45:00+01:00",
+                "start": "11:45",
+                "duration": "00:45",
+                "room": "Board Room- Unconference Track",
+                "slug": "pydata-london-2026-100481-how-to-write-a-pydata-proposal",
+                "url": "https://pretalx.com/pydata-london-2026/talk/LLVVRQ/",
+                "title": "How to write a PyData proposal",
+                "subtitle": "",
+                "track": null,
+                "type": "Talk",
+                "language": "en",
+                "abstract": "In this unconference session, hear what reviewers actually look for in proposals for PyData and how to frame your idea so it stands out.",
+                "description": "",
+                "recording_license": "",
+                "do_not_record": true,
+                "persons": [
+                  {
+                    "code": "CPWUST",
+                    "name": "James Fielder",
+                    "avatar": null,
+                    "biography": null,
+                    "public_name": "James Fielder",
+                    "guid": "c5e44848-efdb-5f68-80f9-f1bef2c854bc",
+                    "url": "https://pretalx.com/pydata-london-2026/speaker/CPWUST/"
+                  }
+                ],
+                "links": [],
+                "feedback_url": "https://pretalx.com/pydata-london-2026/talk/LLVVRQ/feedback/",
+                "origin_url": "https://pretalx.com/pydata-london-2026/talk/LLVVRQ/",
+                "attachments": []
+              },
+              {
                 "guid": "c16ecacf-19e1-5cd9-9d3d-9ad1a1187ba7",
                 "code": "BKW3KD",
                 "id": 98789,
@@ -2576,6 +2612,42 @@
                 "links": [],
                 "feedback_url": "https://pretalx.com/pydata-london-2026/talk/BKW3KD/feedback/",
                 "origin_url": "https://pretalx.com/pydata-london-2026/talk/BKW3KD/",
+                "attachments": []
+              },
+              {
+                "guid": "8d4ab56f-24ed-53b2-831b-80f4082af9ed",
+                "code": "HNKFP8",
+                "id": 100480,
+                "logo": null,
+                "date": "2026-06-07T14:45:00+01:00",
+                "start": "14:45",
+                "duration": "00:45",
+                "room": "Board Room- Unconference Track",
+                "slug": "pydata-london-2026-100480-surviving-and-thriving-as-a-data-professional-in-the-age-of-ai-agents",
+                "url": "https://pretalx.com/pydata-london-2026/talk/HNKFP8/",
+                "title": "Surviving (and Thriving) as a Data Professional in the Age of AI Agents",
+                "subtitle": "",
+                "track": null,
+                "type": "Talk",
+                "language": "en",
+                "abstract": "Data scientists, analysts and engineers are all feeling the pressure — but what's actually changing, and what's hype? This session brings us together to share real experiences of integrating LLMs and agents into data workflows, honestly assess which skills still matter, and tackle the uncomfortable question: are we building the tools that replace us?",
+                "description": "",
+                "recording_license": "",
+                "do_not_record": true,
+                "persons": [
+                  {
+                    "code": "DXX9X3",
+                    "name": "Maksym Bilychenko",
+                    "avatar": "https://pretalx.com/media/avatars/XLFFWD_wQWEXaW.webp",
+                    "biography": "I am a Data Science Leader dedicated to turning complex data into commercial momentum. Over the past 8+ years, I’ve partnered with executive teams to shape data strategy and integrate cross-functional data at scale for multi-million-dollar tech product companies. I bridge the gap between technical execution and business value, ensuring data isn’t just collected, but leveraged for sustainable growth.\n\nBeyond building the high-performing analytics teams that power strategic decisions, I am deeply invested in growing the next generation of talent, actively mentoring professionals looking to build meaningful careers in data science.\n\nMost recently, my focus has been exploring the intersection of AI and data operations, specifically how GenAI are reshaping data teams, redefining technical roles and shifting what it means to be a modern data professional.",
+                    "public_name": "Maksym Bilychenko",
+                    "guid": "646e8ea6-e8df-5719-89bd-92bb5f356973",
+                    "url": "https://pretalx.com/pydata-london-2026/speaker/DXX9X3/"
+                  }
+                ],
+                "links": [],
+                "feedback_url": "https://pretalx.com/pydata-london-2026/talk/HNKFP8/feedback/",
+                "origin_url": "https://pretalx.com/pydata-london-2026/talk/HNKFP8/",
                 "attachments": []
               }
             ]

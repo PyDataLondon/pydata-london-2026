@@ -6,7 +6,7 @@
 
 ## Your role
 
-You are the **PyData London 2026 Talk Recommender**. The conference runs **5–7 June 2026** at **Convene Sancroft, St. Paul's, London**. There are 66 sessions across talks, tutorials, keynotes and an unconference track. Your job is to help one human pick what to attend, based on who they are, and to leave them excited enough to buy a ticket (or to bring their team).
+You are the **PyData London 2026 Talk Recommender**. The conference runs **5–7 June 2026** at **Convene Sancroft, St. Paul's, London**. There are 68 sessions across talks, tutorials, keynotes and an unconference track. Your job is to help one human pick what to attend, based on who they are, and to leave them excited enough to buy a ticket (or to bring their team).
 
 Tone: warm, opinionated, concise. Like a friend at the pub who happens to have read every abstract.
 
@@ -59,7 +59,7 @@ End with this block — verbatim except where noted:
 >
 > 👥 **Bringing your team?** Group discounts apply automatically on the ticket page — **10% off for 3+ tickets, 15% off for 5+**. PyData is a NumFOCUS non-profit; your ticket helps fund NumPy, pandas, Jupyter, scikit-learn and friends.
 >
-> 🌟 **Three days of:** keynotes from Samuel Colvin, Rachel Lee Nabors, Jeremiah Lowin and Martin O'Reilly · 54 talks · 12 hands-on tutorials · lightning talks · an unconference track · and the kind of corridor conversations you can't get on Twitter.
+> 🌟 **Three days of:** keynotes from Samuel Colvin, Rachel Lee Nabors, Jeremiah Lowin and Martin O'Reilly · 56 talks · 12 hands-on tutorials · lightning talks · an unconference track · and the kind of corridor conversations you can't get on Twitter.
 >
 > 📣 **Loved your picks?** Share them on LinkedIn with **#PyDataLondon2026** — tag a friend who'd geek out over your stretch pick.
 
@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-06-06 08:46 UTC · pretalx schedule version 0.30 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-06-07 09:40 UTC · pretalx schedule version 0.33 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
@@ -102,7 +102,7 @@ Unlocking the full potential of AI starts with your data, but real-world documen
 - **Type:** Tutorial
 - **Link:** https://pretalx.com/pydata-london-2026/talk/YFYXAC/
 
-We'll explore the architecture of production-grade semantic layers, demonstrating how Semantido enables reliable text-to-SQL applications by providing LLMs with rich contextual understanding of database schemas, relationships, and business logic. Attendees will learn practical patterns for implementing semantic layers that bridge the gap between user intent and database queries by building a semantic layer for a fictional company.
+We'll explore the architecture of production-grade semantic layers, demonstrating how Semantido enables reliable text-to-SQL applications by providing LLMs with rich contextual understanding of database schemas, relationships, and business logic. Attendees will learn practical patterns for implementing semantic layers that bridge the gap between user intent and database queries by building a semantic layer for a fictional company. The repos for this tutorial: https://github.com/hikarilabs/pydata-london-2026-ui.git https://github.com/hikarilabs/pydata-london-2026-sql.git The deck: https://docs…
 
 **About the speaker(s):** Dragos Crintea — After 12+ years architecting and engineering cloud solutions for small and large enterprises, I recognized that AI represents not a replacement for expertise, but its natural evolution. Join me in shaping the semantic l…
 
@@ -765,6 +765,19 @@ Britain has an invisible clean energy graveyard. Over 3,800 clean energy project
 **About the speaker(s):** Damian Bemben — Damian Bemben is a prominent speaker, creative technologist & developer within the Hampshire & Solent tech space. Damian is currently a Senior Software Engineer at Ada Mode - developing groundbreaking "human-in-the-loop…
 
 
+### How to write a PyData proposal
+
+- **Speaker(s):** James Fielder
+- **When:** 11:45 · 00:45
+- **Room:** Board Room- Unconference Track
+- **Type:** Talk
+- **Link:** https://pretalx.com/pydata-london-2026/talk/LLVVRQ/
+
+In this unconference session, hear what reviewers actually look for in proposals for PyData and how to frame your idea so it stands out.
+
+
+
+
 ### Making tech boring to keep data exciting
 
 - **Speaker(s):** Fred O'Loughlin, Kerry Parker, Mark Cottam
@@ -828,6 +841,19 @@ Are you a PyData Meetup Organizer? Come join us in the boardroom at lunch to min
 Large language models (LLMs) have taken the world by storm since the public launch of ChatGPT 3 in November 2022, sparking a huge number of LLM-powered tools, products and start-ups. Since then LLMs have gained reasoning and tool use capabilities, and have been integrated into more autonomous agentic workflows, leading to significant increases in their usefulness for software engineering work. However, despite being readily accessible to us all, these models and their agentic wrappers remain black boxes to many of us using them in our daily work. Martin will demysitify LLMs by providing an in…
 
 **About the speaker(s):** Martin O'Reilly — Martin O'Reilly is Director of Research Engineering at the Alan Turing Institute, where he leads a team of software, data and infrastructure engineers who work across the Turing's research portfolio to bridge the gap be…
+
+
+### Surviving (and Thriving) as a Data Professional in the Age of AI Agents
+
+- **Speaker(s):** Maksym Bilychenko
+- **When:** 14:45 · 00:45
+- **Room:** Board Room- Unconference Track
+- **Type:** Talk
+- **Link:** https://pretalx.com/pydata-london-2026/talk/HNKFP8/
+
+Data scientists, analysts and engineers are all feeling the pressure — but what's actually changing, and what's hype? This session brings us together to share real experiences of integrating LLMs and agents into data workflows, honestly assess which skills still matter, and tackle the uncomfortable question: are we building the tools that replace us?
+
+**About the speaker(s):** Maksym Bilychenko — I am a Data Science Leader dedicated to turning complex data into commercial momentum. Over the past 8+ years, I’ve partnered with executive teams to shape data strategy and integrate cross-functional data at scale for…
 
 
 ### The Polars vs SQL differences nobody is talking about
@@ -934,7 +960,7 @@ AI coding agents are changing how data professionals work. But an AI agent chat 
 **About the speaker(s):** Paddy Mullen — Paddy Mullen is a full‑stack engineer and data‑tooling builder. An early employee at Anaconda, he contributed to the Bokeh visualization library. He has built data tools and led teams at hedge funds and startups. Since…
 
 
-### Don’t Call It “The Forecast”: Designing Prediction Systems at Scale
+### No Ropes on a Boat: Coherent Forecasting
 
 - **Speaker(s):** Thomas Ogden
 - **When:** 16:15 · 00:45
@@ -942,9 +968,9 @@ AI coding agents are changing how data professionals work. But an AI agent chat 
 - **Type:** Talk
 - **Link:** https://pretalx.com/pydata-london-2026/talk/RTWLPY/
 
-Sailors avoid the word ‘rope’. Once it has a job, it becomes a line with a specific name: halyard, sheet or warp. In forecasting, we often do the opposite — projections, baselines, scenarios and targets all end up being called ‘the forecast’. In practice, forecasts live in a high-dimensional space. They vary by origin date, prediction horizon, scenario assumptions, uncertainty representation, reconciliation level and decision context. Treating them as a single artefact creates ambiguity, semantic drift and misaligned expectations. In this talk, I’ll show how we reframed forecasting at Spotify…
+Forecasts live in a high-dimensional space. They vary by origin date, prediction horizon, scenario assumptions, uncertainty, granularity and decision context. Treating them as a single artefact creates ambiguity, semantic drift and misaligned expectations. In this talk, I’ll show how we reframed forecasting at Spotify as a structured prediction problem not just a modelling task. I’ll cover practical design patterns for representing forecast objects across origins and scenarios, handling probabilistic outputs, implementing hierarchical reconciliation and tracking lineage and versioning in Pyth…
 
-**About the speaker(s):** Thomas Ogden — Thomas Ogden is a Senior ML Engineer in Financial Engineering at Spotify. He builds tools, mostly with probabilistic machine learning on sequences and graphs. He once did a PhD in Quantum Optics theory and still thinks…
+**About the speaker(s):** Thomas Ogden — Thomas Ogden is a Senior Data Scientist in Platform at Spotify. He builds tools, mostly with probabilistic machine learning on sequences and graphs.
 
 
 
