@@ -2,7 +2,8 @@
   "$schema": "https://c3voc.de/schedule/schema.json",
   "generator": {
     "name": "pretalx",
-    "version": "2026.1.1"
+    "version": "2026.1.1",
+    "url": "https://pretalx.com"
   },
   "schedule": {
     "url": "https://pretalx.com/pydata-london-2026/schedule/",
