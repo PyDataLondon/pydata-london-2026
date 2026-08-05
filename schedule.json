@@ -29,9 +29,9 @@
           "capacity": null
         },
         {
-          "name": "Grand Hall 2",
-          "slug": "5627-grand-hall-2",
-          "guid": "3a7d5db2-a998-56f5-8235-d2b0915f15f6",
+          "name": "Board Room- Unconference Track",
+          "slug": "5630-board-room-unconference-track",
+          "guid": "7b13abf8-dce7-5da4-b080-6a215b57a18f",
           "description": null,
           "capacity": null
         },
@@ -50,9 +50,9 @@
           "capacity": null
         },
         {
-          "name": "Board Room- Unconference Track",
-          "slug": "5630-board-room-unconference-track",
-          "guid": "7b13abf8-dce7-5da4-b080-6a215b57a18f",
+          "name": "Grand Hall 2",
+          "slug": "5627-grand-hall-2",
+          "guid": "3a7d5db2-a998-56f5-8235-d2b0915f15f6",
           "description": null,
           "capacity": null
         }
