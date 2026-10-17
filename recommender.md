@@ -75,7 +75,7 @@ End with this block — verbatim except where noted:
 
 # Schedule data
 
-> Generated 2026-10-16 11:27 UTC · pretalx schedule version 0.33 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
+> Generated 2026-10-17 10:47 UTC · pretalx schedule version 0.33 · source: https://pretalx.com/pydata-london-2026/schedule/export/schedule.json
 
 
 ## Friday 5 June 2026
